@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KilowaySDK.ActiveMQ", "KilowaySDK.ActiveMQ\KilowaySDK.ActiveMQ.csproj", "{B57FCA23-48B2-40DB-9A7E-B875AB94E055}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KilowaySDK.ActiveMQ.App.Producer", "KilowaySDK.ActiveMQ.App\KilowaySDK.ActiveMQ.App.Producer.csproj", "{C377DA7A-42AF-4D08-BA3D-A857165C37F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KilowaySDK.ActiveMQ.Interface", "KilowaySDK.ActiveMQ.Interface\KilowaySDK.ActiveMQ.Interface.csproj", "{DF30FA83-6F30-495E-ADE3-F97D6F819103}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KilowaySDK.ActiveMQ.App.Comsumer", "KilowaySDK.ActiveMQ.App.Comsumer\KilowaySDK.ActiveMQ.App.Comsumer.csproj", "{9E648F30-4497-40AB-8C7E-A07DDD5CEB55}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B57FCA23-48B2-40DB-9A7E-B875AB94E055}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B57FCA23-48B2-40DB-9A7E-B875AB94E055}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B57FCA23-48B2-40DB-9A7E-B875AB94E055}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B57FCA23-48B2-40DB-9A7E-B875AB94E055}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C377DA7A-42AF-4D08-BA3D-A857165C37F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C377DA7A-42AF-4D08-BA3D-A857165C37F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C377DA7A-42AF-4D08-BA3D-A857165C37F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C377DA7A-42AF-4D08-BA3D-A857165C37F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF30FA83-6F30-495E-ADE3-F97D6F819103}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF30FA83-6F30-495E-ADE3-F97D6F819103}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF30FA83-6F30-495E-ADE3-F97D6F819103}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF30FA83-6F30-495E-ADE3-F97D6F819103}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E648F30-4497-40AB-8C7E-A07DDD5CEB55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E648F30-4497-40AB-8C7E-A07DDD5CEB55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E648F30-4497-40AB-8C7E-A07DDD5CEB55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E648F30-4497-40AB-8C7E-A07DDD5CEB55}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B863CAE5-09A8-4B30-A514-85A2F2E49727}
+	EndGlobalSection
+EndGlobal

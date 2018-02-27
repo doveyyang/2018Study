@@ -1,0 +1,5 @@
+c:\Users\Dovey\source\repos\MyDIP\Kiloway.IDAL\bin\Debug\Kiloway.IDAL.dll
+c:\Users\Dovey\source\repos\MyDIP\Kiloway.IDAL\bin\Debug\Kiloway.IDAL.pdb
+c:\Users\Dovey\source\repos\MyDIP\Kiloway.IDAL\obj\Debug\Kiloway.IDAL.csproj.CoreCompileInputs.cache
+c:\Users\Dovey\source\repos\MyDIP\Kiloway.IDAL\obj\Debug\Kiloway.IDAL.dll
+c:\Users\Dovey\source\repos\MyDIP\Kiloway.IDAL\obj\Debug\Kiloway.IDAL.pdb

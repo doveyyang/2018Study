@@ -1,0 +1,5 @@
+c:\users\dovey\source\repos\MyIOCUnity\Kiloway.Interface\bin\Debug\Kiloway.Interface.dll
+c:\users\dovey\source\repos\MyIOCUnity\Kiloway.Interface\bin\Debug\Kiloway.Interface.pdb
+c:\users\dovey\source\repos\MyIOCUnity\Kiloway.Interface\obj\Debug\Kiloway.Interface.csproj.CoreCompileInputs.cache
+c:\users\dovey\source\repos\MyIOCUnity\Kiloway.Interface\obj\Debug\Kiloway.Interface.dll
+c:\users\dovey\source\repos\MyIOCUnity\Kiloway.Interface\obj\Debug\Kiloway.Interface.pdb

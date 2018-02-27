@@ -1,0 +1,7 @@
+c:\users\dovey\source\repos\MyCache\MyCache\bin\Debug\MyCache.exe.config
+c:\users\dovey\source\repos\MyCache\MyCache\bin\Debug\MyCache.exe
+c:\users\dovey\source\repos\MyCache\MyCache\bin\Debug\MyCache.pdb
+c:\users\dovey\source\repos\MyCache\MyCache\obj\Debug\MyCache.csprojResolveAssemblyReference.cache
+c:\users\dovey\source\repos\MyCache\MyCache\obj\Debug\MyCache.csproj.CoreCompileInputs.cache
+c:\users\dovey\source\repos\MyCache\MyCache\obj\Debug\MyCache.exe
+c:\users\dovey\source\repos\MyCache\MyCache\obj\Debug\MyCache.pdb

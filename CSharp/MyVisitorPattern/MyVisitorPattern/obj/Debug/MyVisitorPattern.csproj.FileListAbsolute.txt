@@ -1,0 +1,6 @@
+C:\Users\Dovey\source\repos\MyVisitorPattern\MyVisitorPattern\bin\Debug\MyVisitorPattern.exe.config
+C:\Users\Dovey\source\repos\MyVisitorPattern\MyVisitorPattern\bin\Debug\MyVisitorPattern.exe
+C:\Users\Dovey\source\repos\MyVisitorPattern\MyVisitorPattern\bin\Debug\MyVisitorPattern.pdb
+C:\Users\Dovey\source\repos\MyVisitorPattern\MyVisitorPattern\obj\Debug\MyVisitorPattern.csproj.CoreCompileInputs.cache
+C:\Users\Dovey\source\repos\MyVisitorPattern\MyVisitorPattern\obj\Debug\MyVisitorPattern.exe
+C:\Users\Dovey\source\repos\MyVisitorPattern\MyVisitorPattern\obj\Debug\MyVisitorPattern.pdb

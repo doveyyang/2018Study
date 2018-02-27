@@ -1,0 +1,15 @@
+C:\Users\Dovey\source\repos\SwaggerApiDemo\EFTest\bin\EFTest.dll.config
+C:\Users\Dovey\source\repos\SwaggerApiDemo\EFTest\bin\EFTest.dll
+C:\Users\Dovey\source\repos\SwaggerApiDemo\EFTest\bin\EFTest.pdb
+C:\Users\Dovey\source\repos\SwaggerApiDemo\EFTest\bin\EntityFramework.dll
+C:\Users\Dovey\source\repos\SwaggerApiDemo\EFTest\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Dovey\source\repos\SwaggerApiDemo\EFTest\bin\EntityFramework.xml
+C:\Users\Dovey\source\repos\SwaggerApiDemo\EFTest\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Dovey\source\repos\SwaggerApiDemo\EFTest\bin\zh-Hans\EntityFramework.resources.dll
+C:\Users\Dovey\source\repos\SwaggerApiDemo\EFTest\obj\Debug\EFTest.csproj.CoreCompileInputs.cache
+C:\Users\Dovey\source\repos\SwaggerApiDemo\EFTest\obj\Debug\EFTest.dll
+C:\Users\Dovey\source\repos\SwaggerApiDemo\EFTest\obj\Debug\EFTest.pdb
+C:\Users\Dovey\source\repos\SwaggerApiDemo\EFTest\bin\EntityFramework.SqlServer.dll
+C:\Users\Dovey\source\repos\SwaggerApiDemo\EFTest\bin\EntityFramework.SqlServer.xml
+C:\Users\Dovey\source\repos\SwaggerApiDemo\EFTest\bin\zh-Hans\EntityFramework.SqlServer.resources.dll
+C:\Users\Dovey\source\repos\SwaggerApiDemo\EFTest\obj\Debug\EFTest.csprojResolveAssemblyReference.cache

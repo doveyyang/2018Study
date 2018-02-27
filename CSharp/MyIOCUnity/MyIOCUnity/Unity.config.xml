@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<configuration>
+  <configSections>
+    <section name ="unity" type="Microsoft.Practices.Unity.Configuration.UnityConfigurationSection,Unity.Configuration" />
+  </configSections>
+  <unity>
+    <container name="testContainer">
+      <register type="Kiloway.Interface.IPhone,Kiloway.Interface" mapTo="Kiloway.Service.ApplePhone,Kiloway.Service" />
+      <register type="Kiloway.Interface.IMicro,Kiloway.Interface" mapTo="Kiloway.Service.Micro,Kiloway.Service"/>
+      <register type="Kiloway.Interface.IPower,Kiloway.Interface" mapTo="Kiloway.Service.Power,Kiloway.Service"/>
+      <register type="Kiloway.Interface.IHead,Kiloway.Interface" mapTo="Kiloway.Service.Head,Kiloway.Service"/>
+    </container>
+  </unity>
+</configuration>

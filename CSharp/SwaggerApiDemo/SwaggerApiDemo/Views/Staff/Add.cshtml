@@ -1,0 +1,48 @@
+﻿@using SwaggerApiDemo.ViewModels;
+
+@model StaffViewModel
+
+@{
+    ViewBag.Title = "Add";
+}
+
+<h2>Add</h2>
+
+<form action="/Staff/SaveStaff">
+    LoginName:<input type="text" name="LoginName" id="LoginName" />
+    RFID:<input type="text" name="RFID" id="RFID" />
+
+    @Html.ValidationMessage("RFID")
+
+    CardNumber:<input type="text" name="CardNumber" id="CardNumber" />
+
+    <input type="submit" name="Submit" value="提交" />
+    <input type="submit" name="Submit" value="取消" />
+    <input type="reset" value="重置" />
+    <input type="button" value="Reset" onclick="ResetForm()" />
+
+</form>
+
+<br />
+<input type="button" name="BtnSubmit" value="Cancel" onclick="document.getElementById('CancelForm').submit()" />
+
+<form action="/Staff/CancelSave" id="CancelForm" method="get" style="display:none"></form>
+
+<form action="" method="post" id="DoubleInputForm">
+
+    firstName <input type="text" id="TxtFName" name="FName" value="" />
+    lastName <input type="text" id="TxtLName" name="LName" value="" />
+    Salary <input type="text" id="TxtSalary" name="Salary" value="" />
+
+    <input type="submit" name="BtnSubmit" value="Save" onclick="document.getElementById('DoubleInputForm').action='/Staff/SaveStaffTwo'" />
+    <input type="submit" name="BtnSubmit" value="Cancel" onclick="document.getElementById('DoubleInputForm').action='/Staff/CancelSave'" />
+</form>
+
+
+<script>
+    function ResetForm() {
+        document.getElementById("LoginName").value = "";
+        document.getElementById("RFID").value = "";
+        document.getElementById("CardNumber").value = "";
+    }
+</script>

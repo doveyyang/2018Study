@@ -1,0 +1,10 @@
+c:\Users\Dovey\source\repos\MyDIP\Kiloway.Factory\bin\Debug\Kiloway.Factory.dll
+c:\Users\Dovey\source\repos\MyDIP\Kiloway.Factory\bin\Debug\Kiloway.Factory.pdb
+c:\Users\Dovey\source\repos\MyDIP\Kiloway.Factory\bin\Debug\Kiloway.IBLL.dll
+c:\Users\Dovey\source\repos\MyDIP\Kiloway.Factory\bin\Debug\Kiloway.IDAL.dll
+c:\Users\Dovey\source\repos\MyDIP\Kiloway.Factory\bin\Debug\Kiloway.IBLL.pdb
+c:\Users\Dovey\source\repos\MyDIP\Kiloway.Factory\bin\Debug\Kiloway.IDAL.pdb
+c:\Users\Dovey\source\repos\MyDIP\Kiloway.Factory\obj\Debug\Kiloway.Factory.csprojResolveAssemblyReference.cache
+c:\Users\Dovey\source\repos\MyDIP\Kiloway.Factory\obj\Debug\Kiloway.Factory.csproj.CoreCompileInputs.cache
+c:\Users\Dovey\source\repos\MyDIP\Kiloway.Factory\obj\Debug\Kiloway.Factory.dll
+c:\Users\Dovey\source\repos\MyDIP\Kiloway.Factory\obj\Debug\Kiloway.Factory.pdb

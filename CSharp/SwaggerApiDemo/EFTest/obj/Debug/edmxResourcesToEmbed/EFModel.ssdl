@@ -1,0 +1,2005 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EFModel.Store" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.7" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="android_position">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="companyId" Type="int" Nullable="false" />
+    <Property Name="last_time" Type="datetime" Precision="0" Nullable="false" />
+    <Property Name="mac" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="longitude" Type="float" />
+    <Property Name="latitude" Type="float" />
+    <Property Name="staff_id" Type="int" />
+  </EntityType>
+  <EntityType Name="approval">
+    <Key>
+      <PropertyRef Name="approval_id" />
+    </Key>
+    <Property Name="approval_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="apply_id" Type="int" />
+    <Property Name="staff_id" Type="int" Nullable="false" />
+    <Property Name="result_id" Type="int" />
+    <Property Name="approval_date" Type="datetime" Precision="0" />
+    <Property Name="request_staff_id" Type="int" />
+    <Property Name="request_date" Type="datetime" Precision="0" />
+    <Property Name="approval_path" Type="varchar" MaxLength="100" />
+    <Property Name="create_time" Type="datetime" Precision="0" />
+    <Property Name="create_staff_id" Type="int" />
+    <Property Name="approval_advice" Type="varchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="assistant">
+    <Key>
+      <PropertyRef Name="assistant_id" />
+    </Key>
+    <Property Name="assistant_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="equipment_type_id" Type="int" />
+    <Property Name="regulation_id" Type="int" />
+    <Property Name="tools_list" Type="varchar" MaxLength="200" />
+    <Property Name="create_time" Type="datetime" Precision="0" />
+    <Property Name="create_staff_id" Type="int" />
+    <Property Name="delete_time" Type="datetime" Precision="0" />
+    <Property Name="delete_staff_id" Type="int" />
+    <Property Name="delete_status" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="attendance">
+    <Key>
+      <PropertyRef Name="attendance_id" />
+    </Key>
+    <Property Name="attendance_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="staff_id" Type="int" />
+    <Property Name="company_id" Type="int" />
+    <Property Name="mobile_id" Type="int" />
+    <Property Name="attendance_date" Type="datetime" Precision="0" />
+    <Property Name="attendance_type" Type="int" Nullable="false" />
+    <Property Name="attendance_flag" Type="int" Nullable="false" />
+    <Property Name="attendance_leave_date" Type="datetime" Precision="0" />
+    <Property Name="create_time" Type="datetime" Precision="0" />
+    <Property Name="create_staff_id" Type="int" />
+    <Property Name="delete_time" Type="datetime" Precision="0" />
+    <Property Name="delete_staff_id" Type="int" />
+    <Property Name="delete_status" Type="int" Nullable="false" />
+    <Property Name="attendance_date_offset" Type="datetime" Precision="0" />
+    <Property Name="attendance_leave_date_offset" Type="datetime" Precision="0" />
+    <Property Name="work_id" Type="int" />
+    <Property Name="in_type_id" Type="int" />
+    <Property Name="in_type_desc" Type="varchar" MaxLength="255" />
+    <Property Name="out_type_id" Type="int" />
+    <Property Name="out_type_desc" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="bag">
+    <Key>
+      <PropertyRef Name="bag_id" />
+    </Key>
+    <Property Name="bag_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="bag_name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="company_id" Type="int" Nullable="false" />
+    <Property Name="create_user" Type="int" Nullable="false" />
+    <Property Name="create_dt" Type="datetime" Precision="0" Nullable="false" />
+  </EntityType>
+  <EntityType Name="bth_tag">
+    <Key>
+      <PropertyRef Name="bth_id" />
+    </Key>
+    <Property Name="bth_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="company_id" Type="int" Nullable="false" />
+    <Property Name="tag_id" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="tag_jm" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="tag_type" Type="int" Nullable="false" />
+    <Property Name="create_staff" Type="int" />
+    <Property Name="create_time" Type="datetime" Precision="0" />
+    <Property Name="update_time" Type="datetime" Precision="0" />
+    <Property Name="update_staff" Type="int" />
+    <Property Name="delete_staff" Type="int" />
+    <Property Name="delete_time" Type="datetime" Precision="0" />
+    <Property Name="delete_state" Type="int" />
+  </EntityType>
+  <EntityType Name="company">
+    <Key>
+      <PropertyRef Name="company_id" />
+    </Key>
+    <Property Name="company_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="parent_id" Type="int" Nullable="false" />
+    <Property Name="level" Type="int" Nullable="false" />
+    <Property Name="company_path" Type="varchar" MaxLength="100" />
+    <Property Name="company_name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="company_code" Type="varchar" MaxLength="50" />
+    <Property Name="remark" Type="varchar" MaxLength="200" />
+    <Property Name="delete_status" Type="int" Nullable="false" />
+    <Property Name="create_time" Type="datetime" Precision="0" />
+    <Property Name="create_staff_id" Type="int" />
+    <Property Name="delete_time" Type="datetime" Precision="0" />
+    <Property Name="delete_staff_id" Type="int" />
+    <Property Name="manager_id" Type="int" Nullable="false" />
+    <Property Name="railway_company_code" Type="varchar" MaxLength="10" />
+    <Property Name="railway_company_path" Type="varchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="company_duty">
+    <Key>
+      <PropertyRef Name="relation_id" />
+    </Key>
+    <Property Name="relation_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="duty_id" Type="int" Nullable="false" />
+    <Property Name="company_id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="company_line">
+    <Key>
+      <PropertyRef Name="relation_id" />
+    </Key>
+    <Property Name="relation_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="line_id" Type="int" />
+    <Property Name="company_id" Type="int" />
+  </EntityType>
+  <EntityType Name="company_range">
+    <Key>
+      <PropertyRef Name="relation_id" />
+    </Key>
+    <Property Name="relation_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="range_id" Type="int" />
+    <Property Name="company_id" Type="int" />
+  </EntityType>
+  <EntityType Name="company_station">
+    <Key>
+      <PropertyRef Name="relation_id" />
+    </Key>
+    <Property Name="relation_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="company_id" Type="int" Nullable="false" />
+    <Property Name="station_id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="cycle">
+    <Key>
+      <PropertyRef Name="cycle_id" />
+    </Key>
+    <Property Name="cycle_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="cycle_name" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="duty">
+    <Key>
+      <PropertyRef Name="duty_id" />
+    </Key>
+    <Property Name="duty_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="parent_id" Type="int" Nullable="false" />
+    <Property Name="duty_path" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="duty_name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="remark" Type="varchar" MaxLength="200" />
+    <Property Name="create_time" Type="datetime" Precision="0" />
+    <Property Name="create_staff_id" Type="int" />
+    <Property Name="delete_time" Type="datetime" Precision="0" />
+    <Property Name="delete_staff_id" Type="int" />
+    <Property Name="delete_status" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="emergent_maintenance_equipment">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="work_id" Type="int" />
+    <Property Name="equipment_code" Type="varchar" MaxLength="500" />
+    <Property Name="equipment_id" Type="int" Nullable="false" />
+    <Property Name="result_id" Type="int" Nullable="false" />
+    <Property Name="date" Type="datetime" Precision="0" />
+    <Property Name="is_plan" Type="bit" />
+    <Property Name="act_equipment_code" Type="varchar" MaxLength="50" />
+    <Property Name="act_equipment_id" Type="int" />
+  </EntityType>
+  <EntityType Name="equipment">
+    <Key>
+      <PropertyRef Name="equipment_id" />
+    </Key>
+    <Property Name="equipment_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="supplier_id" Type="int" />
+    <Property Name="equipment_type_id" Type="int" />
+    <Property Name="range_id" Type="int" />
+    <Property Name="line_id" Type="int" />
+    <Property Name="station_id" Type="int" />
+    <Property Name="company_id" Type="int" />
+    <Property Name="cycle_id" Type="int" Nullable="false" />
+    <Property Name="equipment_name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="equipment_model" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="device_picture" Type="varchar" MaxLength="255" />
+    <Property Name="install_date" Type="datetime" Precision="0" />
+    <Property Name="rfid_code" Type="varchar" MaxLength="50" />
+    <Property Name="remark" Type="varchar" MaxLength="200" />
+    <Property Name="railway_code" Type="varchar" MaxLength="50" />
+    <Property Name="latitude" Type="float" />
+    <Property Name="longitude" Type="float" />
+    <Property Name="equipment_status_id" Type="int" />
+    <Property Name="create_time" Type="datetime" Precision="0" />
+    <Property Name="create_staff_id" Type="int" />
+    <Property Name="delete_time" Type="datetime" Precision="0" />
+    <Property Name="delete_staff_id" Type="int" />
+    <Property Name="delete_status" Type="int" Nullable="false" />
+    <Property Name="rfid_tid" Type="varchar" MaxLength="50" />
+    <Property Name="update_time" Type="datetime" Precision="0" />
+    <Property Name="ip" Type="varchar" MaxLength="50" />
+    <Property Name="port" Type="varchar" MaxLength="10" />
+    <Property Name="mac" Type="varchar" MaxLength="50" />
+    <Property Name="sn" Type="varchar" MaxLength="255" />
+    <Property Name="stock_id" Type="int" />
+    <Property Name="position_id" Type="int" />
+    <Property Name="person_liable_id" Type="int" />
+    <Property Name="collar_date" Type="datetime" Precision="0" />
+    <Property Name="buy_date" Type="datetime" Precision="0" />
+    <Property Name="production" Type="datetime" Precision="0" />
+    <Property Name="service_life" Type="decimal" Precision="10" Scale="0" />
+    <Property Name="is_warn" Type="int" />
+    <Property Name="service_end" Type="datetime" Precision="0" />
+    <Property Name="buy_company" Type="int" />
+    <Property Name="circulation_date" Type="datetime" Precision="0" />
+    <Property Name="update_staff_id" Type="int" />
+    <Property Name="site_flag" Type="int" />
+    <Property Name="price" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="shelf_id" Type="int" />
+    <Property Name="qr_code" Type="varchar" MaxLength="255" />
+    <Property Name="is_binding" Type="int" Nullable="false" />
+    <Property Name="factory_number" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="equipment_circulration">
+    <Key>
+      <PropertyRef Name="circulration_id" />
+    </Key>
+    <Property Name="circulration_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="equipment_id" Type="int" />
+    <Property Name="operation_id" Type="int" />
+    <Property Name="src_company_id" Type="int" />
+    <Property Name="desc_company_id" Type="int" />
+    <Property Name="circulration_date" Type="datetime" Precision="0" />
+    <Property Name="create_staff_id" Type="int" />
+    <Property Name="create_time" Type="int" />
+    <Property Name="circulration_mem" Type="varchar" MaxLength="200" />
+    <Property Name="circulration_path" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="equipment_failure">
+    <Key>
+      <PropertyRef Name="fault_id" />
+    </Key>
+    <Property Name="fault_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="failure_id" Type="int" />
+    <Property Name="rfid_code" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="fault_description" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="fault_method" Type="varchar" MaxLength="200" />
+    <Property Name="fault_date" Type="datetime" Precision="0" />
+    <Property Name="remark" Type="varchar" MaxLength="200" />
+    <Property Name="create_time" Type="datetime" Precision="0" />
+    <Property Name="create_staff_id" Type="int" />
+    <Property Name="delete_time" Type="datetime" Precision="0" />
+    <Property Name="delete_staff_id" Type="int" />
+    <Property Name="delete_status" Type="int" Nullable="false" />
+    <Property Name="update_time" Type="datetime" Precision="0" />
+    <Property Name="update_staff_id" Type="int" />
+    <Property Name="company_id" Type="int" />
+    <Property Name="result" Type="int" />
+    <Property Name="response_staff_id" Type="int" />
+    <Property Name="response_time" Type="datetime" Precision="0" />
+    <Property Name="deal_staff_id" Type="int" />
+    <Property Name="apply_staff_id" Type="int" />
+    <Property Name="apply_time" Type="datetime" Precision="0" />
+  </EntityType>
+  <EntityType Name="equipment_failure_dealway">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="failure_id" Type="int" Nullable="false" />
+    <Property Name="fault_description" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="fault_method" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="create_time" Type="datetime" Precision="0" />
+    <Property Name="create_staff_id" Type="int" />
+    <Property Name="delete_time" Type="datetime" Precision="0" />
+    <Property Name="delete_staff_id" Type="int" />
+    <Property Name="delete_status" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="equipment_operation">
+    <Key>
+      <PropertyRef Name="operation_id" />
+    </Key>
+    <Property Name="operation_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="operation_name" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="create_time" Type="datetime" Precision="0" />
+    <Property Name="create_staff_id" Type="int" />
+    <Property Name="update_time" Type="datetime" Precision="0" />
+    <Property Name="update_staff_id" Type="int" />
+    <Property Name="delete_time" Type="datetime" Precision="0" />
+    <Property Name="delete_staff_id" Type="int" />
+    <Property Name="operation_status" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="equipment_status">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="equipment_status" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="equipment_stock_warn">
+    <Key>
+      <PropertyRef Name="warn_id" />
+    </Key>
+    <Property Name="company_id" Type="int" />
+    <Property Name="warn" Type="decimal" Precision="10" Scale="0" Nullable="false" />
+    <Property Name="create_staff_id" Type="int" />
+    <Property Name="create_time" Type="datetime" Precision="0" />
+    <Property Name="update_time" Type="datetime" Precision="0" />
+    <Property Name="update_staff_id" Type="int" />
+    <Property Name="delete_time" Type="datetime" Precision="0" />
+    <Property Name="delete_staff_id" Type="int" />
+    <Property Name="warn_status" Type="int" />
+    <Property Name="warn_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="equ_id" Type="int" />
+    <Property Name="stock_id" Type="int" />
+    <Property Name="warn_type" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="equipment_type">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="parent_id" Type="int" Nullable="false" />
+    <Property Name="name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="remark" Type="varchar" MaxLength="200" />
+    <Property Name="path" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="jm" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="create_time" Type="datetime" Precision="0" />
+    <Property Name="create_staff_id" Type="int" />
+    <Property Name="delete_time" Type="datetime" Precision="0" />
+    <Property Name="delete_staff_id" Type="int" />
+    <Property Name="delete_status" Type="int" Nullable="false" />
+    <Property Name="code" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="equipment_used_warn">
+    <Key>
+      <PropertyRef Name="warn_id" />
+    </Key>
+    <Property Name="company_id" Type="int" />
+    <Property Name="warn" Type="decimal" Precision="10" Scale="0" Nullable="false" />
+    <Property Name="create_staff_id" Type="int" />
+    <Property Name="create_time" Type="datetime" Precision="0" />
+    <Property Name="update_time" Type="datetime" Precision="0" />
+    <Property Name="update_staff_id" Type="int" />
+    <Property Name="delete_time" Type="datetime" Precision="0" />
+    <Property Name="delete_staff_id" Type="int" />
+    <Property Name="warn_status" Type="int" />
+    <Property Name="warn_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="equ_id" Type="int" />
+    <Property Name="warn_type" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="exception_log">
+    <Key>
+      <PropertyRef Name="exception_id" />
+    </Key>
+    <Property Name="exception_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="info" Type="longtext" Nullable="false" />
+    <Property Name="time" Type="datetime" Precision="0" Nullable="false" />
+  </EntityType>
+  <EntityType Name="failure">
+    <Key>
+      <PropertyRef Name="failure_id" />
+    </Key>
+    <Property Name="failure_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="failure_name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="parent_id" Type="int" Nullable="false" />
+    <Property Name="remark" Type="varchar" MaxLength="200" />
+    <Property Name="grade" Type="int" Nullable="false" />
+    <Property Name="create_time" Type="datetime" Precision="0" />
+    <Property Name="create_staff_id" Type="int" />
+    <Property Name="delete_time" Type="datetime" Precision="0" />
+    <Property Name="delete_staff_id" Type="int" />
+    <Property Name="delete_status" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="failure_dealway">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="failure_id" Type="int" />
+    <Property Name="equ_Id" Type="int" />
+    <Property Name="create_time" Type="datetime" Precision="0" />
+    <Property Name="create_staff_id" Type="int" />
+    <Property Name="delete_time" Type="datetime" Precision="0" />
+    <Property Name="delete_staff_id" Type="int" />
+    <Property Name="delete_status" Type="int" Nullable="false" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“def.railway_cloud_v21_nanchang_test.gender”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="gender">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="sex_name" />
+    </Key>
+    <Property Name="Id" Type="tinyint" Nullable="false" />
+    <Property Name="sex_name" Type="varchar" MaxLength="10" Nullable="false" />
+  </EntityType>
+  <EntityType Name="install_position">
+    <Key>
+      <PropertyRef Name="position_id" />
+    </Key>
+    <Property Name="position_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="position_name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="position_parent_id" Type="int" />
+    <Property Name="position_path" Type="varchar" MaxLength="200" />
+    <Property Name="create_staff_id" Type="int" />
+    <Property Name="create_time" Type="datetime" Precision="0" />
+    <Property Name="update_time" Type="datetime" Precision="0" />
+    <Property Name="update_staff_id" Type="int" />
+    <Property Name="delete_staff_id" Type="int" />
+    <Property Name="delete_time" Type="datetime" Precision="0" />
+    <Property Name="position_status" Type="int" Nullable="false" />
+    <Property Name="company_id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="level">
+    <Key>
+      <PropertyRef Name="level" />
+    </Key>
+    <Property Name="level" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="levelName" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="line">
+    <Key>
+      <PropertyRef Name="line_id" />
+    </Key>
+    <Property Name="line_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="parent" Type="int" />
+    <Property Name="name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="remark" Type="varchar" MaxLength="200" />
+    <Property Name="jm" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="path" Type="varchar" MaxLength="60" />
+    <Property Name="begin_kilo_mark" Type="varchar" MaxLength="20" />
+    <Property Name="begin_meter" Type="int" />
+    <Property Name="end_meter" Type="int" />
+    <Property Name="end_kilo_mark" Type="varchar" MaxLength="20" />
+    <Property Name="begin_longitude" Type="float" />
+    <Property Name="end_longitude" Type="float" />
+    <Property Name="begin_latitude" Type="float" />
+    <Property Name="end_latitude" Type="float" />
+    <Property Name="create_time" Type="datetime" Precision="0" />
+    <Property Name="create_staff_id" Type="int" />
+    <Property Name="delete_time" Type="datetime" Precision="0" />
+    <Property Name="delete_staff_id" Type="int" />
+    <Property Name="delete_status" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="line_station">
+    <Key>
+      <PropertyRef Name="relation_id" />
+    </Key>
+    <Property Name="relation_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="line_id" Type="int" />
+    <Property Name="station_id" Type="int" />
+  </EntityType>
+  <EntityType Name="login">
+    <Key>
+      <PropertyRef Name="login_name" />
+    </Key>
+    <Property Name="salt" Type="char" MaxLength="64" Nullable="false" />
+    <Property Name="password" Type="char" MaxLength="64" Nullable="false" />
+    <Property Name="reg_time" Type="datetime" Precision="0" Nullable="false" />
+    <Property Name="last_login_time" Type="datetime" Precision="0" />
+    <Property Name="status" Type="uint" />
+    <Property Name="staff_id" Type="int" Nullable="false" />
+    <Property Name="login_name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="login_type" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="create_time" Type="datetime" Precision="0" />
+    <Property Name="create_staff_id" Type="int" />
+    <Property Name="delete_time" Type="datetime" Precision="0" />
+    <Property Name="delete_staff_id" Type="int" />
+    <Property Name="delete_status" Type="int" Nullable="false" />
+    <Property Name="validity_time" Type="datetime" Precision="0" />
+    <Property Name="update_time" Type="datetime" Precision="0" />
+    <Property Name="session_id" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“def.railway_cloud_v21_nanchang_test.login_log”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="login_log">
+    <Key>
+      <PropertyRef Name="staff_id" />
+      <PropertyRef Name="login_name" />
+      <PropertyRef Name="datetime" />
+      <PropertyRef Name="delete_status" />
+    </Key>
+    <Property Name="staff_id" Type="int" Nullable="false" />
+    <Property Name="login_name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="datetime" Type="timestamp" Precision="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="create_time" Type="datetime" Precision="0" />
+    <Property Name="create_staff_id" Type="int" />
+    <Property Name="delete_time" Type="datetime" Precision="0" />
+    <Property Name="delete_staff_id" Type="int" />
+    <Property Name="delete_status" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="login_role">
+    <Key>
+      <PropertyRef Name="staff_id" />
+      <PropertyRef Name="role_id" />
+    </Key>
+    <Property Name="staff_id" Type="int" Nullable="false" />
+    <Property Name="role_id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="lose_warn_type">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="loser_tag_moniter">
+    <Key>
+      <PropertyRef Name="moniter_id" />
+    </Key>
+    <Property Name="moniter_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="company_id" Type="int" Nullable="false" />
+    <Property Name="mobiler_id" Type="int" Nullable="false" />
+    <Property Name="tag_jm" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="tools_id" Type="int" />
+    <Property Name="staff_id" Type="int" Nullable="false" />
+    <Property Name="begin_date" Type="datetime" Precision="0" Nullable="false" />
+    <Property Name="end_date" Type="datetime" Precision="0" />
+    <Property Name="moniter_state" Type="int" />
+    <Property Name="work_id" Type="int" Nullable="false" />
+    <Property Name="moniter_type_id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="maintenance_equipment">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="content_id" Type="int" />
+    <Property Name="equipment_code" Type="varchar" MaxLength="500" />
+    <Property Name="equipment_id" Type="int" Nullable="false" />
+    <Property Name="result_id" Type="int" Nullable="false" />
+    <Property Name="date" Type="datetime" Precision="0" />
+    <Property Name="is_plan" Type="bit" />
+    <Property Name="act_equipment_code" Type="varchar" MaxLength="50" />
+    <Property Name="act_equipment_id" Type="int" />
+  </EntityType>
+  <EntityType Name="maintenance_experience">
+    <Key>
+      <PropertyRef Name="experience_id" />
+    </Key>
+    <Property Name="experience_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="experience_name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="remark" Type="varchar" MaxLength="200" />
+    <Property Name="content" Type="text" Nullable="false" />
+    <Property Name="create_time" Type="datetime" Precision="0" />
+    <Property Name="create_staff_id" Type="int" />
+    <Property Name="delete_time" Type="datetime" Precision="0" />
+    <Property Name="delete_staff_id" Type="int" />
+    <Property Name="delete_status" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="maintenance_picture">
+    <Key>
+      <PropertyRef Name="picture_id" />
+    </Key>
+    <Property Name="picture_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="equipment_id" Type="int" />
+    <Property Name="mobile_id" Type="int" />
+    <Property Name="plan_id" Type="int" />
+    <Property Name="staff_id" Type="int" />
+    <Property Name="company_id" Type="int" />
+    <Property Name="work_image" Type="longtext" />
+    <Property Name="date" Type="datetime" Precision="0" />
+    <Property Name="work_id" Type="int" />
+  </EntityType>
+  <EntityType Name="maintenance_plan">
+    <Key>
+      <PropertyRef Name="plan_id" />
+    </Key>
+    <Property Name="plan_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="maintenance_type_id" Type="int" />
+    <Property Name="range_id" Type="int" />
+    <Property Name="company_id" Type="int" />
+    <Property Name="line_id" Type="int" />
+    <Property Name="station_id" Type="int" />
+    <Property Name="begin_date" Type="datetime" Precision="0" Nullable="false" />
+    <Property Name="end_date" Type="datetime" Precision="0" Nullable="false" />
+    <Property Name="job_controller" Type="varchar" MaxLength="50" />
+    <Property Name="person_in_charge" Type="varchar" MaxLength="50" />
+    <Property Name="resident_liaison" Type="varchar" MaxLength="50" />
+    <Property Name="liaison_officer" Type="char" MaxLength="10" />
+    <Property Name="order_nubmer" Type="varchar" MaxLength="100" />
+    <Property Name="departure_station" Type="varchar" MaxLength="100" />
+    <Property Name="departure_range" Type="varchar" MaxLength="100" />
+    <Property Name="maintenance_level" Type="varchar" MaxLength="100" />
+    <Property Name="control_model" Type="varchar" MaxLength="100" />
+    <Property Name="actual_begin_date" Type="datetime" Precision="0" />
+    <Property Name="actual_end_date" Type="datetime" Precision="0" />
+    <Property Name="job_location" Type="varchar" MaxLength="100" />
+    <Property Name="registration_premises" Type="varchar" MaxLength="100" />
+    <Property Name="next_time" Type="varchar" MaxLength="100" />
+    <Property Name="driving" Type="text" />
+    <Property Name="labour" Type="text" />
+    <Property Name="stop" Type="text" />
+    <Property Name="title" Type="varchar" MaxLength="100" />
+    <Property Name="fill_in_person" Type="varchar" MaxLength="100" />
+    <Property Name="date_of_filling" Type="varchar" MaxLength="100" />
+    <Property Name="opinion" Type="text" />
+    <Property Name="summary" Type="text" />
+    <Property Name="status_id" Type="int" Nullable="false" />
+    <Property Name="create_time" Type="datetime" Precision="0" />
+    <Property Name="create_staff_id" Type="int" />
+    <Property Name="delete_time" Type="datetime" Precision="0" />
+    <Property Name="delete_staff_id" Type="int" />
+    <Property Name="delete_status" Type="int" Nullable="false" />
+    <Property Name="begin_date_offset" Type="datetime" Precision="0" />
+    <Property Name="end_date_offset" Type="datetime" Precision="0" />
+    <Property Name="plan_type" Type="int" />
+  </EntityType>
+  <EntityType Name="maintenance_plan_status">
+    <Key>
+      <PropertyRef Name="status_id" />
+    </Key>
+    <Property Name="status_id" Type="int" Nullable="false" />
+    <Property Name="status_name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="create_time" Type="datetime" Precision="0" />
+    <Property Name="create_staff_id" Type="int" />
+    <Property Name="delete_time" Type="datetime" Precision="0" />
+    <Property Name="delete_staff_id" Type="int" />
+    <Property Name="delete_status" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="maintenance_regulations">
+    <Key>
+      <PropertyRef Name="regulation_id" />
+    </Key>
+    <Property Name="regulation_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="regulation_name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="remark" Type="varchar" MaxLength="200" />
+    <Property Name="content" Type="text" Nullable="false" />
+    <Property Name="create_time" Type="datetime" Precision="0" />
+    <Property Name="create_staff_id" Type="int" />
+    <Property Name="delete_time" Type="datetime" Precision="0" />
+    <Property Name="delete_staff_id" Type="int" />
+    <Property Name="delete_status" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="maintenance_result">
+    <Key>
+      <PropertyRef Name="result_id" />
+    </Key>
+    <Property Name="result_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="result" Type="varchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityType Name="maintenance_staff">
+    <Key>
+      <PropertyRef Name="staff_id" />
+    </Key>
+    <Property Name="staff_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="company_id" Type="int" />
+    <Property Name="range_id" Type="int" />
+    <Property Name="duty_id" Type="int" />
+    <Property Name="sex" Type="int" />
+    <Property Name="birthday" Type="datetime" Precision="0" />
+    <Property Name="card_number" Type="char" MaxLength="18" />
+    <Property Name="name" Type="varchar" MaxLength="50" />
+    <Property Name="picture" Type="varchar" MaxLength="255" />
+    <Property Name="tel" Type="varchar" MaxLength="50" />
+    <Property Name="job_number" Type="varchar" MaxLength="50" />
+    <Property Name="rfid_code" Type="varchar" MaxLength="50" />
+    <Property Name="check_date" Type="datetime" Precision="0" />
+    <Property Name="person_type" Type="int" />
+    <Property Name="logout_date" Type="datetime" Precision="0" />
+    <Property Name="create_time" Type="datetime" Precision="0" />
+    <Property Name="create_staff_id" Type="int" />
+    <Property Name="delete_time" Type="datetime" Precision="0" />
+    <Property Name="delete_staff_id" Type="int" />
+    <Property Name="delete_status" Type="int" Nullable="false" />
+    <Property Name="rfid_tid" Type="varchar" MaxLength="50" />
+    <Property Name="is_system_user" Type="int" Nullable="false" />
+    <Property Name="update_time" Type="datetime" Precision="0" />
+  </EntityType>
+  <EntityType Name="maintenance_tools">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="staff_id" Type="int" Nullable="false" />
+    <Property Name="in_number" Type="int" />
+    <Property Name="in_date" Type="datetime" Precision="0" />
+    <Property Name="out_number" Type="int" />
+    <Property Name="out_date" Type="datetime" Precision="0" />
+    <Property Name="mobile_id" Type="int" Nullable="false" />
+    <Property Name="picture_path" Type="text" />
+    <Property Name="create_time" Type="datetime" Precision="0" />
+    <Property Name="create_staff_id" Type="int" />
+    <Property Name="delete_time" Type="datetime" Precision="0" />
+    <Property Name="delete_staff_id" Type="int" />
+    <Property Name="delete_status" Type="int" Nullable="false" />
+    <Property Name="requisit_main_id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="maintenance_type">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="type" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="parent_id" Type="int" Nullable="false" />
+    <Property Name="remark" Type="varchar" MaxLength="200" />
+    <Property Name="create_time" Type="datetime" Precision="0" />
+    <Property Name="create_staff_id" Type="int" />
+    <Property Name="delete_time" Type="datetime" Precision="0" />
+    <Property Name="delete_staff_id" Type="int" />
+    <Property Name="delete_status" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="message">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="message_type_id" Type="tinyint" Nullable="false" />
+    <Property Name="message_title" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="message_detail" Type="text" />
+    <Property Name="ref_table" Type="varchar" MaxLength="50" />
+    <Property Name="ref_id" Type="int" />
+    <Property Name="send_staff_id" Type="int" />
+    <Property Name="send_date" Type="datetime" Precision="0" />
+    <Property Name="receive_staff_id" Type="int" Nullable="false" />
+    <Property Name="receive_time" Type="datetime" Precision="0" Nullable="false" />
+    <Property Name="forward_path" Type="varchar" MaxLength="255" />
+    <Property Name="delete_status" Type="int" Nullable="false" />
+    <Property Name="delete_time" Type="datetime" Precision="0" />
+    <Property Name="delete_staff_id" Type="int" />
+  </EntityType>
+  <EntityType Name="mobile_app_set">
+    <Key>
+      <PropertyRef Name="perm_id" />
+    </Key>
+    <Property Name="perm_id" Type="int" Nullable="false" />
+    <Property Name="perm_name" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="perm_state" Type="bit" Nullable="false" />
+    <Property Name="is_warn" Type="bit" />
+    <Property Name="warn_rank" Type="int" />
+  </EntityType>
+  <EntityType Name="mobile_device">
+    <Key>
+      <PropertyRef Name="mobile_id" />
+    </Key>
+    <Property Name="mobile_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="company_id" Type="int" />
+    <Property Name="device_name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="registration_date" Type="datetime" Precision="0" />
+    <Property Name="picture" Type="varchar" MaxLength="200" />
+    <Property Name="mobile_model" Type="varchar" MaxLength="50" />
+    <Property Name="remark" Type="varchar" MaxLength="200" />
+    <Property Name="railway_code" Type="varchar" MaxLength="50" />
+    <Property Name="mac" Type="varchar" MaxLength="50" />
+    <Property Name="longitude" Type="float" />
+    <Property Name="latitude" Type="float" />
+    <Property Name="location_date" Type="datetime" Precision="0" />
+    <Property Name="equipment_status_id" Type="int" Nullable="false" />
+    <Property Name="staff_id" Type="int" />
+    <Property Name="create_time" Type="datetime" Precision="0" />
+    <Property Name="create_staff_id" Type="int" />
+    <Property Name="delete_time" Type="datetime" Precision="0" />
+    <Property Name="delete_staff_id" Type="int" />
+    <Property Name="delete_status" Type="int" Nullable="false" />
+    <Property Name="rang_id" Type="int" />
+  </EntityType>
+  <EntityType Name="perm">
+    <Key>
+      <PropertyRef Name="perm_staff_id" />
+    </Key>
+    <Property Name="staff_id" Type="int" Nullable="false" />
+    <Property Name="perm" Type="bigint" Nullable="false" />
+    <Property Name="perm_staff_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="person_duty">
+    <Key>
+      <PropertyRef Name="staff_id" />
+      <PropertyRef Name="duty_id" />
+      <PropertyRef Name="company_id" />
+    </Key>
+    <Property Name="staff_id" Type="int" Nullable="false" />
+    <Property Name="duty_id" Type="int" Nullable="false" />
+    <Property Name="company_id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="plan_content">
+    <Key>
+      <PropertyRef Name="content_id" />
+    </Key>
+    <Property Name="content_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="plan_id" Type="int" />
+    <Property Name="operator_name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="operator_id" Type="int" Nullable="false" />
+    <Property Name="matual1_man" Type="varchar" MaxLength="200" />
+    <Property Name="content" Type="text" />
+    <Property Name="remark" Type="text" />
+    <Property Name="matual1_id" Type="int" />
+    <Property Name="matual2_man" Type="varchar" MaxLength="50" />
+    <Property Name="matual2_id" Type="int" />
+    <Property Name="result_id" Type="int" Nullable="false" />
+    <Property Name="date" Type="datetime" Precision="0" />
+    <Property Name="safe_control" Type="text" />
+  </EntityType>
+  <EntityType Name="pre_code">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="pre_style" Type="int" Nullable="false" />
+    <Property Name="companyid" Type="int" Nullable="false" />
+    <Property Name="code" Type="varchar" MaxLength="255" Nullable="false" />
+  </EntityType>
+  <EntityType Name="product_upgrade">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version_name" Type="varchar" MaxLength="50" />
+    <Property Name="version_code" Type="int" />
+    <Property Name="os" Type="varchar" MaxLength="50" />
+    <Property Name="filename" Type="varchar" MaxLength="255" />
+    <Property Name="type" Type="varchar" MaxLength="255" />
+    <Property Name="remark" Type="text" />
+    <Property Name="upload_time" Type="datetime" Precision="0" />
+    <Property Name="upload_user" Type="int" />
+  </EntityType>
+  <EntityType Name="range_station">
+    <Key>
+      <PropertyRef Name="relation_id" />
+    </Key>
+    <Property Name="relation_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="range_id" Type="int" />
+    <Property Name="station_id" Type="int" />
+  </EntityType>
+  <EntityType Name="repair_apply">
+    <Key>
+      <PropertyRef Name="apply_id" />
+    </Key>
+    <Property Name="apply_id" Type="int" Nullable="false" />
+    <Property Name="company_id" Type="int" Nullable="false" />
+    <Property Name="apply_staff_id" Type="int" Nullable="false" />
+    <Property Name="apply_time" Type="datetime" Precision="0" Nullable="false" />
+    <Property Name="sponsor_staff_id" Type="int" />
+    <Property Name="sponsor_company_id" Type="int" />
+    <Property Name="apply_status" Type="int" />
+    <Property Name="apply_content" Type="varchar" MaxLength="200" />
+    <Property Name="create_staff_id" Type="int" />
+    <Property Name="create_time" Type="datetime" Precision="0" />
+    <Property Name="update_time" Type="datetime" Precision="0" />
+    <Property Name="update_staff_id" Type="int" />
+    <Property Name="delete_time" Type="datetime" Precision="0" />
+    <Property Name="delete_staff_id" Type="int" />
+  </EntityType>
+  <EntityType Name="repair_detail">
+    <Key>
+      <PropertyRef Name="detail_id" />
+    </Key>
+    <Property Name="detail_id" Type="int" Nullable="false" />
+    <Property Name="apply_id" Type="int" />
+    <Property Name="equipment_id" Type="int" />
+    <Property Name="failure_id" Type="int" />
+    <Property Name="operation_id" Type="int" />
+    <Property Name="failure_cause" Type="varchar" MaxLength="200" />
+    <Property Name="detail_status" Type="int" Nullable="false" />
+    <Property Name="repair_company" Type="varchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="repair_log">
+    <Key>
+      <PropertyRef Name="log_id" />
+    </Key>
+    <Property Name="log_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="fault_id" Type="int" Nullable="false" />
+    <Property Name="log_time" Type="datetime" Precision="0" />
+    <Property Name="operator_staff_id" Type="int" />
+    <Property Name="feed_back" Type="varchar" MaxLength="500" />
+    <Property Name="repair_status" Type="int" />
+  </EntityType>
+  <EntityType Name="role">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="scope" Type="int" Nullable="false" />
+    <Property Name="company_id" Type="bigint" Nullable="false" />
+    <Property Name="name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="create_time" Type="datetime" Precision="0" />
+    <Property Name="create_staff_id" Type="int" />
+    <Property Name="delete_time" Type="datetime" Precision="0" />
+    <Property Name="delete_staff_id" Type="int" />
+    <Property Name="delete_status" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="role_perm">
+    <Key>
+      <PropertyRef Name="role_perm_id" />
+    </Key>
+    <Property Name="role_perm_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="role_id" Type="int" Nullable="false" />
+    <Property Name="perm_id" Type="ubigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="scene_photos">
+    <Key>
+      <PropertyRef Name="picture_id" />
+    </Key>
+    <Property Name="picture_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="company_id" Type="int" Nullable="false" />
+    <Property Name="work_id" Type="int" />
+    <Property Name="requisit_main_id" Type="int" />
+    <Property Name="model_id" Type="int" Nullable="false" />
+    <Property Name="picture_path" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="photo_date" Type="datetime" Precision="0" Nullable="false" />
+    <Property Name="mobile_id" Type="int" Nullable="false" />
+    <Property Name="staff_id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="staff_in_type">
+    <Key>
+      <PropertyRef Name="staff_in_id" />
+    </Key>
+    <Property Name="staff_in_id" Type="int" Nullable="false" />
+    <Property Name="in_type" Type="varchar" MaxLength="255" Nullable="false" />
+  </EntityType>
+  <EntityType Name="staff_out_type">
+    <Key>
+      <PropertyRef Name="staff_out_id" />
+    </Key>
+    <Property Name="staff_out_id" Type="int" Nullable="false" />
+    <Property Name="out_type" Type="varchar" MaxLength="255" Nullable="false" />
+  </EntityType>
+  <EntityType Name="stat_attendance_rate">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Year" Type="varchar" MaxLength="4" Nullable="false" />
+    <Property Name="Month" Type="varchar" MaxLength="2" Nullable="false" />
+    <Property Name="Order" Type="int" Nullable="false" />
+    <Property Name="BeginDate" Type="varchar" MaxLength="8" Nullable="false" />
+    <Property Name="EndDate" Type="varchar" MaxLength="8" Nullable="false" />
+    <Property Name="PlanNum" Type="int" Nullable="false" />
+    <Property Name="AttendanceNum" Type="int" Nullable="false" />
+    <Property Name="StatDate" Type="datetime" Precision="0" Nullable="false" />
+    <Property Name="CompanyId" Type="int" Nullable="false" />
+    <Property Name="GranularityType" Type="int" Nullable="false" />
+    <Property Name="StationId" Type="int" />
+  </EntityType>
+  <EntityType Name="stat_attendance_rate_staff">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Year" Type="varchar" MaxLength="4" Nullable="false" />
+    <Property Name="Month" Type="varchar" MaxLength="2" Nullable="false" />
+    <Property Name="Order" Type="int" Nullable="false" />
+    <Property Name="BeginDate" Type="varchar" MaxLength="8" Nullable="false" />
+    <Property Name="EndDate" Type="varchar" MaxLength="8" Nullable="false" />
+    <Property Name="PlanNum" Type="int" Nullable="false" />
+    <Property Name="AttendanceNum" Type="int" Nullable="false" />
+    <Property Name="StatDate" Type="datetime" Precision="0" Nullable="false" />
+    <Property Name="StaffId" Type="int" Nullable="false" />
+    <Property Name="GranularityType" Type="int" Nullable="false" />
+    <Property Name="CompanyId" Type="int" Nullable="false" />
+    <Property Name="StationId" Type="int" />
+  </EntityType>
+  <EntityType Name="stat_maintenance_avg_num_person">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Year" Type="varchar" MaxLength="4" Nullable="false" />
+    <Property Name="Month" Type="varchar" MaxLength="2" Nullable="false" />
+    <Property Name="Order" Type="int" Nullable="false" />
+    <Property Name="BeginDate" Type="date" Nullable="false" />
+    <Property Name="EndDate" Type="date" Nullable="false" />
+    <Property Name="PersonNum" Type="int" Nullable="false" />
+    <Property Name="MaintenanceNum" Type="int" Nullable="false" />
+    <Property Name="StatDate" Type="datetime" Precision="0" Nullable="false" />
+    <Property Name="CompanyId" Type="int" Nullable="false" />
+    <Property Name="GranularityType" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="stat_maintenance_comparative_person">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Year" Type="varchar" MaxLength="4" Nullable="false" />
+    <Property Name="Month" Type="varchar" MaxLength="2" Nullable="false" />
+    <Property Name="Order" Type="int" Nullable="false" />
+    <Property Name="BeginDate" Type="date" Nullable="false" />
+    <Property Name="EndDate" Type="date" Nullable="false" />
+    <Property Name="MaintenanceNum" Type="int" Nullable="false" />
+    <Property Name="StatDate" Type="datetime" Precision="0" Nullable="false" />
+    <Property Name="StaffId" Type="int" Nullable="false" />
+    <Property Name="GranularityType" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="stat_maintenance_equipment_rate">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Year" Type="varchar" MaxLength="4" Nullable="false" />
+    <Property Name="Month" Type="varchar" MaxLength="2" Nullable="false" />
+    <Property Name="Order" Type="int" Nullable="false" />
+    <Property Name="BeginDate" Type="date" Nullable="false" />
+    <Property Name="EndDate" Type="date" Nullable="false" />
+    <Property Name="TotalNum" Type="int" Nullable="false" />
+    <Property Name="MaintenanceNum" Type="int" Nullable="false" />
+    <Property Name="StatDate" Type="datetime" Precision="0" Nullable="false" />
+    <Property Name="CompanyId" Type="int" Nullable="false" />
+    <Property Name="GranularityType" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="stat_style">
+    <Key>
+      <PropertyRef Name="stat_id" />
+    </Key>
+    <Property Name="stat_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="stat_style_id" Type="int" Nullable="false" />
+    <Property Name="stat_style_name" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="stat_tool_inout_rate">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Year" Type="varchar" MaxLength="4" Nullable="false" />
+    <Property Name="Month" Type="varchar" MaxLength="2" Nullable="false" />
+    <Property Name="Order" Type="int" Nullable="false" />
+    <Property Name="BeginDate" Type="date" Nullable="false" />
+    <Property Name="EndDate" Type="date" Nullable="false" />
+    <Property Name="In_Number" Type="int" Nullable="false" />
+    <Property Name="Out_Number" Type="int" Nullable="false" />
+    <Property Name="CompanyId" Type="int" Nullable="false" />
+    <Property Name="GranularityType" Type="int" Nullable="false" />
+    <Property Name="StatDate" Type="datetime" Precision="0" Nullable="false" />
+  </EntityType>
+  <EntityType Name="stat_tools_rate">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Year" Type="varchar" MaxLength="4" Nullable="false" />
+    <Property Name="Month" Type="varchar" MaxLength="4" Nullable="false" />
+    <Property Name="Order" Type="varchar" MaxLength="4" Nullable="false" />
+    <Property Name="BeginDate" Type="varchar" MaxLength="8" Nullable="false" />
+    <Property Name="EndDate" Type="varchar" MaxLength="8" Nullable="false" />
+    <Property Name="RenewNumber" Type="int" Nullable="false" />
+    <Property Name="AddNumber" Type="int" Nullable="false" />
+    <Property Name="DeleteNumber" Type="int" Nullable="false" />
+    <Property Name="StartDate" Type="datetime" Precision="0" Nullable="false" />
+    <Property Name="CompanyId" Type="int" Nullable="false" />
+    <Property Name="GranularityType" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="stat_tools_renew_rate">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Year" Type="varchar" MaxLength="4" Nullable="false" />
+    <Property Name="Month" Type="varchar" MaxLength="4" Nullable="false" />
+    <Property Name="Order" Type="varchar" MaxLength="4" Nullable="false" />
+    <Property Name="BeginDate" Type="varchar" MaxLength="8" Nullable="false" />
+    <Property Name="EndDate" Type="varchar" MaxLength="8" Nullable="false" />
+    <Property Name="ToolsStyleId" Type="int" />
+    <Property Name="RenewNumber" Type="int" Nullable="false" />
+    <Property Name="StartDate" Type="datetime" Precision="0" Nullable="false" />
+    <Property Name="CompanyId" Type="int" Nullable="false" />
+    <Property Name="GranularityType" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="station">
+    <Key>
+      <PropertyRef Name="station_id" />
+    </Key>
+    <Property Name="station_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="station_name" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="kilo_mark" Type="varchar" MaxLength="50" />
+    <Property Name="remark" Type="varchar" MaxLength="200" />
+    <Property Name="jm" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="station_type" Type="int" Nullable="false" />
+    <Property Name="station_meter" Type="int" Nullable="false" />
+    <Property Name="create_time" Type="datetime" Precision="0" />
+    <Property Name="create_staff_id" Type="int" />
+    <Property Name="delete_time" Type="datetime" Precision="0" />
+    <Property Name="delete_staff_id" Type="int" />
+    <Property Name="station_latitude" Type="float" />
+    <Property Name="station_longtitude" Type="float" />
+    <Property Name="delete_status" Type="int" Nullable="false" />
+    <Property Name="manager" Type="int" />
+    <Property Name="longitude" Type="float" />
+    <Property Name="latitude" Type="float" />
+    <Property Name="rfid" Type="varchar" MaxLength="50" />
+    <Property Name="address" Type="varchar" MaxLength="255" />
+    <Property Name="qrcode" Type="varchar" MaxLength="255" />
+    <Property Name="update_time" Type="datetime" Precision="0" />
+  </EntityType>
+  <EntityType Name="station_type">
+    <Key>
+      <PropertyRef Name="station_type_id" />
+    </Key>
+    <Property Name="station_type_id" Type="int" Nullable="false" />
+    <Property Name="station_type_name" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="stock">
+    <Key>
+      <PropertyRef Name="stock_id" />
+    </Key>
+    <Property Name="stock_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="stock_name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="parent_id" Type="int" Nullable="false" />
+    <Property Name="company_id" Type="int" Nullable="false" />
+    <Property Name="create_time" Type="datetime" Precision="0" Nullable="false" />
+    <Property Name="create_staff_id" Type="int" Nullable="false" />
+    <Property Name="update_time" Type="datetime" Precision="0" />
+    <Property Name="update_staff_id" Type="int" />
+    <Property Name="delete_staff_id" Type="int" />
+    <Property Name="delete_time" Type="datetime" Precision="0" />
+    <Property Name="stock_path" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="stock_style_id" Type="int" Nullable="false" />
+    <Property Name="delete_status" Type="int" />
+    <Property Name="stockcol" Type="varchar" MaxLength="45" />
+  </EntityType>
+  <EntityType Name="stock_style">
+    <Key>
+      <PropertyRef Name="stock_style_id" />
+    </Key>
+    <Property Name="stock_style_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="stock_style_name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="create_time" Type="datetime" Precision="0" Nullable="false" />
+    <Property Name="create_staff_id" Type="int" Nullable="false" />
+    <Property Name="update_time" Type="datetime" Precision="0" />
+    <Property Name="update_staff_id" Type="int" />
+    <Property Name="delete_staff_id" Type="int" />
+    <Property Name="delete_time" Type="datetime" Precision="0" />
+    <Property Name="stock_status" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="supplier">
+    <Key>
+      <PropertyRef Name="supplier_id" />
+    </Key>
+    <Property Name="supplier_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="supplier_name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="supplier_address" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="supplier_tel" Type="varchar" MaxLength="50" />
+    <Property Name="after_sale_tel" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="after_sale_name" Type="varchar" MaxLength="50" />
+    <Property Name="supplier_status" Type="int" Nullable="false" />
+    <Property Name="create_time" Type="datetime" Precision="0" />
+    <Property Name="create_staff_id" Type="int" />
+    <Property Name="delete_time" Type="datetime" Precision="0" />
+    <Property Name="delete_staff_id" Type="int" />
+    <Property Name="delete_status" Type="int" Nullable="false" />
+    <Property Name="company_id" Type="int" />
+    <Property Name="supplier_level_id" Type="int" />
+    <Property Name="supplier_license" Type="varchar" MaxLength="1000" />
+    <Property Name="supplier_license_no" Type="varchar" MaxLength="50" />
+    <Property Name="update_staff_id" Type="int" />
+    <Property Name="update_time" Type="datetime" Precision="0" />
+  </EntityType>
+  <EntityType Name="sys_warn">
+    <Key>
+      <PropertyRef Name="message_id" />
+    </Key>
+    <Property Name="message_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="company_id" Type="int" Nullable="false" />
+    <Property Name="message_info" Type="text" Nullable="false" />
+    <Property Name="relevance_id" Type="varchar" MaxLength="45" Nullable="false" />
+    <Property Name="read_list" Type="text" />
+    <Property Name="message_time" Type="datetime" Precision="0" Nullable="false" />
+  </EntityType>
+  <EntityType Name="system_log">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="log" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="memo" Type="text" />
+    <Property Name="ref_table" Type="varchar" MaxLength="50" />
+    <Property Name="ref_id" Type="int" />
+    <Property Name="staff_id" Type="int" Nullable="false" />
+    <Property Name="log_time" Type="datetime" Precision="0" Nullable="false" />
+  </EntityType>
+  <EntityType Name="system_variable_name">
+    <Key>
+      <PropertyRef Name="variable_id" />
+    </Key>
+    <Property Name="variable_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="variable_name" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="variable_state" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="system_variable_set">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="system_variable_id" Type="int" Nullable="false" />
+    <Property Name="system_variable_value" Type="int" />
+    <Property Name="create_staff_id" Type="int" Nullable="false" />
+    <Property Name="create_date" Type="datetime" Precision="0" />
+    <Property Name="update_date" Type="datetime" Precision="0" />
+    <Property Name="update_staff_id" Type="int" />
+    <Property Name="delete_time" Type="datetime" Precision="0" />
+    <Property Name="delete_staff_id" Type="int" />
+    <Property Name="delete_state" Type="bit" Nullable="false" />
+    <Property Name="company_id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="temporary_staff">
+    <Key>
+      <PropertyRef Name="temporary_id" />
+    </Key>
+    <Property Name="temporary_id" Type="int" Nullable="false" />
+    <Property Name="company_id" Type="int" />
+    <Property Name="mobile_id" Type="int" />
+    <Property Name="temporary_name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="sex" Type="int" Nullable="false" />
+    <Property Name="rfid_code" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="card_number" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="check_date" Type="datetime" Precision="0" Nullable="false" />
+    <Property Name="flag" Type="int" Nullable="false" />
+    <Property Name="sign_date" Type="datetime" Precision="0" Nullable="false" />
+    <Property Name="sign_type" Type="int" Nullable="false" />
+    <Property Name="create_time" Type="datetime" Precision="0" />
+    <Property Name="create_staff_id" Type="int" />
+    <Property Name="delete_time" Type="datetime" Precision="0" />
+    <Property Name="delete_staff_id" Type="int" />
+    <Property Name="delete_status" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tool_borrow_type">
+    <Key>
+      <PropertyRef Name="requisit_type_id" />
+    </Key>
+    <Property Name="requisit_type_id" Type="int" Nullable="false" />
+    <Property Name="requisit_type" Type="varchar" MaxLength="255" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tool_epc">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="requisit_id" Type="int" Nullable="false" />
+    <Property Name="epc" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tool_requisit">
+    <Key>
+      <PropertyRef Name="requisit_id" />
+    </Key>
+    <Property Name="requisit_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="staff_id" Type="int" />
+    <Property Name="borrow_date" Type="datetime" Precision="0" />
+    <Property Name="return_date" Type="datetime" Precision="0" />
+    <Property Name="epc" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="tools_id" Type="int" />
+    <Property Name="create_time" Type="datetime" Precision="0" />
+    <Property Name="create_staff_id" Type="int" />
+    <Property Name="delete_time" Type="datetime" Precision="0" />
+    <Property Name="delete_staff_id" Type="int" />
+    <Property Name="delete_status" Type="int" Nullable="false" />
+    <Property Name="work_id" Type="int" />
+    <Property Name="requisit_main_id" Type="int" Nullable="false" />
+    <Property Name="return_type" Type="int" />
+    <Property Name="return_type_desc" Type="varchar" MaxLength="255" />
+    <Property Name="borrow_type" Type="int" />
+    <Property Name="borrow_type_desc" Type="varchar" MaxLength="255" />
+    <Property Name="staff_borrow_state" Type="int" Nullable="false" />
+    <Property Name="staff_return_state" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tool_requisit_main">
+    <Key>
+      <PropertyRef Name="requisit_main_id" />
+    </Key>
+    <Property Name="requisit_main_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="work_id" Type="int" Nullable="false" />
+    <Property Name="staff_id" Type="int" Nullable="false" />
+    <Property Name="close" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tool_return_type">
+    <Key>
+      <PropertyRef Name="requisit_type_id" />
+    </Key>
+    <Property Name="requisit_type_id" Type="int" Nullable="false" />
+    <Property Name="requisit_type" Type="varchar" MaxLength="255" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tools">
+    <Key>
+      <PropertyRef Name="tool_id" />
+    </Key>
+    <Property Name="tool_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="company_id" Type="int" />
+    <Property Name="id" Type="int" />
+    <Property Name="tool_name" Type="varchar" MaxLength="50" />
+    <Property Name="tool_no" Type="int" />
+    <Property Name="tool_style_id" Type="int" />
+    <Property Name="tool_rfid" Type="varchar" MaxLength="50" />
+    <Property Name="create_time" Type="datetime" Precision="0" />
+    <Property Name="create_staff_id" Type="int" />
+    <Property Name="delete_time" Type="datetime" Precision="0" />
+    <Property Name="delete_staff_id" Type="int" />
+    <Property Name="delete_status" Type="int" Nullable="false" />
+    <Property Name="rfid_tid" Type="varchar" MaxLength="50" />
+    <Property Name="is_renew" Type="int" Nullable="false" />
+    <Property Name="update_time" Type="datetime" Precision="0" />
+    <Property Name="borrow_state" Type="smallint" Nullable="false" />
+    <Property Name="borrow_staff_id" Type="int" />
+    <Property Name="borrow_time" Type="datetime" Precision="0" />
+    <Property Name="bag_id" Type="int" />
+    <Property Name="staff_id" Type="int" />
+    <Property Name="is_public" Type="bit" />
+    <Property Name="factory_number" Type="varchar" MaxLength="255" />
+    <Property Name="is_binding" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tools_in">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="staff_id" Type="int" Nullable="false" />
+    <Property Name="requisit_id" Type="int" Nullable="false" />
+    <Property Name="in_time" Type="datetime" Precision="0" />
+    <Property Name="out_time" Type="datetime" Precision="0" />
+    <Property Name="create_staff_id" Type="int" Nullable="false" />
+    <Property Name="create_time" Type="datetime" Precision="0" Nullable="false" />
+    <Property Name="delete_staff_id" Type="int" />
+    <Property Name="delete_time" Type="datetime" Precision="0" />
+    <Property Name="requisit_main_id" Type="int" />
+  </EntityType>
+  <EntityType Name="tools_in_detail">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="tools_in_id" Type="bigint" Nullable="false" />
+    <Property Name="tools_id" Type="bigint" Nullable="false" />
+    <Property Name="epc" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="in_time" Type="datetime" Precision="0" />
+    <Property Name="out_time" Type="datetime" Precision="0" />
+    <Property Name="create_staff_id" Type="int" Nullable="false" />
+    <Property Name="create_time" Type="datetime" Precision="0" Nullable="false" />
+    <Property Name="delete_staff_id" Type="int" />
+    <Property Name="delete_time" Type="datetime" Precision="0" />
+    <Property Name="in_type" Type="int" />
+    <Property Name="in_type_desc" Type="varchar" MaxLength="255" />
+    <Property Name="out_type" Type="int" />
+    <Property Name="out_type_desc" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="tools_in_material">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="tools_in_id" Type="bigint" Nullable="false" />
+    <Property Name="name" Type="varchar" MaxLength="255" />
+    <Property Name="amount" Type="decimal" Precision="10" Scale="0" />
+    <Property Name="unit" Type="varchar" MaxLength="255" />
+    <Property Name="desc" Type="varchar" MaxLength="255" />
+    <Property Name="in_type" Type="int" />
+    <Property Name="in_type_desc" Type="varchar" MaxLength="255" />
+    <Property Name="out_type" Type="int" />
+    <Property Name="out_type_desc" Type="varchar" MaxLength="255" />
+    <Property Name="staff_id" Type="int" />
+    <Property Name="material_requisit_id" Type="int" />
+  </EntityType>
+  <EntityType Name="tools_in_type">
+    <Key>
+      <PropertyRef Name="requisit_type_id" />
+    </Key>
+    <Property Name="requisit_type_id" Type="int" Nullable="false" />
+    <Property Name="requisit_type" Type="varchar" MaxLength="255" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tools_out_type">
+    <Key>
+      <PropertyRef Name="requisit_type_id" />
+    </Key>
+    <Property Name="requisit_type_id" Type="int" Nullable="false" />
+    <Property Name="requisit_type" Type="varchar" MaxLength="255" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tools_requisit_material">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="requisit_main_id" Type="bigint" Nullable="false" />
+    <Property Name="material_name" Type="varchar" MaxLength="255" />
+    <Property Name="material_amount" Type="decimal" Precision="10" Scale="0" />
+    <Property Name="material_unit" Type="varchar" MaxLength="255" />
+    <Property Name="material_desc" Type="varchar" MaxLength="255" />
+    <Property Name="material_in_type" Type="int" />
+    <Property Name="material_in_type_desc" Type="varchar" MaxLength="255" />
+    <Property Name="material_out_type" Type="int" />
+    <Property Name="material_out_type_desc" Type="varchar" MaxLength="255" />
+    <Property Name="work_id" Type="int" Nullable="false" />
+    <Property Name="staff_id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tools_scan">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="staff_id" Type="int" />
+    <Property Name="mobile_id" Type="int" />
+    <Property Name="in_count" Type="int" Nullable="false" />
+    <Property Name="out_cout" Type="int" />
+    <Property Name="station_id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tools_style">
+    <Key>
+      <PropertyRef Name="tools_style_id" />
+    </Key>
+    <Property Name="tools_style_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="tools_style" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="tools_spec" Type="varchar" MaxLength="50" />
+    <Property Name="tools_jm" Type="varchar" MaxLength="50" />
+    <Property Name="create_time" Type="datetime" Precision="0" />
+    <Property Name="create_staff_id" Type="int" />
+    <Property Name="delete_time" Type="datetime" Precision="0" />
+    <Property Name="delete_staff_id" Type="int" />
+    <Property Name="update_time" Type="datetime" Precision="0" />
+    <Property Name="update_staff_id" Type="int" />
+    <Property Name="delete_status" Type="int" Nullable="false" />
+    <Property Name="parent_id" Type="int" Nullable="false" />
+    <Property Name="tools_path" Type="varchar" MaxLength="100" />
+    <Property Name="tools_unit" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="train">
+    <Key>
+      <PropertyRef Name="train_id" />
+    </Key>
+    <Property Name="train_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="train_code" Type="varchar" MaxLength="255" />
+    <Property Name="train_style_id" Type="int" />
+    <Property Name="create_id" Type="int" />
+    <Property Name="create_time" Type="datetime" Precision="0" />
+    <Property Name="delete_id" Type="int" />
+    <Property Name="delete_time" Type="datetime" Precision="0" />
+    <Property Name="update_time" Type="datetime" Precision="0" />
+    <Property Name="train_status" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="train_style">
+    <Key>
+      <PropertyRef Name="train_style_id" />
+    </Key>
+    <Property Name="train_style_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="train_style_name" Type="varchar" MaxLength="50" />
+    <Property Name="create_time" Type="datetime" Precision="0" />
+    <Property Name="create_id" Type="int" />
+    <Property Name="delete_time" Type="datetime" Precision="0" />
+    <Property Name="delete_id" Type="int" />
+    <Property Name="update_time" Type="datetime" Precision="0" />
+    <Property Name="train_style_status" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="train_video">
+    <Key>
+      <PropertyRef Name="video_id" />
+    </Key>
+    <Property Name="video_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="staff_id" Type="int" Nullable="false" />
+    <Property Name="equipment_id" Type="int" Nullable="false" />
+    <Property Name="company_id" Type="int" Nullable="false" />
+    <Property Name="train_id" Type="int" Nullable="false" />
+    <Property Name="video_path" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="create_time" Type="datetime" Precision="0" />
+    <Property Name="create_id" Type="int" />
+    <Property Name="delete_id" Type="int" />
+    <Property Name="delete_time" Type="datetime" Precision="0" />
+    <Property Name="update_time" Type="datetime" Precision="0" />
+    <Property Name="picture_path" Type="varchar" MaxLength="255" />
+    <Property Name="train_video_status" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="type_experience">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="experience_id" Type="int" />
+    <Property Name="equipment_type_id" Type="int" />
+    <Property Name="create_time" Type="datetime" Precision="0" />
+    <Property Name="create_staff_id" Type="int" />
+    <Property Name="delete_time" Type="datetime" Precision="0" />
+    <Property Name="delete_staff_id" Type="int" />
+    <Property Name="delete_status" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="v2_maintenance_content">
+    <Key>
+      <PropertyRef Name="content_id" />
+    </Key>
+    <Property Name="content_id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="item_id" Type="bigint" />
+    <Property Name="content_template_id" Type="bigint" />
+    <Property Name="memo" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="v2_maintenance_content_template">
+    <Key>
+      <PropertyRef Name="content_template_id" />
+    </Key>
+    <Property Name="content_template_id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="item_template_id" Type="bigint" />
+    <Property Name="record_template_id" Type="bigint" />
+    <Property Name="content" Type="varchar" MaxLength="255" />
+    <Property Name="cycle" Type="varchar" MaxLength="50" />
+    <Property Name="standard" Type="varchar" MaxLength="255" />
+    <Property Name="method" Type="varchar" MaxLength="255" />
+    <Property Name="memo" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="v2_maintenance_item">
+    <Key>
+      <PropertyRef Name="item_id" />
+    </Key>
+    <Property Name="item_id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="record_id" Type="bigint" />
+    <Property Name="item_template_id" Type="bigint" />
+  </EntityType>
+  <EntityType Name="v2_maintenance_item_equipment">
+    <Key>
+      <PropertyRef Name="item_equipment_id" />
+    </Key>
+    <Property Name="item_equipment_id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="item_id" Type="bigint" Nullable="false" />
+    <Property Name="equipment_id" Type="bigint" Nullable="false" />
+    <Property Name="record_id" Type="bigint" Nullable="false" />
+    <Property Name="maintenance_time" Type="datetime" Precision="0" Nullable="false" />
+  </EntityType>
+  <EntityType Name="v2_maintenance_item_template">
+    <Key>
+      <PropertyRef Name="item_template_id" />
+    </Key>
+    <Property Name="item_template_id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="record_template_id" Type="bigint" />
+    <Property Name="name" Type="varchar" MaxLength="255" />
+    <Property Name="parent_id" Type="bigint" />
+  </EntityType>
+  <EntityType Name="v2_maintenance_record">
+    <Key>
+      <PropertyRef Name="record_id" />
+    </Key>
+    <Property Name="record_id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="record_template_id" Type="bigint" />
+    <Property Name="record_period" Type="varchar" MaxLength="8" />
+    <Property Name="create_user" Type="int" />
+    <Property Name="create_time" Type="datetime" Precision="0" />
+    <Property Name="delete_flag" Type="bit" />
+    <Property Name="delete_user" Type="int" />
+    <Property Name="delete_time" Type="datetime" Precision="0" />
+    <Property Name="plan_id" Type="bigint" />
+    <Property Name="plan_content_id" Type="bigint" />
+    <Property Name="stationId" Type="bigint" />
+    <Property Name="status" Type="int" Nullable="false" />
+    <Property Name="result_num" Type="int" />
+    <Property Name="result_code" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="v2_maintenance_record_template">
+    <Key>
+      <PropertyRef Name="record_template_id" />
+    </Key>
+    <Property Name="record_template_id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="record_period_type" Type="smallint" Nullable="false" />
+    <Property Name="range_id" Type="int" Nullable="false" />
+    <Property Name="report_type" Type="smallint" Nullable="false" />
+    <Property Name="title" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="result_num" Type="int" />
+    <Property Name="code" Type="varchar" MaxLength="255" />
+    <Property Name="create_user" Type="int" Nullable="false" />
+    <Property Name="create_time" Type="datetime" Precision="0" Nullable="false" />
+    <Property Name="delete_flag" Type="bit" Nullable="false" />
+    <Property Name="delete_user" Type="int" />
+    <Property Name="delete_time" Type="datetime" Precision="0" />
+  </EntityType>
+  <EntityType Name="v2_maintenance_result">
+    <Key>
+      <PropertyRef Name="result_id" />
+    </Key>
+    <Property Name="result_id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="content_id" Type="bigint" />
+    <Property Name="result_template_id" Type="bigint" />
+    <Property Name="result" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="v2_maintenance_result_template">
+    <Key>
+      <PropertyRef Name="result_template_id" />
+    </Key>
+    <Property Name="result_template_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="content_template_id" Type="int" Nullable="false" />
+    <Property Name="input_type" Type="int" Nullable="false" />
+    <Property Name="options" Type="text" />
+    <Property Name="result_name" Type="varchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityType Name="v2_maintenance_station_picture">
+    <Key>
+      <PropertyRef Name="picture_id" />
+    </Key>
+    <Property Name="picture_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="station_id" Type="int" />
+    <Property Name="mobile_id" Type="int" />
+    <Property Name="plan_id" Type="int" />
+    <Property Name="staff_id" Type="int" />
+    <Property Name="company_id" Type="int" />
+    <Property Name="work_image" Type="longtext" />
+    <Property Name="date" Type="datetime" Precision="0" />
+  </EntityType>
+  <EntityType Name="v2_month_plan">
+    <Key>
+      <PropertyRef Name="plan_id" />
+    </Key>
+    <Property Name="plan_id" Type="ubigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="plan_type" Type="smallint" />
+    <Property Name="plan_month" Type="char" MaxLength="6" />
+    <Property Name="range_id" Type="bigint" />
+    <Property Name="workshop_manger" Type="int" />
+    <Property Name="workrange_manager" Type="int" />
+    <Property Name="plan_date" Type="date" />
+    <Property Name="create_user" Type="int" />
+    <Property Name="create_time" Type="datetime" Precision="0" />
+    <Property Name="delete_flag" Type="bit" />
+    <Property Name="delete_time" Type="datetime" Precision="0" />
+    <Property Name="delete_user" Type="int" />
+  </EntityType>
+  <EntityType Name="v2_month_plan_content">
+    <Key>
+      <PropertyRef Name="content_id" />
+    </Key>
+    <Property Name="content_id" Type="ubigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="plan_id" Type="bigint" Nullable="false" />
+    <Property Name="location" Type="varchar" MaxLength="255" />
+    <Property Name="equipment_name" Type="varchar" MaxLength="255" />
+    <Property Name="content" Type="varchar" MaxLength="255" />
+    <Property Name="unit" Type="char" MaxLength="10" />
+    <Property Name="amount" Type="float" />
+    <Property Name="times" Type="int" />
+    <Property Name="result_id" Type="int" />
+  </EntityType>
+  <EntityType Name="v2_month_plan_content_detail">
+    <Key>
+      <PropertyRef Name="content_detail_id" />
+    </Key>
+    <Property Name="content_detail_id" Type="ubigint" Nullable="false" />
+    <Property Name="plan_id" Type="bigint" Nullable="false" />
+    <Property Name="content_id" Type="bigint" Nullable="false" />
+    <Property Name="date" Type="date" />
+  </EntityType>
+  <EntityType Name="v2_month_plan_content_detail_staff">
+    <Key>
+      <PropertyRef Name="detail_staff_id" />
+    </Key>
+    <Property Name="detail_staff_id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="content_detail_id" Type="bigint" Nullable="false" />
+    <Property Name="staff_id" Type="int" Nullable="false" />
+    <Property Name="staff_name" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="v2_protection_log">
+    <Key>
+      <PropertyRef Name="log_id" />
+    </Key>
+    <Property Name="log_id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="work_id" Type="int" />
+    <Property Name="plan_id" Type="int" />
+    <Property Name="staff_id" Type="int" />
+    <Property Name="work_time" Type="datetime" Precision="0" Nullable="false" />
+    <Property Name="work_proj" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="agree_time" Type="datetime" Precision="0" />
+    <Property Name="command_code" Type="varchar" MaxLength="255" />
+    <Property Name="job_location" Type="varchar" MaxLength="255" />
+    <Property Name="staff_num" Type="int" />
+    <Property Name="train_flag" Type="bit" />
+    <Property Name="stop_time" Type="datetime" Precision="0" />
+    <Property Name="stop_time2" Type="date" />
+    <Property Name="back_time" Type="datetime" Precision="0" />
+    <Property Name="gate_flag" Type="bit" />
+    <Property Name="gate_time" Type="datetime" Precision="0" />
+    <Property Name="out_gate_loc" Type="varchar" MaxLength="255" />
+    <Property Name="out_gate_time" Type="datetime" Precision="0" />
+    <Property Name="photo_flag" Type="bit" />
+    <Property Name="remark" Type="text" />
+    <Property Name="status" Type="bit" />
+    <Property Name="delete_flag" Type="bit" />
+    <Property Name="delete_time" Type="datetime" Precision="0" />
+    <Property Name="gate_loc" Type="varchar" MaxLength="255" />
+    <Property Name="out_gate_loc2" Type="varchar" MaxLength="255" />
+    <Property Name="out_gate_time2" Type="datetime" Precision="0" />
+  </EntityType>
+  <EntityType Name="v2_protection_log_detail">
+    <Key>
+      <PropertyRef Name="log_detail_id" />
+    </Key>
+    <Property Name="log_detail_id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="log_id" Type="bigint" Nullable="false" />
+    <Property Name="up" Type="varchar" MaxLength="255" />
+    <Property Name="down" Type="varchar" MaxLength="255" />
+    <Property Name="notice_time" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“def.railway_cloud_v21_nanchang_test.v2_report_period_type”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="v2_report_period_type">
+    <Key>
+      <PropertyRef Name="PeriodType" />
+      <PropertyRef Name="PeriodName" />
+    </Key>
+    <Property Name="PeriodType" Type="int" Nullable="false" />
+    <Property Name="PeriodName" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="v2_shelf">
+    <Key>
+      <PropertyRef Name="shelf_id" />
+    </Key>
+    <Property Name="shelf_id" Type="uint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="station_id" Type="int" Nullable="false" />
+    <Property Name="railway_code" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="manager" Type="int" Nullable="false" />
+    <Property Name="rfid" Type="varchar" MaxLength="50" />
+    <Property Name="memo" Type="text" />
+    <Property Name="create_user" Type="int" Nullable="false" />
+    <Property Name="create_time" Type="datetime" Precision="0" Nullable="false" />
+    <Property Name="delete_flag" Type="bit" Nullable="false" />
+    <Property Name="delete_user" Type="int" />
+    <Property Name="delete_time" Type="datetime" Precision="0" />
+    <Property Name="qrcode" Type="varchar" MaxLength="20" />
+    <Property Name="update_time" Type="datetime" Precision="0" />
+  </EntityType>
+  <EntityType Name="v2_work">
+    <Key>
+      <PropertyRef Name="work_id" />
+    </Key>
+    <Property Name="work_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="staff_id" Type="int" Nullable="false" />
+    <Property Name="work_name" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="work_location" Type="varchar" MaxLength="255" />
+    <Property Name="begin_date" Type="datetime" Precision="0" Nullable="false" />
+    <Property Name="end_date" Type="datetime" Precision="0" Nullable="false" />
+    <Property Name="work_type" Type="int" Nullable="false" />
+    <Property Name="work_subtype" Type="int" />
+    <Property Name="work_status" Type="bit" Nullable="false" />
+    <Property Name="del_flag" Type="bit" Nullable="false" />
+    <Property Name="del_time" Type="datetime" Precision="0" />
+  </EntityType>
+  <EntityType Name="v2_work_plan">
+    <Key>
+      <PropertyRef Name="work_plan_id" />
+    </Key>
+    <Property Name="work_plan_id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="work_id" Type="int" Nullable="false" />
+    <Property Name="plan_id" Type="int" Nullable="false" />
+    <Property Name="del_flag" Type="bit" Nullable="false" />
+    <Property Name="del_time" Type="datetime" Precision="0" />
+  </EntityType>
+  <EntityType Name="v2_work_subtype">
+    <Key>
+      <PropertyRef Name="subtype_id" />
+    </Key>
+    <Property Name="subtype_id" Type="int" Nullable="false" />
+    <Property Name="subtype_name" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="create_time" Type="datetime" Precision="0" Nullable="false" />
+    <Property Name="create_user" Type="int" Nullable="false" />
+    <Property Name="del_flag" Type="bit" Nullable="false" />
+    <Property Name="del_time" Type="datetime" Precision="0" />
+  </EntityType>
+  <EntityType Name="video_borrow">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="staff_id" Type="int" Nullable="false" />
+    <Property Name="equipment_id" Type="int" Nullable="false" />
+    <Property Name="create_time" Type="datetime" Precision="0" Nullable="false" />
+  </EntityType>
+  <EntityType Name="warn_deal_set">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="role_id" Type="int" Nullable="false" />
+    <Property Name="company_id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="warn_level">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="state" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="warn_level_relation">
+    <Key>
+      <PropertyRef Name="relation_id" />
+    </Key>
+    <Property Name="relation_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="warn_level_id" Type="int" Nullable="false" />
+    <Property Name="company_id" Type="int" Nullable="false" />
+    <Property Name="model_id" Type="int" Nullable="false" />
+    <Property Name="type_id" Type="int" Nullable="false" />
+    <Property Name="create_staff_id" Type="int" />
+    <Property Name="create_date" Type="datetime" Precision="0" />
+    <Property Name="update_date" Type="datetime" Precision="0" />
+    <Property Name="update_staff_id" Type="int" />
+    <Property Name="delete_staff_id" Type="int" />
+    <Property Name="delete_date" Type="datetime" Precision="0" />
+    <Property Name="delete_state" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="warn_message">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="warn_level_id" Type="int" />
+    <Property Name="company_id" Type="int" />
+    <Property Name="work_id" Type="int" />
+    <Property Name="requisit_main_id" Type="int" />
+    <Property Name="model_id" Type="int" />
+    <Property Name="type_id" Type="int" Nullable="false" />
+    <Property Name="mobile_id" Type="int" />
+    <Property Name="receive_time" Type="datetime" Precision="0" />
+    <Property Name="deal_staff_id" Type="int" />
+    <Property Name="message" Type="varchar" MaxLength="255" />
+    <Property Name="deal_time" Type="datetime" Precision="0" />
+    <Property Name="handle_opinions" Type="varchar" MaxLength="255" />
+    <Property Name="create_staff_id" Type="int" Nullable="false" />
+    <Property Name="message_state" Type="bit" Nullable="false" />
+    <Property Name="longitude" Type="float" />
+    <Property Name="latitude" Type="float" />
+    <Property Name="epc" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="name" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="work_progress">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="company_id" Type="int" Nullable="false" />
+    <Property Name="work_id" Type="int" Nullable="false" />
+    <Property Name="progress_state" Type="bit" Nullable="false" />
+    <Property Name="create_staff_id" Type="int" Nullable="false" />
+    <Property Name="create_date" Type="datetime" Precision="0" Nullable="false" />
+    <Property Name="complete_time" Type="datetime" Precision="0" />
+    <Property Name="complete_staff_id" Type="int" />
+    <Property Name="model_id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="work_range">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="remark" Type="varchar" MaxLength="200" />
+    <Property Name="begin_meter" Type="int" Nullable="false" />
+    <Property Name="end_meter" Type="int" Nullable="false" />
+    <Property Name="begin_longtitude" Type="float" />
+    <Property Name="begin_kilo_mark" Type="varchar" MaxLength="50" />
+    <Property Name="end_kilo_mark" Type="varchar" MaxLength="50" />
+    <Property Name="create_time" Type="datetime" Precision="0" />
+    <Property Name="create_staff_id" Type="int" />
+    <Property Name="begin_latitude" Type="float" />
+    <Property Name="end_longtitude" Type="float" />
+    <Property Name="end_latitude" Type="float" />
+    <Property Name="company_id" Type="int" />
+    <Property Name="delete_time" Type="datetime" Precision="0" />
+    <Property Name="delete_status" Type="int" Nullable="false" />
+    <Property Name="delete_staff_id" Type="int" />
+  </EntityType>
+  <EntityContainer Name="EFModelStoreContainer">
+    <EntitySet Name="android_position" EntityType="Self.android_position" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="approval" EntityType="Self.approval" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="assistant" EntityType="Self.assistant" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="attendance" EntityType="Self.attendance" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="bag" EntityType="Self.bag" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="bth_tag" EntityType="Self.bth_tag" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="company" EntityType="Self.company" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="company_duty" EntityType="Self.company_duty" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="company_line" EntityType="Self.company_line" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="company_range" EntityType="Self.company_range" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="company_station" EntityType="Self.company_station" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="cycle" EntityType="Self.cycle" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="duty" EntityType="Self.duty" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="emergent_maintenance_equipment" EntityType="Self.emergent_maintenance_equipment" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="equipment" EntityType="Self.equipment" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="equipment_circulration" EntityType="Self.equipment_circulration" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="equipment_failure" EntityType="Self.equipment_failure" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="equipment_failure_dealway" EntityType="Self.equipment_failure_dealway" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="equipment_operation" EntityType="Self.equipment_operation" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="equipment_status" EntityType="Self.equipment_status" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="equipment_stock_warn" EntityType="Self.equipment_stock_warn" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="equipment_type" EntityType="Self.equipment_type" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="equipment_used_warn" EntityType="Self.equipment_used_warn" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="exception_log" EntityType="Self.exception_log" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="failure" EntityType="Self.failure" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="failure_dealway" EntityType="Self.failure_dealway" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="install_position" EntityType="Self.install_position" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="level" EntityType="Self.level" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="line" EntityType="Self.line" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="line_station" EntityType="Self.line_station" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="login" EntityType="Self.login" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="login_role" EntityType="Self.login_role" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="lose_warn_type" EntityType="Self.lose_warn_type" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="loser_tag_moniter" EntityType="Self.loser_tag_moniter" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="maintenance_equipment" EntityType="Self.maintenance_equipment" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="maintenance_experience" EntityType="Self.maintenance_experience" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="maintenance_picture" EntityType="Self.maintenance_picture" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="maintenance_plan" EntityType="Self.maintenance_plan" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="maintenance_plan_status" EntityType="Self.maintenance_plan_status" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="maintenance_regulations" EntityType="Self.maintenance_regulations" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="maintenance_result" EntityType="Self.maintenance_result" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="maintenance_staff" EntityType="Self.maintenance_staff" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="maintenance_tools" EntityType="Self.maintenance_tools" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="maintenance_type" EntityType="Self.maintenance_type" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="message" EntityType="Self.message" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="mobile_app_set" EntityType="Self.mobile_app_set" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="mobile_device" EntityType="Self.mobile_device" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="perm" EntityType="Self.perm" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="person_duty" EntityType="Self.person_duty" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="plan_content" EntityType="Self.plan_content" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="pre_code" EntityType="Self.pre_code" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="product_upgrade" EntityType="Self.product_upgrade" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="range_station" EntityType="Self.range_station" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="repair_apply" EntityType="Self.repair_apply" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="repair_detail" EntityType="Self.repair_detail" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="repair_log" EntityType="Self.repair_log" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="role" EntityType="Self.role" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="role_perm" EntityType="Self.role_perm" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="scene_photos" EntityType="Self.scene_photos" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="staff_in_type" EntityType="Self.staff_in_type" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="staff_out_type" EntityType="Self.staff_out_type" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="stat_attendance_rate" EntityType="Self.stat_attendance_rate" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="stat_attendance_rate_staff" EntityType="Self.stat_attendance_rate_staff" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="stat_maintenance_avg_num_person" EntityType="Self.stat_maintenance_avg_num_person" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="stat_maintenance_comparative_person" EntityType="Self.stat_maintenance_comparative_person" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="stat_maintenance_equipment_rate" EntityType="Self.stat_maintenance_equipment_rate" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="stat_style" EntityType="Self.stat_style" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="stat_tool_inout_rate" EntityType="Self.stat_tool_inout_rate" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="stat_tools_rate" EntityType="Self.stat_tools_rate" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="stat_tools_renew_rate" EntityType="Self.stat_tools_renew_rate" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="station" EntityType="Self.station" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="station_type" EntityType="Self.station_type" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="stock" EntityType="Self.stock" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="stock_style" EntityType="Self.stock_style" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="supplier" EntityType="Self.supplier" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="sys_warn" EntityType="Self.sys_warn" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="system_log" EntityType="Self.system_log" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="system_variable_name" EntityType="Self.system_variable_name" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="system_variable_set" EntityType="Self.system_variable_set" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="temporary_staff" EntityType="Self.temporary_staff" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="tool_borrow_type" EntityType="Self.tool_borrow_type" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="tool_epc" EntityType="Self.tool_epc" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="tool_requisit" EntityType="Self.tool_requisit" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="tool_requisit_main" EntityType="Self.tool_requisit_main" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="tool_return_type" EntityType="Self.tool_return_type" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="tools" EntityType="Self.tools" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="tools_in" EntityType="Self.tools_in" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="tools_in_detail" EntityType="Self.tools_in_detail" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="tools_in_material" EntityType="Self.tools_in_material" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="tools_in_type" EntityType="Self.tools_in_type" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="tools_out_type" EntityType="Self.tools_out_type" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="tools_requisit_material" EntityType="Self.tools_requisit_material" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="tools_scan" EntityType="Self.tools_scan" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="tools_style" EntityType="Self.tools_style" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="train" EntityType="Self.train" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="train_style" EntityType="Self.train_style" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="train_video" EntityType="Self.train_video" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="type_experience" EntityType="Self.type_experience" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="v2_maintenance_content" EntityType="Self.v2_maintenance_content" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="v2_maintenance_content_template" EntityType="Self.v2_maintenance_content_template" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="v2_maintenance_item" EntityType="Self.v2_maintenance_item" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="v2_maintenance_item_equipment" EntityType="Self.v2_maintenance_item_equipment" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="v2_maintenance_item_template" EntityType="Self.v2_maintenance_item_template" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="v2_maintenance_record" EntityType="Self.v2_maintenance_record" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="v2_maintenance_record_template" EntityType="Self.v2_maintenance_record_template" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="v2_maintenance_result" EntityType="Self.v2_maintenance_result" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="v2_maintenance_result_template" EntityType="Self.v2_maintenance_result_template" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="v2_maintenance_station_picture" EntityType="Self.v2_maintenance_station_picture" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="v2_month_plan" EntityType="Self.v2_month_plan" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="v2_month_plan_content" EntityType="Self.v2_month_plan_content" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="v2_month_plan_content_detail" EntityType="Self.v2_month_plan_content_detail" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="v2_month_plan_content_detail_staff" EntityType="Self.v2_month_plan_content_detail_staff" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="v2_protection_log" EntityType="Self.v2_protection_log" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="v2_protection_log_detail" EntityType="Self.v2_protection_log_detail" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="v2_shelf" EntityType="Self.v2_shelf" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="v2_work" EntityType="Self.v2_work" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="v2_work_plan" EntityType="Self.v2_work_plan" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="v2_work_subtype" EntityType="Self.v2_work_subtype" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="video_borrow" EntityType="Self.video_borrow" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="warn_deal_set" EntityType="Self.warn_deal_set" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="warn_level" EntityType="Self.warn_level" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="warn_level_relation" EntityType="Self.warn_level_relation" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="warn_message" EntityType="Self.warn_message" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="work_progress" EntityType="Self.work_progress" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="work_range" EntityType="Self.work_range" Schema="railway_cloud_v21_nanchang_test" store:Type="Tables" />
+    <EntitySet Name="gender" EntityType="Self.gender" store:Type="Tables" store:Schema="railway_cloud_v21_nanchang_test">
+      <DefiningQuery>SELECT
+`gender`.`Id`, 
+`gender`.`sex_name`
+FROM `gender` AS `gender`</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="login_log" EntityType="Self.login_log" store:Type="Tables" store:Schema="railway_cloud_v21_nanchang_test">
+      <DefiningQuery>SELECT
+`login_log`.`staff_id`, 
+`login_log`.`login_name`, 
+`login_log`.`datetime`, 
+`login_log`.`create_time`, 
+`login_log`.`create_staff_id`, 
+`login_log`.`delete_time`, 
+`login_log`.`delete_staff_id`, 
+`login_log`.`delete_status`
+FROM `login_log` AS `login_log`</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="v2_report_period_type" EntityType="Self.v2_report_period_type" store:Type="Tables" store:Schema="railway_cloud_v21_nanchang_test">
+      <DefiningQuery>SELECT
+`v2_report_period_type`.`PeriodType`, 
+`v2_report_period_type`.`PeriodName`
+FROM `v2_report_period_type` AS `v2_report_period_type`</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

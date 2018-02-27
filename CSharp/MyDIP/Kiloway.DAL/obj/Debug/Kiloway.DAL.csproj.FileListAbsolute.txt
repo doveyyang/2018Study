@@ -1,0 +1,8 @@
+c:\Users\Dovey\source\repos\MyDIP\Kiloway.DAL\bin\Debug\Kiloway.DAL.dll
+c:\Users\Dovey\source\repos\MyDIP\Kiloway.DAL\bin\Debug\Kiloway.DAL.pdb
+c:\Users\Dovey\source\repos\MyDIP\Kiloway.DAL\bin\Debug\Kiloway.IDAL.dll
+c:\Users\Dovey\source\repos\MyDIP\Kiloway.DAL\bin\Debug\Kiloway.IDAL.pdb
+c:\Users\Dovey\source\repos\MyDIP\Kiloway.DAL\obj\Debug\Kiloway.DAL.csprojResolveAssemblyReference.cache
+c:\Users\Dovey\source\repos\MyDIP\Kiloway.DAL\obj\Debug\Kiloway.DAL.csproj.CoreCompileInputs.cache
+c:\Users\Dovey\source\repos\MyDIP\Kiloway.DAL\obj\Debug\Kiloway.DAL.dll
+c:\Users\Dovey\source\repos\MyDIP\Kiloway.DAL\obj\Debug\Kiloway.DAL.pdb

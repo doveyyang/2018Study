@@ -1,0 +1,15 @@
+﻿@using SwaggerApiDemo.ViewModels;
+@model CreateEmployeeViewModel
+@{
+    ViewBag.Title = "SaveEmployee";
+}
+
+<h2>SaveEmployee</h2>
+
+<input type="text" id="TxtFName" name="FirstName" value="@Model.FirstName" />
+<input type="text" id="TxtLName" name="LastName" value="@Model.LastName" />
+<input type="text" id="TxtSalary" name="Salary" value="@Model.Salary" />
+
+<input type="submit" name="Submit" value="提交" />
+<input type="submit" name="Submit" value="取消" />
+<input type="reset" value="重置" />

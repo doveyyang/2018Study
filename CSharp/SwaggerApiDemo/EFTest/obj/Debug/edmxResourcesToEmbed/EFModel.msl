@@ -1,0 +1,1970 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="EFModelStoreContainer" CdmEntityContainer="EFEntities">
+    <EntitySetMapping Name="android_position">
+      <EntityTypeMapping TypeName="EFModel.android_position">
+        <MappingFragment StoreEntitySet="android_position">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="companyId" ColumnName="companyId" />
+          <ScalarProperty Name="last_time" ColumnName="last_time" />
+          <ScalarProperty Name="mac" ColumnName="mac" />
+          <ScalarProperty Name="longitude" ColumnName="longitude" />
+          <ScalarProperty Name="latitude" ColumnName="latitude" />
+          <ScalarProperty Name="staff_id" ColumnName="staff_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="approval">
+      <EntityTypeMapping TypeName="EFModel.approval">
+        <MappingFragment StoreEntitySet="approval">
+          <ScalarProperty Name="approval_id" ColumnName="approval_id" />
+          <ScalarProperty Name="apply_id" ColumnName="apply_id" />
+          <ScalarProperty Name="staff_id" ColumnName="staff_id" />
+          <ScalarProperty Name="result_id" ColumnName="result_id" />
+          <ScalarProperty Name="approval_date" ColumnName="approval_date" />
+          <ScalarProperty Name="request_staff_id" ColumnName="request_staff_id" />
+          <ScalarProperty Name="request_date" ColumnName="request_date" />
+          <ScalarProperty Name="approval_path" ColumnName="approval_path" />
+          <ScalarProperty Name="create_time" ColumnName="create_time" />
+          <ScalarProperty Name="create_staff_id" ColumnName="create_staff_id" />
+          <ScalarProperty Name="approval_advice" ColumnName="approval_advice" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="assistant">
+      <EntityTypeMapping TypeName="EFModel.assistant">
+        <MappingFragment StoreEntitySet="assistant">
+          <ScalarProperty Name="assistant_id" ColumnName="assistant_id" />
+          <ScalarProperty Name="equipment_type_id" ColumnName="equipment_type_id" />
+          <ScalarProperty Name="regulation_id" ColumnName="regulation_id" />
+          <ScalarProperty Name="tools_list" ColumnName="tools_list" />
+          <ScalarProperty Name="create_time" ColumnName="create_time" />
+          <ScalarProperty Name="create_staff_id" ColumnName="create_staff_id" />
+          <ScalarProperty Name="delete_time" ColumnName="delete_time" />
+          <ScalarProperty Name="delete_staff_id" ColumnName="delete_staff_id" />
+          <ScalarProperty Name="delete_status" ColumnName="delete_status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="attendance">
+      <EntityTypeMapping TypeName="EFModel.attendance">
+        <MappingFragment StoreEntitySet="attendance">
+          <ScalarProperty Name="attendance_id" ColumnName="attendance_id" />
+          <ScalarProperty Name="staff_id" ColumnName="staff_id" />
+          <ScalarProperty Name="company_id" ColumnName="company_id" />
+          <ScalarProperty Name="mobile_id" ColumnName="mobile_id" />
+          <ScalarProperty Name="attendance_date" ColumnName="attendance_date" />
+          <ScalarProperty Name="attendance_type" ColumnName="attendance_type" />
+          <ScalarProperty Name="attendance_flag" ColumnName="attendance_flag" />
+          <ScalarProperty Name="attendance_leave_date" ColumnName="attendance_leave_date" />
+          <ScalarProperty Name="create_time" ColumnName="create_time" />
+          <ScalarProperty Name="create_staff_id" ColumnName="create_staff_id" />
+          <ScalarProperty Name="delete_time" ColumnName="delete_time" />
+          <ScalarProperty Name="delete_staff_id" ColumnName="delete_staff_id" />
+          <ScalarProperty Name="delete_status" ColumnName="delete_status" />
+          <ScalarProperty Name="attendance_date_offset" ColumnName="attendance_date_offset" />
+          <ScalarProperty Name="attendance_leave_date_offset" ColumnName="attendance_leave_date_offset" />
+          <ScalarProperty Name="work_id" ColumnName="work_id" />
+          <ScalarProperty Name="in_type_id" ColumnName="in_type_id" />
+          <ScalarProperty Name="in_type_desc" ColumnName="in_type_desc" />
+          <ScalarProperty Name="out_type_id" ColumnName="out_type_id" />
+          <ScalarProperty Name="out_type_desc" ColumnName="out_type_desc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bag">
+      <EntityTypeMapping TypeName="EFModel.bag">
+        <MappingFragment StoreEntitySet="bag">
+          <ScalarProperty Name="bag_id" ColumnName="bag_id" />
+          <ScalarProperty Name="bag_name" ColumnName="bag_name" />
+          <ScalarProperty Name="company_id" ColumnName="company_id" />
+          <ScalarProperty Name="create_user" ColumnName="create_user" />
+          <ScalarProperty Name="create_dt" ColumnName="create_dt" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bth_tag">
+      <EntityTypeMapping TypeName="EFModel.bth_tag">
+        <MappingFragment StoreEntitySet="bth_tag">
+          <ScalarProperty Name="bth_id" ColumnName="bth_id" />
+          <ScalarProperty Name="company_id" ColumnName="company_id" />
+          <ScalarProperty Name="tag_id" ColumnName="tag_id" />
+          <ScalarProperty Name="tag_jm" ColumnName="tag_jm" />
+          <ScalarProperty Name="tag_type" ColumnName="tag_type" />
+          <ScalarProperty Name="create_staff" ColumnName="create_staff" />
+          <ScalarProperty Name="create_time" ColumnName="create_time" />
+          <ScalarProperty Name="update_time" ColumnName="update_time" />
+          <ScalarProperty Name="update_staff" ColumnName="update_staff" />
+          <ScalarProperty Name="delete_staff" ColumnName="delete_staff" />
+          <ScalarProperty Name="delete_time" ColumnName="delete_time" />
+          <ScalarProperty Name="delete_state" ColumnName="delete_state" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="company">
+      <EntityTypeMapping TypeName="EFModel.company">
+        <MappingFragment StoreEntitySet="company">
+          <ScalarProperty Name="company_id" ColumnName="company_id" />
+          <ScalarProperty Name="parent_id" ColumnName="parent_id" />
+          <ScalarProperty Name="level" ColumnName="level" />
+          <ScalarProperty Name="company_path" ColumnName="company_path" />
+          <ScalarProperty Name="company_name" ColumnName="company_name" />
+          <ScalarProperty Name="company_code" ColumnName="company_code" />
+          <ScalarProperty Name="remark" ColumnName="remark" />
+          <ScalarProperty Name="delete_status" ColumnName="delete_status" />
+          <ScalarProperty Name="create_time" ColumnName="create_time" />
+          <ScalarProperty Name="create_staff_id" ColumnName="create_staff_id" />
+          <ScalarProperty Name="delete_time" ColumnName="delete_time" />
+          <ScalarProperty Name="delete_staff_id" ColumnName="delete_staff_id" />
+          <ScalarProperty Name="manager_id" ColumnName="manager_id" />
+          <ScalarProperty Name="railway_company_code" ColumnName="railway_company_code" />
+          <ScalarProperty Name="railway_company_path" ColumnName="railway_company_path" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="company_duty">
+      <EntityTypeMapping TypeName="EFModel.company_duty">
+        <MappingFragment StoreEntitySet="company_duty">
+          <ScalarProperty Name="relation_id" ColumnName="relation_id" />
+          <ScalarProperty Name="duty_id" ColumnName="duty_id" />
+          <ScalarProperty Name="company_id" ColumnName="company_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="company_line">
+      <EntityTypeMapping TypeName="EFModel.company_line">
+        <MappingFragment StoreEntitySet="company_line">
+          <ScalarProperty Name="relation_id" ColumnName="relation_id" />
+          <ScalarProperty Name="line_id" ColumnName="line_id" />
+          <ScalarProperty Name="company_id" ColumnName="company_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="company_range">
+      <EntityTypeMapping TypeName="EFModel.company_range">
+        <MappingFragment StoreEntitySet="company_range">
+          <ScalarProperty Name="relation_id" ColumnName="relation_id" />
+          <ScalarProperty Name="range_id" ColumnName="range_id" />
+          <ScalarProperty Name="company_id" ColumnName="company_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="company_station">
+      <EntityTypeMapping TypeName="EFModel.company_station">
+        <MappingFragment StoreEntitySet="company_station">
+          <ScalarProperty Name="relation_id" ColumnName="relation_id" />
+          <ScalarProperty Name="company_id" ColumnName="company_id" />
+          <ScalarProperty Name="station_id" ColumnName="station_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="cycle">
+      <EntityTypeMapping TypeName="EFModel.cycle">
+        <MappingFragment StoreEntitySet="cycle">
+          <ScalarProperty Name="cycle_id" ColumnName="cycle_id" />
+          <ScalarProperty Name="cycle_name" ColumnName="cycle_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="duty">
+      <EntityTypeMapping TypeName="EFModel.duty">
+        <MappingFragment StoreEntitySet="duty">
+          <ScalarProperty Name="duty_id" ColumnName="duty_id" />
+          <ScalarProperty Name="parent_id" ColumnName="parent_id" />
+          <ScalarProperty Name="duty_path" ColumnName="duty_path" />
+          <ScalarProperty Name="duty_name" ColumnName="duty_name" />
+          <ScalarProperty Name="remark" ColumnName="remark" />
+          <ScalarProperty Name="create_time" ColumnName="create_time" />
+          <ScalarProperty Name="create_staff_id" ColumnName="create_staff_id" />
+          <ScalarProperty Name="delete_time" ColumnName="delete_time" />
+          <ScalarProperty Name="delete_staff_id" ColumnName="delete_staff_id" />
+          <ScalarProperty Name="delete_status" ColumnName="delete_status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="emergent_maintenance_equipment">
+      <EntityTypeMapping TypeName="EFModel.emergent_maintenance_equipment">
+        <MappingFragment StoreEntitySet="emergent_maintenance_equipment">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="work_id" ColumnName="work_id" />
+          <ScalarProperty Name="equipment_code" ColumnName="equipment_code" />
+          <ScalarProperty Name="equipment_id" ColumnName="equipment_id" />
+          <ScalarProperty Name="result_id" ColumnName="result_id" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="is_plan" ColumnName="is_plan" />
+          <ScalarProperty Name="act_equipment_code" ColumnName="act_equipment_code" />
+          <ScalarProperty Name="act_equipment_id" ColumnName="act_equipment_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="equipment">
+      <EntityTypeMapping TypeName="EFModel.equipment">
+        <MappingFragment StoreEntitySet="equipment">
+          <ScalarProperty Name="equipment_id" ColumnName="equipment_id" />
+          <ScalarProperty Name="supplier_id" ColumnName="supplier_id" />
+          <ScalarProperty Name="equipment_type_id" ColumnName="equipment_type_id" />
+          <ScalarProperty Name="range_id" ColumnName="range_id" />
+          <ScalarProperty Name="line_id" ColumnName="line_id" />
+          <ScalarProperty Name="station_id" ColumnName="station_id" />
+          <ScalarProperty Name="company_id" ColumnName="company_id" />
+          <ScalarProperty Name="cycle_id" ColumnName="cycle_id" />
+          <ScalarProperty Name="equipment_name" ColumnName="equipment_name" />
+          <ScalarProperty Name="equipment_model" ColumnName="equipment_model" />
+          <ScalarProperty Name="device_picture" ColumnName="device_picture" />
+          <ScalarProperty Name="install_date" ColumnName="install_date" />
+          <ScalarProperty Name="rfid_code" ColumnName="rfid_code" />
+          <ScalarProperty Name="remark" ColumnName="remark" />
+          <ScalarProperty Name="railway_code" ColumnName="railway_code" />
+          <ScalarProperty Name="latitude" ColumnName="latitude" />
+          <ScalarProperty Name="longitude" ColumnName="longitude" />
+          <ScalarProperty Name="equipment_status_id" ColumnName="equipment_status_id" />
+          <ScalarProperty Name="create_time" ColumnName="create_time" />
+          <ScalarProperty Name="create_staff_id" ColumnName="create_staff_id" />
+          <ScalarProperty Name="delete_time" ColumnName="delete_time" />
+          <ScalarProperty Name="delete_staff_id" ColumnName="delete_staff_id" />
+          <ScalarProperty Name="delete_status" ColumnName="delete_status" />
+          <ScalarProperty Name="rfid_tid" ColumnName="rfid_tid" />
+          <ScalarProperty Name="update_time" ColumnName="update_time" />
+          <ScalarProperty Name="ip" ColumnName="ip" />
+          <ScalarProperty Name="port" ColumnName="port" />
+          <ScalarProperty Name="mac" ColumnName="mac" />
+          <ScalarProperty Name="sn" ColumnName="sn" />
+          <ScalarProperty Name="stock_id" ColumnName="stock_id" />
+          <ScalarProperty Name="position_id" ColumnName="position_id" />
+          <ScalarProperty Name="person_liable_id" ColumnName="person_liable_id" />
+          <ScalarProperty Name="collar_date" ColumnName="collar_date" />
+          <ScalarProperty Name="buy_date" ColumnName="buy_date" />
+          <ScalarProperty Name="production" ColumnName="production" />
+          <ScalarProperty Name="service_life" ColumnName="service_life" />
+          <ScalarProperty Name="is_warn" ColumnName="is_warn" />
+          <ScalarProperty Name="service_end" ColumnName="service_end" />
+          <ScalarProperty Name="buy_company" ColumnName="buy_company" />
+          <ScalarProperty Name="circulation_date" ColumnName="circulation_date" />
+          <ScalarProperty Name="update_staff_id" ColumnName="update_staff_id" />
+          <ScalarProperty Name="site_flag" ColumnName="site_flag" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="shelf_id" ColumnName="shelf_id" />
+          <ScalarProperty Name="qr_code" ColumnName="qr_code" />
+          <ScalarProperty Name="is_binding" ColumnName="is_binding" />
+          <ScalarProperty Name="factory_number" ColumnName="factory_number" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="equipment_circulration">
+      <EntityTypeMapping TypeName="EFModel.equipment_circulration">
+        <MappingFragment StoreEntitySet="equipment_circulration">
+          <ScalarProperty Name="circulration_id" ColumnName="circulration_id" />
+          <ScalarProperty Name="equipment_id" ColumnName="equipment_id" />
+          <ScalarProperty Name="operation_id" ColumnName="operation_id" />
+          <ScalarProperty Name="src_company_id" ColumnName="src_company_id" />
+          <ScalarProperty Name="desc_company_id" ColumnName="desc_company_id" />
+          <ScalarProperty Name="circulration_date" ColumnName="circulration_date" />
+          <ScalarProperty Name="create_staff_id" ColumnName="create_staff_id" />
+          <ScalarProperty Name="create_time" ColumnName="create_time" />
+          <ScalarProperty Name="circulration_mem" ColumnName="circulration_mem" />
+          <ScalarProperty Name="circulration_path" ColumnName="circulration_path" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="equipment_failure">
+      <EntityTypeMapping TypeName="EFModel.equipment_failure">
+        <MappingFragment StoreEntitySet="equipment_failure">
+          <ScalarProperty Name="fault_id" ColumnName="fault_id" />
+          <ScalarProperty Name="failure_id" ColumnName="failure_id" />
+          <ScalarProperty Name="rfid_code" ColumnName="rfid_code" />
+          <ScalarProperty Name="fault_description" ColumnName="fault_description" />
+          <ScalarProperty Name="fault_method" ColumnName="fault_method" />
+          <ScalarProperty Name="fault_date" ColumnName="fault_date" />
+          <ScalarProperty Name="remark" ColumnName="remark" />
+          <ScalarProperty Name="create_time" ColumnName="create_time" />
+          <ScalarProperty Name="create_staff_id" ColumnName="create_staff_id" />
+          <ScalarProperty Name="delete_time" ColumnName="delete_time" />
+          <ScalarProperty Name="delete_staff_id" ColumnName="delete_staff_id" />
+          <ScalarProperty Name="delete_status" ColumnName="delete_status" />
+          <ScalarProperty Name="update_time" ColumnName="update_time" />
+          <ScalarProperty Name="update_staff_id" ColumnName="update_staff_id" />
+          <ScalarProperty Name="company_id" ColumnName="company_id" />
+          <ScalarProperty Name="result" ColumnName="result" />
+          <ScalarProperty Name="response_staff_id" ColumnName="response_staff_id" />
+          <ScalarProperty Name="response_time" ColumnName="response_time" />
+          <ScalarProperty Name="deal_staff_id" ColumnName="deal_staff_id" />
+          <ScalarProperty Name="apply_staff_id" ColumnName="apply_staff_id" />
+          <ScalarProperty Name="apply_time" ColumnName="apply_time" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="equipment_failure_dealway">
+      <EntityTypeMapping TypeName="EFModel.equipment_failure_dealway">
+        <MappingFragment StoreEntitySet="equipment_failure_dealway">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="failure_id" ColumnName="failure_id" />
+          <ScalarProperty Name="fault_description" ColumnName="fault_description" />
+          <ScalarProperty Name="fault_method" ColumnName="fault_method" />
+          <ScalarProperty Name="create_time" ColumnName="create_time" />
+          <ScalarProperty Name="create_staff_id" ColumnName="create_staff_id" />
+          <ScalarProperty Name="delete_time" ColumnName="delete_time" />
+          <ScalarProperty Name="delete_staff_id" ColumnName="delete_staff_id" />
+          <ScalarProperty Name="delete_status" ColumnName="delete_status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="equipment_operation">
+      <EntityTypeMapping TypeName="EFModel.equipment_operation">
+        <MappingFragment StoreEntitySet="equipment_operation">
+          <ScalarProperty Name="operation_id" ColumnName="operation_id" />
+          <ScalarProperty Name="operation_name" ColumnName="operation_name" />
+          <ScalarProperty Name="create_time" ColumnName="create_time" />
+          <ScalarProperty Name="create_staff_id" ColumnName="create_staff_id" />
+          <ScalarProperty Name="update_time" ColumnName="update_time" />
+          <ScalarProperty Name="update_staff_id" ColumnName="update_staff_id" />
+          <ScalarProperty Name="delete_time" ColumnName="delete_time" />
+          <ScalarProperty Name="delete_staff_id" ColumnName="delete_staff_id" />
+          <ScalarProperty Name="operation_status" ColumnName="operation_status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="equipment_status">
+      <EntityTypeMapping TypeName="EFModel.equipment_status">
+        <MappingFragment StoreEntitySet="equipment_status">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="equipment_status1" ColumnName="equipment_status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="equipment_stock_warn">
+      <EntityTypeMapping TypeName="EFModel.equipment_stock_warn">
+        <MappingFragment StoreEntitySet="equipment_stock_warn">
+          <ScalarProperty Name="company_id" ColumnName="company_id" />
+          <ScalarProperty Name="warn" ColumnName="warn" />
+          <ScalarProperty Name="create_staff_id" ColumnName="create_staff_id" />
+          <ScalarProperty Name="create_time" ColumnName="create_time" />
+          <ScalarProperty Name="update_time" ColumnName="update_time" />
+          <ScalarProperty Name="update_staff_id" ColumnName="update_staff_id" />
+          <ScalarProperty Name="delete_time" ColumnName="delete_time" />
+          <ScalarProperty Name="delete_staff_id" ColumnName="delete_staff_id" />
+          <ScalarProperty Name="warn_status" ColumnName="warn_status" />
+          <ScalarProperty Name="warn_id" ColumnName="warn_id" />
+          <ScalarProperty Name="equ_id" ColumnName="equ_id" />
+          <ScalarProperty Name="stock_id" ColumnName="stock_id" />
+          <ScalarProperty Name="warn_type" ColumnName="warn_type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="equipment_type">
+      <EntityTypeMapping TypeName="EFModel.equipment_type">
+        <MappingFragment StoreEntitySet="equipment_type">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="parent_id" ColumnName="parent_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="remark" ColumnName="remark" />
+          <ScalarProperty Name="path" ColumnName="path" />
+          <ScalarProperty Name="jm" ColumnName="jm" />
+          <ScalarProperty Name="create_time" ColumnName="create_time" />
+          <ScalarProperty Name="create_staff_id" ColumnName="create_staff_id" />
+          <ScalarProperty Name="delete_time" ColumnName="delete_time" />
+          <ScalarProperty Name="delete_staff_id" ColumnName="delete_staff_id" />
+          <ScalarProperty Name="delete_status" ColumnName="delete_status" />
+          <ScalarProperty Name="code" ColumnName="code" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="equipment_used_warn">
+      <EntityTypeMapping TypeName="EFModel.equipment_used_warn">
+        <MappingFragment StoreEntitySet="equipment_used_warn">
+          <ScalarProperty Name="company_id" ColumnName="company_id" />
+          <ScalarProperty Name="warn" ColumnName="warn" />
+          <ScalarProperty Name="create_staff_id" ColumnName="create_staff_id" />
+          <ScalarProperty Name="create_time" ColumnName="create_time" />
+          <ScalarProperty Name="update_time" ColumnName="update_time" />
+          <ScalarProperty Name="update_staff_id" ColumnName="update_staff_id" />
+          <ScalarProperty Name="delete_time" ColumnName="delete_time" />
+          <ScalarProperty Name="delete_staff_id" ColumnName="delete_staff_id" />
+          <ScalarProperty Name="warn_status" ColumnName="warn_status" />
+          <ScalarProperty Name="warn_id" ColumnName="warn_id" />
+          <ScalarProperty Name="equ_id" ColumnName="equ_id" />
+          <ScalarProperty Name="warn_type" ColumnName="warn_type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="exception_log">
+      <EntityTypeMapping TypeName="EFModel.exception_log">
+        <MappingFragment StoreEntitySet="exception_log">
+          <ScalarProperty Name="exception_id" ColumnName="exception_id" />
+          <ScalarProperty Name="info" ColumnName="info" />
+          <ScalarProperty Name="time" ColumnName="time" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="failure">
+      <EntityTypeMapping TypeName="EFModel.failure">
+        <MappingFragment StoreEntitySet="failure">
+          <ScalarProperty Name="failure_id" ColumnName="failure_id" />
+          <ScalarProperty Name="failure_name" ColumnName="failure_name" />
+          <ScalarProperty Name="parent_id" ColumnName="parent_id" />
+          <ScalarProperty Name="remark" ColumnName="remark" />
+          <ScalarProperty Name="grade" ColumnName="grade" />
+          <ScalarProperty Name="create_time" ColumnName="create_time" />
+          <ScalarProperty Name="create_staff_id" ColumnName="create_staff_id" />
+          <ScalarProperty Name="delete_time" ColumnName="delete_time" />
+          <ScalarProperty Name="delete_staff_id" ColumnName="delete_staff_id" />
+          <ScalarProperty Name="delete_status" ColumnName="delete_status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="failure_dealway">
+      <EntityTypeMapping TypeName="EFModel.failure_dealway">
+        <MappingFragment StoreEntitySet="failure_dealway">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="failure_id" ColumnName="failure_id" />
+          <ScalarProperty Name="equ_Id" ColumnName="equ_Id" />
+          <ScalarProperty Name="create_time" ColumnName="create_time" />
+          <ScalarProperty Name="create_staff_id" ColumnName="create_staff_id" />
+          <ScalarProperty Name="delete_time" ColumnName="delete_time" />
+          <ScalarProperty Name="delete_staff_id" ColumnName="delete_staff_id" />
+          <ScalarProperty Name="delete_status" ColumnName="delete_status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="install_position">
+      <EntityTypeMapping TypeName="EFModel.install_position">
+        <MappingFragment StoreEntitySet="install_position">
+          <ScalarProperty Name="position_id" ColumnName="position_id" />
+          <ScalarProperty Name="position_name" ColumnName="position_name" />
+          <ScalarProperty Name="position_parent_id" ColumnName="position_parent_id" />
+          <ScalarProperty Name="position_path" ColumnName="position_path" />
+          <ScalarProperty Name="create_staff_id" ColumnName="create_staff_id" />
+          <ScalarProperty Name="create_time" ColumnName="create_time" />
+          <ScalarProperty Name="update_time" ColumnName="update_time" />
+          <ScalarProperty Name="update_staff_id" ColumnName="update_staff_id" />
+          <ScalarProperty Name="delete_staff_id" ColumnName="delete_staff_id" />
+          <ScalarProperty Name="delete_time" ColumnName="delete_time" />
+          <ScalarProperty Name="position_status" ColumnName="position_status" />
+          <ScalarProperty Name="company_id" ColumnName="company_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="level">
+      <EntityTypeMapping TypeName="EFModel.level">
+        <MappingFragment StoreEntitySet="level">
+          <ScalarProperty Name="level1" ColumnName="level" />
+          <ScalarProperty Name="levelName" ColumnName="levelName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="line">
+      <EntityTypeMapping TypeName="EFModel.line">
+        <MappingFragment StoreEntitySet="line">
+          <ScalarProperty Name="line_id" ColumnName="line_id" />
+          <ScalarProperty Name="parent" ColumnName="parent" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="remark" ColumnName="remark" />
+          <ScalarProperty Name="jm" ColumnName="jm" />
+          <ScalarProperty Name="path" ColumnName="path" />
+          <ScalarProperty Name="begin_kilo_mark" ColumnName="begin_kilo_mark" />
+          <ScalarProperty Name="begin_meter" ColumnName="begin_meter" />
+          <ScalarProperty Name="end_meter" ColumnName="end_meter" />
+          <ScalarProperty Name="end_kilo_mark" ColumnName="end_kilo_mark" />
+          <ScalarProperty Name="begin_longitude" ColumnName="begin_longitude" />
+          <ScalarProperty Name="end_longitude" ColumnName="end_longitude" />
+          <ScalarProperty Name="begin_latitude" ColumnName="begin_latitude" />
+          <ScalarProperty Name="end_latitude" ColumnName="end_latitude" />
+          <ScalarProperty Name="create_time" ColumnName="create_time" />
+          <ScalarProperty Name="create_staff_id" ColumnName="create_staff_id" />
+          <ScalarProperty Name="delete_time" ColumnName="delete_time" />
+          <ScalarProperty Name="delete_staff_id" ColumnName="delete_staff_id" />
+          <ScalarProperty Name="delete_status" ColumnName="delete_status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="line_station">
+      <EntityTypeMapping TypeName="EFModel.line_station">
+        <MappingFragment StoreEntitySet="line_station">
+          <ScalarProperty Name="relation_id" ColumnName="relation_id" />
+          <ScalarProperty Name="line_id" ColumnName="line_id" />
+          <ScalarProperty Name="station_id" ColumnName="station_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="login">
+      <EntityTypeMapping TypeName="EFModel.login">
+        <MappingFragment StoreEntitySet="login">
+          <ScalarProperty Name="salt" ColumnName="salt" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="reg_time" ColumnName="reg_time" />
+          <ScalarProperty Name="last_login_time" ColumnName="last_login_time" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="staff_id" ColumnName="staff_id" />
+          <ScalarProperty Name="login_name" ColumnName="login_name" />
+          <ScalarProperty Name="login_type" ColumnName="login_type" />
+          <ScalarProperty Name="create_time" ColumnName="create_time" />
+          <ScalarProperty Name="create_staff_id" ColumnName="create_staff_id" />
+          <ScalarProperty Name="delete_time" ColumnName="delete_time" />
+          <ScalarProperty Name="delete_staff_id" ColumnName="delete_staff_id" />
+          <ScalarProperty Name="delete_status" ColumnName="delete_status" />
+          <ScalarProperty Name="validity_time" ColumnName="validity_time" />
+          <ScalarProperty Name="update_time" ColumnName="update_time" />
+          <ScalarProperty Name="session_id" ColumnName="session_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="login_role">
+      <EntityTypeMapping TypeName="EFModel.login_role">
+        <MappingFragment StoreEntitySet="login_role">
+          <ScalarProperty Name="staff_id" ColumnName="staff_id" />
+          <ScalarProperty Name="role_id" ColumnName="role_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="lose_warn_type">
+      <EntityTypeMapping TypeName="EFModel.lose_warn_type">
+        <MappingFragment StoreEntitySet="lose_warn_type">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="loser_tag_moniter">
+      <EntityTypeMapping TypeName="EFModel.loser_tag_moniter">
+        <MappingFragment StoreEntitySet="loser_tag_moniter">
+          <ScalarProperty Name="moniter_id" ColumnName="moniter_id" />
+          <ScalarProperty Name="company_id" ColumnName="company_id" />
+          <ScalarProperty Name="mobiler_id" ColumnName="mobiler_id" />
+          <ScalarProperty Name="tag_jm" ColumnName="tag_jm" />
+          <ScalarProperty Name="tools_id" ColumnName="tools_id" />
+          <ScalarProperty Name="staff_id" ColumnName="staff_id" />
+          <ScalarProperty Name="begin_date" ColumnName="begin_date" />
+          <ScalarProperty Name="end_date" ColumnName="end_date" />
+          <ScalarProperty Name="moniter_state" ColumnName="moniter_state" />
+          <ScalarProperty Name="work_id" ColumnName="work_id" />
+          <ScalarProperty Name="moniter_type_id" ColumnName="moniter_type_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="maintenance_equipment">
+      <EntityTypeMapping TypeName="EFModel.maintenance_equipment">
+        <MappingFragment StoreEntitySet="maintenance_equipment">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="content_id" ColumnName="content_id" />
+          <ScalarProperty Name="equipment_code" ColumnName="equipment_code" />
+          <ScalarProperty Name="equipment_id" ColumnName="equipment_id" />
+          <ScalarProperty Name="result_id" ColumnName="result_id" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="is_plan" ColumnName="is_plan" />
+          <ScalarProperty Name="act_equipment_code" ColumnName="act_equipment_code" />
+          <ScalarProperty Name="act_equipment_id" ColumnName="act_equipment_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="maintenance_experience">
+      <EntityTypeMapping TypeName="EFModel.maintenance_experience">
+        <MappingFragment StoreEntitySet="maintenance_experience">
+          <ScalarProperty Name="experience_id" ColumnName="experience_id" />
+          <ScalarProperty Name="experience_name" ColumnName="experience_name" />
+          <ScalarProperty Name="remark" ColumnName="remark" />
+          <ScalarProperty Name="content" ColumnName="content" />
+          <ScalarProperty Name="create_time" ColumnName="create_time" />
+          <ScalarProperty Name="create_staff_id" ColumnName="create_staff_id" />
+          <ScalarProperty Name="delete_time" ColumnName="delete_time" />
+          <ScalarProperty Name="delete_staff_id" ColumnName="delete_staff_id" />
+          <ScalarProperty Name="delete_status" ColumnName="delete_status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="maintenance_picture">
+      <EntityTypeMapping TypeName="EFModel.maintenance_picture">
+        <MappingFragment StoreEntitySet="maintenance_picture">
+          <ScalarProperty Name="picture_id" ColumnName="picture_id" />
+          <ScalarProperty Name="equipment_id" ColumnName="equipment_id" />
+          <ScalarProperty Name="mobile_id" ColumnName="mobile_id" />
+          <ScalarProperty Name="plan_id" ColumnName="plan_id" />
+          <ScalarProperty Name="staff_id" ColumnName="staff_id" />
+          <ScalarProperty Name="company_id" ColumnName="company_id" />
+          <ScalarProperty Name="work_image" ColumnName="work_image" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="work_id" ColumnName="work_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="maintenance_plan">
+      <EntityTypeMapping TypeName="EFModel.maintenance_plan">
+        <MappingFragment StoreEntitySet="maintenance_plan">
+          <ScalarProperty Name="plan_id" ColumnName="plan_id" />
+          <ScalarProperty Name="maintenance_type_id" ColumnName="maintenance_type_id" />
+          <ScalarProperty Name="range_id" ColumnName="range_id" />
+          <ScalarProperty Name="company_id" ColumnName="company_id" />
+          <ScalarProperty Name="line_id" ColumnName="line_id" />
+          <ScalarProperty Name="station_id" ColumnName="station_id" />
+          <ScalarProperty Name="begin_date" ColumnName="begin_date" />
+          <ScalarProperty Name="end_date" ColumnName="end_date" />
+          <ScalarProperty Name="job_controller" ColumnName="job_controller" />
+          <ScalarProperty Name="person_in_charge" ColumnName="person_in_charge" />
+          <ScalarProperty Name="resident_liaison" ColumnName="resident_liaison" />
+          <ScalarProperty Name="liaison_officer" ColumnName="liaison_officer" />
+          <ScalarProperty Name="order_nubmer" ColumnName="order_nubmer" />
+          <ScalarProperty Name="departure_station" ColumnName="departure_station" />
+          <ScalarProperty Name="departure_range" ColumnName="departure_range" />
+          <ScalarProperty Name="maintenance_level" ColumnName="maintenance_level" />
+          <ScalarProperty Name="control_model" ColumnName="control_model" />
+          <ScalarProperty Name="actual_begin_date" ColumnName="actual_begin_date" />
+          <ScalarProperty Name="actual_end_date" ColumnName="actual_end_date" />
+          <ScalarProperty Name="job_location" ColumnName="job_location" />
+          <ScalarProperty Name="registration_premises" ColumnName="registration_premises" />
+          <ScalarProperty Name="next_time" ColumnName="next_time" />
+          <ScalarProperty Name="driving" ColumnName="driving" />
+          <ScalarProperty Name="labour" ColumnName="labour" />
+          <ScalarProperty Name="stop" ColumnName="stop" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="fill_in_person" ColumnName="fill_in_person" />
+          <ScalarProperty Name="date_of_filling" ColumnName="date_of_filling" />
+          <ScalarProperty Name="opinion" ColumnName="opinion" />
+          <ScalarProperty Name="summary" ColumnName="summary" />
+          <ScalarProperty Name="status_id" ColumnName="status_id" />
+          <ScalarProperty Name="create_time" ColumnName="create_time" />
+          <ScalarProperty Name="create_staff_id" ColumnName="create_staff_id" />
+          <ScalarProperty Name="delete_time" ColumnName="delete_time" />
+          <ScalarProperty Name="delete_staff_id" ColumnName="delete_staff_id" />
+          <ScalarProperty Name="delete_status" ColumnName="delete_status" />
+          <ScalarProperty Name="begin_date_offset" ColumnName="begin_date_offset" />
+          <ScalarProperty Name="end_date_offset" ColumnName="end_date_offset" />
+          <ScalarProperty Name="plan_type" ColumnName="plan_type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="maintenance_plan_status">
+      <EntityTypeMapping TypeName="EFModel.maintenance_plan_status">
+        <MappingFragment StoreEntitySet="maintenance_plan_status">
+          <ScalarProperty Name="status_id" ColumnName="status_id" />
+          <ScalarProperty Name="status_name" ColumnName="status_name" />
+          <ScalarProperty Name="create_time" ColumnName="create_time" />
+          <ScalarProperty Name="create_staff_id" ColumnName="create_staff_id" />
+          <ScalarProperty Name="delete_time" ColumnName="delete_time" />
+          <ScalarProperty Name="delete_staff_id" ColumnName="delete_staff_id" />
+          <ScalarProperty Name="delete_status" ColumnName="delete_status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="maintenance_regulations">
+      <EntityTypeMapping TypeName="EFModel.maintenance_regulations">
+        <MappingFragment StoreEntitySet="maintenance_regulations">
+          <ScalarProperty Name="regulation_id" ColumnName="regulation_id" />
+          <ScalarProperty Name="regulation_name" ColumnName="regulation_name" />
+          <ScalarProperty Name="remark" ColumnName="remark" />
+          <ScalarProperty Name="content" ColumnName="content" />
+          <ScalarProperty Name="create_time" ColumnName="create_time" />
+          <ScalarProperty Name="create_staff_id" ColumnName="create_staff_id" />
+          <ScalarProperty Name="delete_time" ColumnName="delete_time" />
+          <ScalarProperty Name="delete_staff_id" ColumnName="delete_staff_id" />
+          <ScalarProperty Name="delete_status" ColumnName="delete_status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="maintenance_result">
+      <EntityTypeMapping TypeName="EFModel.maintenance_result">
+        <MappingFragment StoreEntitySet="maintenance_result">
+          <ScalarProperty Name="result_id" ColumnName="result_id" />
+          <ScalarProperty Name="result" ColumnName="result" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="maintenance_staff">
+      <EntityTypeMapping TypeName="EFModel.maintenance_staff">
+        <MappingFragment StoreEntitySet="maintenance_staff">
+          <ScalarProperty Name="staff_id" ColumnName="staff_id" />
+          <ScalarProperty Name="company_id" ColumnName="company_id" />
+          <ScalarProperty Name="range_id" ColumnName="range_id" />
+          <ScalarProperty Name="duty_id" ColumnName="duty_id" />
+          <ScalarProperty Name="sex" ColumnName="sex" />
+          <ScalarProperty Name="birthday" ColumnName="birthday" />
+          <ScalarProperty Name="card_number" ColumnName="card_number" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="picture" ColumnName="picture" />
+          <ScalarProperty Name="tel" ColumnName="tel" />
+          <ScalarProperty Name="job_number" ColumnName="job_number" />
+          <ScalarProperty Name="rfid_code" ColumnName="rfid_code" />
+          <ScalarProperty Name="check_date" ColumnName="check_date" />
+          <ScalarProperty Name="person_type" ColumnName="person_type" />
+          <ScalarProperty Name="logout_date" ColumnName="logout_date" />
+          <ScalarProperty Name="create_time" ColumnName="create_time" />
+          <ScalarProperty Name="create_staff_id" ColumnName="create_staff_id" />
+          <ScalarProperty Name="delete_time" ColumnName="delete_time" />
+          <ScalarProperty Name="delete_staff_id" ColumnName="delete_staff_id" />
+          <ScalarProperty Name="delete_status" ColumnName="delete_status" />
+          <ScalarProperty Name="rfid_tid" ColumnName="rfid_tid" />
+          <ScalarProperty Name="is_system_user" ColumnName="is_system_user" />
+          <ScalarProperty Name="update_time" ColumnName="update_time" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="maintenance_tools">
+      <EntityTypeMapping TypeName="EFModel.maintenance_tools">
+        <MappingFragment StoreEntitySet="maintenance_tools">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="staff_id" ColumnName="staff_id" />
+          <ScalarProperty Name="in_number" ColumnName="in_number" />
+          <ScalarProperty Name="in_date" ColumnName="in_date" />
+          <ScalarProperty Name="out_number" ColumnName="out_number" />
+          <ScalarProperty Name="out_date" ColumnName="out_date" />
+          <ScalarProperty Name="mobile_id" ColumnName="mobile_id" />
+          <ScalarProperty Name="picture_path" ColumnName="picture_path" />
+          <ScalarProperty Name="create_time" ColumnName="create_time" />
+          <ScalarProperty Name="create_staff_id" ColumnName="create_staff_id" />
+          <ScalarProperty Name="delete_time" ColumnName="delete_time" />
+          <ScalarProperty Name="delete_staff_id" ColumnName="delete_staff_id" />
+          <ScalarProperty Name="delete_status" ColumnName="delete_status" />
+          <ScalarProperty Name="requisit_main_id" ColumnName="requisit_main_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="maintenance_type">
+      <EntityTypeMapping TypeName="EFModel.maintenance_type">
+        <MappingFragment StoreEntitySet="maintenance_type">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="parent_id" ColumnName="parent_id" />
+          <ScalarProperty Name="remark" ColumnName="remark" />
+          <ScalarProperty Name="create_time" ColumnName="create_time" />
+          <ScalarProperty Name="create_staff_id" ColumnName="create_staff_id" />
+          <ScalarProperty Name="delete_time" ColumnName="delete_time" />
+          <ScalarProperty Name="delete_staff_id" ColumnName="delete_staff_id" />
+          <ScalarProperty Name="delete_status" ColumnName="delete_status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="message">
+      <EntityTypeMapping TypeName="EFModel.message">
+        <MappingFragment StoreEntitySet="message">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="message_type_id" ColumnName="message_type_id" />
+          <ScalarProperty Name="message_title" ColumnName="message_title" />
+          <ScalarProperty Name="message_detail" ColumnName="message_detail" />
+          <ScalarProperty Name="ref_table" ColumnName="ref_table" />
+          <ScalarProperty Name="ref_id" ColumnName="ref_id" />
+          <ScalarProperty Name="send_staff_id" ColumnName="send_staff_id" />
+          <ScalarProperty Name="send_date" ColumnName="send_date" />
+          <ScalarProperty Name="receive_staff_id" ColumnName="receive_staff_id" />
+          <ScalarProperty Name="receive_time" ColumnName="receive_time" />
+          <ScalarProperty Name="forward_path" ColumnName="forward_path" />
+          <ScalarProperty Name="delete_status" ColumnName="delete_status" />
+          <ScalarProperty Name="delete_time" ColumnName="delete_time" />
+          <ScalarProperty Name="delete_staff_id" ColumnName="delete_staff_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mobile_app_set">
+      <EntityTypeMapping TypeName="EFModel.mobile_app_set">
+        <MappingFragment StoreEntitySet="mobile_app_set">
+          <ScalarProperty Name="perm_id" ColumnName="perm_id" />
+          <ScalarProperty Name="perm_name" ColumnName="perm_name" />
+          <ScalarProperty Name="perm_state" ColumnName="perm_state" />
+          <ScalarProperty Name="is_warn" ColumnName="is_warn" />
+          <ScalarProperty Name="warn_rank" ColumnName="warn_rank" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mobile_device">
+      <EntityTypeMapping TypeName="EFModel.mobile_device">
+        <MappingFragment StoreEntitySet="mobile_device">
+          <ScalarProperty Name="mobile_id" ColumnName="mobile_id" />
+          <ScalarProperty Name="company_id" ColumnName="company_id" />
+          <ScalarProperty Name="device_name" ColumnName="device_name" />
+          <ScalarProperty Name="registration_date" ColumnName="registration_date" />
+          <ScalarProperty Name="picture" ColumnName="picture" />
+          <ScalarProperty Name="mobile_model" ColumnName="mobile_model" />
+          <ScalarProperty Name="remark" ColumnName="remark" />
+          <ScalarProperty Name="railway_code" ColumnName="railway_code" />
+          <ScalarProperty Name="mac" ColumnName="mac" />
+          <ScalarProperty Name="longitude" ColumnName="longitude" />
+          <ScalarProperty Name="latitude" ColumnName="latitude" />
+          <ScalarProperty Name="location_date" ColumnName="location_date" />
+          <ScalarProperty Name="equipment_status_id" ColumnName="equipment_status_id" />
+          <ScalarProperty Name="staff_id" ColumnName="staff_id" />
+          <ScalarProperty Name="create_time" ColumnName="create_time" />
+          <ScalarProperty Name="create_staff_id" ColumnName="create_staff_id" />
+          <ScalarProperty Name="delete_time" ColumnName="delete_time" />
+          <ScalarProperty Name="delete_staff_id" ColumnName="delete_staff_id" />
+          <ScalarProperty Name="delete_status" ColumnName="delete_status" />
+          <ScalarProperty Name="rang_id" ColumnName="rang_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="perm">
+      <EntityTypeMapping TypeName="EFModel.perm">
+        <MappingFragment StoreEntitySet="perm">
+          <ScalarProperty Name="staff_id" ColumnName="staff_id" />
+          <ScalarProperty Name="perm1" ColumnName="perm" />
+          <ScalarProperty Name="perm_staff_id" ColumnName="perm_staff_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="person_duty">
+      <EntityTypeMapping TypeName="EFModel.person_duty">
+        <MappingFragment StoreEntitySet="person_duty">
+          <ScalarProperty Name="staff_id" ColumnName="staff_id" />
+          <ScalarProperty Name="duty_id" ColumnName="duty_id" />
+          <ScalarProperty Name="company_id" ColumnName="company_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="plan_content">
+      <EntityTypeMapping TypeName="EFModel.plan_content">
+        <MappingFragment StoreEntitySet="plan_content">
+          <ScalarProperty Name="content_id" ColumnName="content_id" />
+          <ScalarProperty Name="plan_id" ColumnName="plan_id" />
+          <ScalarProperty Name="operator_name" ColumnName="operator_name" />
+          <ScalarProperty Name="operator_id" ColumnName="operator_id" />
+          <ScalarProperty Name="matual1_man" ColumnName="matual1_man" />
+          <ScalarProperty Name="content" ColumnName="content" />
+          <ScalarProperty Name="remark" ColumnName="remark" />
+          <ScalarProperty Name="matual1_id" ColumnName="matual1_id" />
+          <ScalarProperty Name="matual2_man" ColumnName="matual2_man" />
+          <ScalarProperty Name="matual2_id" ColumnName="matual2_id" />
+          <ScalarProperty Name="result_id" ColumnName="result_id" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="safe_control" ColumnName="safe_control" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="pre_code">
+      <EntityTypeMapping TypeName="EFModel.pre_code">
+        <MappingFragment StoreEntitySet="pre_code">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="pre_style" ColumnName="pre_style" />
+          <ScalarProperty Name="companyid" ColumnName="companyid" />
+          <ScalarProperty Name="code" ColumnName="code" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="product_upgrade">
+      <EntityTypeMapping TypeName="EFModel.product_upgrade">
+        <MappingFragment StoreEntitySet="product_upgrade">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="version_name" ColumnName="version_name" />
+          <ScalarProperty Name="version_code" ColumnName="version_code" />
+          <ScalarProperty Name="os" ColumnName="os" />
+          <ScalarProperty Name="filename" ColumnName="filename" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="remark" ColumnName="remark" />
+          <ScalarProperty Name="upload_time" ColumnName="upload_time" />
+          <ScalarProperty Name="upload_user" ColumnName="upload_user" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="range_station">
+      <EntityTypeMapping TypeName="EFModel.range_station">
+        <MappingFragment StoreEntitySet="range_station">
+          <ScalarProperty Name="relation_id" ColumnName="relation_id" />
+          <ScalarProperty Name="range_id" ColumnName="range_id" />
+          <ScalarProperty Name="station_id" ColumnName="station_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="repair_apply">
+      <EntityTypeMapping TypeName="EFModel.repair_apply">
+        <MappingFragment StoreEntitySet="repair_apply">
+          <ScalarProperty Name="apply_id" ColumnName="apply_id" />
+          <ScalarProperty Name="company_id" ColumnName="company_id" />
+          <ScalarProperty Name="apply_staff_id" ColumnName="apply_staff_id" />
+          <ScalarProperty Name="apply_time" ColumnName="apply_time" />
+          <ScalarProperty Name="sponsor_staff_id" ColumnName="sponsor_staff_id" />
+          <ScalarProperty Name="sponsor_company_id" ColumnName="sponsor_company_id" />
+          <ScalarProperty Name="apply_status" ColumnName="apply_status" />
+          <ScalarProperty Name="apply_content" ColumnName="apply_content" />
+          <ScalarProperty Name="create_staff_id" ColumnName="create_staff_id" />
+          <ScalarProperty Name="create_time" ColumnName="create_time" />
+          <ScalarProperty Name="update_time" ColumnName="update_time" />
+          <ScalarProperty Name="update_staff_id" ColumnName="update_staff_id" />
+          <ScalarProperty Name="delete_time" ColumnName="delete_time" />
+          <ScalarProperty Name="delete_staff_id" ColumnName="delete_staff_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="repair_detail">
+      <EntityTypeMapping TypeName="EFModel.repair_detail">
+        <MappingFragment StoreEntitySet="repair_detail">
+          <ScalarProperty Name="detail_id" ColumnName="detail_id" />
+          <ScalarProperty Name="apply_id" ColumnName="apply_id" />
+          <ScalarProperty Name="equipment_id" ColumnName="equipment_id" />
+          <ScalarProperty Name="failure_id" ColumnName="failure_id" />
+          <ScalarProperty Name="operation_id" ColumnName="operation_id" />
+          <ScalarProperty Name="failure_cause" ColumnName="failure_cause" />
+          <ScalarProperty Name="detail_status" ColumnName="detail_status" />
+          <ScalarProperty Name="repair_company" ColumnName="repair_company" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="repair_log">
+      <EntityTypeMapping TypeName="EFModel.repair_log">
+        <MappingFragment StoreEntitySet="repair_log">
+          <ScalarProperty Name="log_id" ColumnName="log_id" />
+          <ScalarProperty Name="fault_id" ColumnName="fault_id" />
+          <ScalarProperty Name="log_time" ColumnName="log_time" />
+          <ScalarProperty Name="operator_staff_id" ColumnName="operator_staff_id" />
+          <ScalarProperty Name="feed_back" ColumnName="feed_back" />
+          <ScalarProperty Name="repair_status" ColumnName="repair_status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="role">
+      <EntityTypeMapping TypeName="EFModel.role">
+        <MappingFragment StoreEntitySet="role">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="scope" ColumnName="scope" />
+          <ScalarProperty Name="company_id" ColumnName="company_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="create_time" ColumnName="create_time" />
+          <ScalarProperty Name="create_staff_id" ColumnName="create_staff_id" />
+          <ScalarProperty Name="delete_time" ColumnName="delete_time" />
+          <ScalarProperty Name="delete_staff_id" ColumnName="delete_staff_id" />
+          <ScalarProperty Name="delete_status" ColumnName="delete_status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="role_perm">
+      <EntityTypeMapping TypeName="EFModel.role_perm">
+        <MappingFragment StoreEntitySet="role_perm">
+          <ScalarProperty Name="role_perm_id" ColumnName="role_perm_id" />
+          <ScalarProperty Name="role_id" ColumnName="role_id" />
+          <ScalarProperty Name="perm_id" ColumnName="perm_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="scene_photos">
+      <EntityTypeMapping TypeName="EFModel.scene_photos">
+        <MappingFragment StoreEntitySet="scene_photos">
+          <ScalarProperty Name="picture_id" ColumnName="picture_id" />
+          <ScalarProperty Name="company_id" ColumnName="company_id" />
+          <ScalarProperty Name="work_id" ColumnName="work_id" />
+          <ScalarProperty Name="requisit_main_id" ColumnName="requisit_main_id" />
+          <ScalarProperty Name="model_id" ColumnName="model_id" />
+          <ScalarProperty Name="picture_path" ColumnName="picture_path" />
+          <ScalarProperty Name="photo_date" ColumnName="photo_date" />
+          <ScalarProperty Name="mobile_id" ColumnName="mobile_id" />
+          <ScalarProperty Name="staff_id" ColumnName="staff_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="staff_in_type">
+      <EntityTypeMapping TypeName="EFModel.staff_in_type">
+        <MappingFragment StoreEntitySet="staff_in_type">
+          <ScalarProperty Name="staff_in_id" ColumnName="staff_in_id" />
+          <ScalarProperty Name="in_type" ColumnName="in_type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="staff_out_type">
+      <EntityTypeMapping TypeName="EFModel.staff_out_type">
+        <MappingFragment StoreEntitySet="staff_out_type">
+          <ScalarProperty Name="staff_out_id" ColumnName="staff_out_id" />
+          <ScalarProperty Name="out_type" ColumnName="out_type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="stat_attendance_rate">
+      <EntityTypeMapping TypeName="EFModel.stat_attendance_rate">
+        <MappingFragment StoreEntitySet="stat_attendance_rate">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="Month" ColumnName="Month" />
+          <ScalarProperty Name="Order" ColumnName="Order" />
+          <ScalarProperty Name="BeginDate" ColumnName="BeginDate" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="PlanNum" ColumnName="PlanNum" />
+          <ScalarProperty Name="AttendanceNum" ColumnName="AttendanceNum" />
+          <ScalarProperty Name="StatDate" ColumnName="StatDate" />
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="GranularityType" ColumnName="GranularityType" />
+          <ScalarProperty Name="StationId" ColumnName="StationId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="stat_attendance_rate_staff">
+      <EntityTypeMapping TypeName="EFModel.stat_attendance_rate_staff">
+        <MappingFragment StoreEntitySet="stat_attendance_rate_staff">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="Month" ColumnName="Month" />
+          <ScalarProperty Name="Order" ColumnName="Order" />
+          <ScalarProperty Name="BeginDate" ColumnName="BeginDate" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="PlanNum" ColumnName="PlanNum" />
+          <ScalarProperty Name="AttendanceNum" ColumnName="AttendanceNum" />
+          <ScalarProperty Name="StatDate" ColumnName="StatDate" />
+          <ScalarProperty Name="StaffId" ColumnName="StaffId" />
+          <ScalarProperty Name="GranularityType" ColumnName="GranularityType" />
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="StationId" ColumnName="StationId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="stat_maintenance_avg_num_person">
+      <EntityTypeMapping TypeName="EFModel.stat_maintenance_avg_num_person">
+        <MappingFragment StoreEntitySet="stat_maintenance_avg_num_person">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="Month" ColumnName="Month" />
+          <ScalarProperty Name="Order" ColumnName="Order" />
+          <ScalarProperty Name="BeginDate" ColumnName="BeginDate" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="PersonNum" ColumnName="PersonNum" />
+          <ScalarProperty Name="MaintenanceNum" ColumnName="MaintenanceNum" />
+          <ScalarProperty Name="StatDate" ColumnName="StatDate" />
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="GranularityType" ColumnName="GranularityType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="stat_maintenance_comparative_person">
+      <EntityTypeMapping TypeName="EFModel.stat_maintenance_comparative_person">
+        <MappingFragment StoreEntitySet="stat_maintenance_comparative_person">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="Month" ColumnName="Month" />
+          <ScalarProperty Name="Order" ColumnName="Order" />
+          <ScalarProperty Name="BeginDate" ColumnName="BeginDate" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="MaintenanceNum" ColumnName="MaintenanceNum" />
+          <ScalarProperty Name="StatDate" ColumnName="StatDate" />
+          <ScalarProperty Name="StaffId" ColumnName="StaffId" />
+          <ScalarProperty Name="GranularityType" ColumnName="GranularityType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="stat_maintenance_equipment_rate">
+      <EntityTypeMapping TypeName="EFModel.stat_maintenance_equipment_rate">
+        <MappingFragment StoreEntitySet="stat_maintenance_equipment_rate">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="Month" ColumnName="Month" />
+          <ScalarProperty Name="Order" ColumnName="Order" />
+          <ScalarProperty Name="BeginDate" ColumnName="BeginDate" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="TotalNum" ColumnName="TotalNum" />
+          <ScalarProperty Name="MaintenanceNum" ColumnName="MaintenanceNum" />
+          <ScalarProperty Name="StatDate" ColumnName="StatDate" />
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="GranularityType" ColumnName="GranularityType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="stat_style">
+      <EntityTypeMapping TypeName="EFModel.stat_style">
+        <MappingFragment StoreEntitySet="stat_style">
+          <ScalarProperty Name="stat_id" ColumnName="stat_id" />
+          <ScalarProperty Name="stat_style_id" ColumnName="stat_style_id" />
+          <ScalarProperty Name="stat_style_name" ColumnName="stat_style_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="stat_tool_inout_rate">
+      <EntityTypeMapping TypeName="EFModel.stat_tool_inout_rate">
+        <MappingFragment StoreEntitySet="stat_tool_inout_rate">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="Month" ColumnName="Month" />
+          <ScalarProperty Name="Order" ColumnName="Order" />
+          <ScalarProperty Name="BeginDate" ColumnName="BeginDate" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="In_Number" ColumnName="In_Number" />
+          <ScalarProperty Name="Out_Number" ColumnName="Out_Number" />
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="GranularityType" ColumnName="GranularityType" />
+          <ScalarProperty Name="StatDate" ColumnName="StatDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="stat_tools_rate">
+      <EntityTypeMapping TypeName="EFModel.stat_tools_rate">
+        <MappingFragment StoreEntitySet="stat_tools_rate">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="Month" ColumnName="Month" />
+          <ScalarProperty Name="Order" ColumnName="Order" />
+          <ScalarProperty Name="BeginDate" ColumnName="BeginDate" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="RenewNumber" ColumnName="RenewNumber" />
+          <ScalarProperty Name="AddNumber" ColumnName="AddNumber" />
+          <ScalarProperty Name="DeleteNumber" ColumnName="DeleteNumber" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="GranularityType" ColumnName="GranularityType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="stat_tools_renew_rate">
+      <EntityTypeMapping TypeName="EFModel.stat_tools_renew_rate">
+        <MappingFragment StoreEntitySet="stat_tools_renew_rate">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="Month" ColumnName="Month" />
+          <ScalarProperty Name="Order" ColumnName="Order" />
+          <ScalarProperty Name="BeginDate" ColumnName="BeginDate" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="ToolsStyleId" ColumnName="ToolsStyleId" />
+          <ScalarProperty Name="RenewNumber" ColumnName="RenewNumber" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="GranularityType" ColumnName="GranularityType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="station">
+      <EntityTypeMapping TypeName="EFModel.station">
+        <MappingFragment StoreEntitySet="station">
+          <ScalarProperty Name="station_id" ColumnName="station_id" />
+          <ScalarProperty Name="station_name" ColumnName="station_name" />
+          <ScalarProperty Name="kilo_mark" ColumnName="kilo_mark" />
+          <ScalarProperty Name="remark" ColumnName="remark" />
+          <ScalarProperty Name="jm" ColumnName="jm" />
+          <ScalarProperty Name="station_type" ColumnName="station_type" />
+          <ScalarProperty Name="station_meter" ColumnName="station_meter" />
+          <ScalarProperty Name="create_time" ColumnName="create_time" />
+          <ScalarProperty Name="create_staff_id" ColumnName="create_staff_id" />
+          <ScalarProperty Name="delete_time" ColumnName="delete_time" />
+          <ScalarProperty Name="delete_staff_id" ColumnName="delete_staff_id" />
+          <ScalarProperty Name="station_latitude" ColumnName="station_latitude" />
+          <ScalarProperty Name="station_longtitude" ColumnName="station_longtitude" />
+          <ScalarProperty Name="delete_status" ColumnName="delete_status" />
+          <ScalarProperty Name="manager" ColumnName="manager" />
+          <ScalarProperty Name="longitude" ColumnName="longitude" />
+          <ScalarProperty Name="latitude" ColumnName="latitude" />
+          <ScalarProperty Name="rfid" ColumnName="rfid" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="qrcode" ColumnName="qrcode" />
+          <ScalarProperty Name="update_time" ColumnName="update_time" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="station_type">
+      <EntityTypeMapping TypeName="EFModel.station_type">
+        <MappingFragment StoreEntitySet="station_type">
+          <ScalarProperty Name="station_type_id" ColumnName="station_type_id" />
+          <ScalarProperty Name="station_type_name" ColumnName="station_type_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="stock">
+      <EntityTypeMapping TypeName="EFModel.stock">
+        <MappingFragment StoreEntitySet="stock">
+          <ScalarProperty Name="stock_id" ColumnName="stock_id" />
+          <ScalarProperty Name="stock_name" ColumnName="stock_name" />
+          <ScalarProperty Name="parent_id" ColumnName="parent_id" />
+          <ScalarProperty Name="company_id" ColumnName="company_id" />
+          <ScalarProperty Name="create_time" ColumnName="create_time" />
+          <ScalarProperty Name="create_staff_id" ColumnName="create_staff_id" />
+          <ScalarProperty Name="update_time" ColumnName="update_time" />
+          <ScalarProperty Name="update_staff_id" ColumnName="update_staff_id" />
+          <ScalarProperty Name="delete_staff_id" ColumnName="delete_staff_id" />
+          <ScalarProperty Name="delete_time" ColumnName="delete_time" />
+          <ScalarProperty Name="stock_path" ColumnName="stock_path" />
+          <ScalarProperty Name="stock_style_id" ColumnName="stock_style_id" />
+          <ScalarProperty Name="delete_status" ColumnName="delete_status" />
+          <ScalarProperty Name="stockcol" ColumnName="stockcol" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="stock_style">
+      <EntityTypeMapping TypeName="EFModel.stock_style">
+        <MappingFragment StoreEntitySet="stock_style">
+          <ScalarProperty Name="stock_style_id" ColumnName="stock_style_id" />
+          <ScalarProperty Name="stock_style_name" ColumnName="stock_style_name" />
+          <ScalarProperty Name="create_time" ColumnName="create_time" />
+          <ScalarProperty Name="create_staff_id" ColumnName="create_staff_id" />
+          <ScalarProperty Name="update_time" ColumnName="update_time" />
+          <ScalarProperty Name="update_staff_id" ColumnName="update_staff_id" />
+          <ScalarProperty Name="delete_staff_id" ColumnName="delete_staff_id" />
+          <ScalarProperty Name="delete_time" ColumnName="delete_time" />
+          <ScalarProperty Name="stock_status" ColumnName="stock_status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="supplier">
+      <EntityTypeMapping TypeName="EFModel.supplier">
+        <MappingFragment StoreEntitySet="supplier">
+          <ScalarProperty Name="supplier_id" ColumnName="supplier_id" />
+          <ScalarProperty Name="supplier_name" ColumnName="supplier_name" />
+          <ScalarProperty Name="supplier_address" ColumnName="supplier_address" />
+          <ScalarProperty Name="supplier_tel" ColumnName="supplier_tel" />
+          <ScalarProperty Name="after_sale_tel" ColumnName="after_sale_tel" />
+          <ScalarProperty Name="after_sale_name" ColumnName="after_sale_name" />
+          <ScalarProperty Name="supplier_status" ColumnName="supplier_status" />
+          <ScalarProperty Name="create_time" ColumnName="create_time" />
+          <ScalarProperty Name="create_staff_id" ColumnName="create_staff_id" />
+          <ScalarProperty Name="delete_time" ColumnName="delete_time" />
+          <ScalarProperty Name="delete_staff_id" ColumnName="delete_staff_id" />
+          <ScalarProperty Name="delete_status" ColumnName="delete_status" />
+          <ScalarProperty Name="company_id" ColumnName="company_id" />
+          <ScalarProperty Name="supplier_level_id" ColumnName="supplier_level_id" />
+          <ScalarProperty Name="supplier_license" ColumnName="supplier_license" />
+          <ScalarProperty Name="supplier_license_no" ColumnName="supplier_license_no" />
+          <ScalarProperty Name="update_staff_id" ColumnName="update_staff_id" />
+          <ScalarProperty Name="update_time" ColumnName="update_time" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sys_warn">
+      <EntityTypeMapping TypeName="EFModel.sys_warn">
+        <MappingFragment StoreEntitySet="sys_warn">
+          <ScalarProperty Name="message_id" ColumnName="message_id" />
+          <ScalarProperty Name="company_id" ColumnName="company_id" />
+          <ScalarProperty Name="message_info" ColumnName="message_info" />
+          <ScalarProperty Name="relevance_id" ColumnName="relevance_id" />
+          <ScalarProperty Name="read_list" ColumnName="read_list" />
+          <ScalarProperty Name="message_time" ColumnName="message_time" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="system_log">
+      <EntityTypeMapping TypeName="EFModel.system_log">
+        <MappingFragment StoreEntitySet="system_log">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="log" ColumnName="log" />
+          <ScalarProperty Name="memo" ColumnName="memo" />
+          <ScalarProperty Name="ref_table" ColumnName="ref_table" />
+          <ScalarProperty Name="ref_id" ColumnName="ref_id" />
+          <ScalarProperty Name="staff_id" ColumnName="staff_id" />
+          <ScalarProperty Name="log_time" ColumnName="log_time" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="system_variable_name">
+      <EntityTypeMapping TypeName="EFModel.system_variable_name">
+        <MappingFragment StoreEntitySet="system_variable_name">
+          <ScalarProperty Name="variable_id" ColumnName="variable_id" />
+          <ScalarProperty Name="variable_name" ColumnName="variable_name" />
+          <ScalarProperty Name="variable_state" ColumnName="variable_state" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="system_variable_set">
+      <EntityTypeMapping TypeName="EFModel.system_variable_set">
+        <MappingFragment StoreEntitySet="system_variable_set">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="system_variable_id" ColumnName="system_variable_id" />
+          <ScalarProperty Name="system_variable_value" ColumnName="system_variable_value" />
+          <ScalarProperty Name="create_staff_id" ColumnName="create_staff_id" />
+          <ScalarProperty Name="create_date" ColumnName="create_date" />
+          <ScalarProperty Name="update_date" ColumnName="update_date" />
+          <ScalarProperty Name="update_staff_id" ColumnName="update_staff_id" />
+          <ScalarProperty Name="delete_time" ColumnName="delete_time" />
+          <ScalarProperty Name="delete_staff_id" ColumnName="delete_staff_id" />
+          <ScalarProperty Name="delete_state" ColumnName="delete_state" />
+          <ScalarProperty Name="company_id" ColumnName="company_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="temporary_staff">
+      <EntityTypeMapping TypeName="EFModel.temporary_staff">
+        <MappingFragment StoreEntitySet="temporary_staff">
+          <ScalarProperty Name="temporary_id" ColumnName="temporary_id" />
+          <ScalarProperty Name="company_id" ColumnName="company_id" />
+          <ScalarProperty Name="mobile_id" ColumnName="mobile_id" />
+          <ScalarProperty Name="temporary_name" ColumnName="temporary_name" />
+          <ScalarProperty Name="sex" ColumnName="sex" />
+          <ScalarProperty Name="rfid_code" ColumnName="rfid_code" />
+          <ScalarProperty Name="card_number" ColumnName="card_number" />
+          <ScalarProperty Name="check_date" ColumnName="check_date" />
+          <ScalarProperty Name="flag" ColumnName="flag" />
+          <ScalarProperty Name="sign_date" ColumnName="sign_date" />
+          <ScalarProperty Name="sign_type" ColumnName="sign_type" />
+          <ScalarProperty Name="create_time" ColumnName="create_time" />
+          <ScalarProperty Name="create_staff_id" ColumnName="create_staff_id" />
+          <ScalarProperty Name="delete_time" ColumnName="delete_time" />
+          <ScalarProperty Name="delete_staff_id" ColumnName="delete_staff_id" />
+          <ScalarProperty Name="delete_status" ColumnName="delete_status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tool_borrow_type">
+      <EntityTypeMapping TypeName="EFModel.tool_borrow_type">
+        <MappingFragment StoreEntitySet="tool_borrow_type">
+          <ScalarProperty Name="requisit_type_id" ColumnName="requisit_type_id" />
+          <ScalarProperty Name="requisit_type" ColumnName="requisit_type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tool_epc">
+      <EntityTypeMapping TypeName="EFModel.tool_epc">
+        <MappingFragment StoreEntitySet="tool_epc">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="requisit_id" ColumnName="requisit_id" />
+          <ScalarProperty Name="epc" ColumnName="epc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tool_requisit">
+      <EntityTypeMapping TypeName="EFModel.tool_requisit">
+        <MappingFragment StoreEntitySet="tool_requisit">
+          <ScalarProperty Name="requisit_id" ColumnName="requisit_id" />
+          <ScalarProperty Name="staff_id" ColumnName="staff_id" />
+          <ScalarProperty Name="borrow_date" ColumnName="borrow_date" />
+          <ScalarProperty Name="return_date" ColumnName="return_date" />
+          <ScalarProperty Name="epc" ColumnName="epc" />
+          <ScalarProperty Name="tools_id" ColumnName="tools_id" />
+          <ScalarProperty Name="create_time" ColumnName="create_time" />
+          <ScalarProperty Name="create_staff_id" ColumnName="create_staff_id" />
+          <ScalarProperty Name="delete_time" ColumnName="delete_time" />
+          <ScalarProperty Name="delete_staff_id" ColumnName="delete_staff_id" />
+          <ScalarProperty Name="delete_status" ColumnName="delete_status" />
+          <ScalarProperty Name="work_id" ColumnName="work_id" />
+          <ScalarProperty Name="requisit_main_id" ColumnName="requisit_main_id" />
+          <ScalarProperty Name="return_type" ColumnName="return_type" />
+          <ScalarProperty Name="return_type_desc" ColumnName="return_type_desc" />
+          <ScalarProperty Name="borrow_type" ColumnName="borrow_type" />
+          <ScalarProperty Name="borrow_type_desc" ColumnName="borrow_type_desc" />
+          <ScalarProperty Name="staff_borrow_state" ColumnName="staff_borrow_state" />
+          <ScalarProperty Name="staff_return_state" ColumnName="staff_return_state" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tool_requisit_main">
+      <EntityTypeMapping TypeName="EFModel.tool_requisit_main">
+        <MappingFragment StoreEntitySet="tool_requisit_main">
+          <ScalarProperty Name="requisit_main_id" ColumnName="requisit_main_id" />
+          <ScalarProperty Name="work_id" ColumnName="work_id" />
+          <ScalarProperty Name="staff_id" ColumnName="staff_id" />
+          <ScalarProperty Name="close" ColumnName="close" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tool_return_type">
+      <EntityTypeMapping TypeName="EFModel.tool_return_type">
+        <MappingFragment StoreEntitySet="tool_return_type">
+          <ScalarProperty Name="requisit_type_id" ColumnName="requisit_type_id" />
+          <ScalarProperty Name="requisit_type" ColumnName="requisit_type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tools">
+      <EntityTypeMapping TypeName="EFModel.tools">
+        <MappingFragment StoreEntitySet="tools">
+          <ScalarProperty Name="tool_id" ColumnName="tool_id" />
+          <ScalarProperty Name="company_id" ColumnName="company_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="tool_name" ColumnName="tool_name" />
+          <ScalarProperty Name="tool_no" ColumnName="tool_no" />
+          <ScalarProperty Name="tool_style_id" ColumnName="tool_style_id" />
+          <ScalarProperty Name="tool_rfid" ColumnName="tool_rfid" />
+          <ScalarProperty Name="create_time" ColumnName="create_time" />
+          <ScalarProperty Name="create_staff_id" ColumnName="create_staff_id" />
+          <ScalarProperty Name="delete_time" ColumnName="delete_time" />
+          <ScalarProperty Name="delete_staff_id" ColumnName="delete_staff_id" />
+          <ScalarProperty Name="delete_status" ColumnName="delete_status" />
+          <ScalarProperty Name="rfid_tid" ColumnName="rfid_tid" />
+          <ScalarProperty Name="is_renew" ColumnName="is_renew" />
+          <ScalarProperty Name="update_time" ColumnName="update_time" />
+          <ScalarProperty Name="borrow_state" ColumnName="borrow_state" />
+          <ScalarProperty Name="borrow_staff_id" ColumnName="borrow_staff_id" />
+          <ScalarProperty Name="borrow_time" ColumnName="borrow_time" />
+          <ScalarProperty Name="bag_id" ColumnName="bag_id" />
+          <ScalarProperty Name="staff_id" ColumnName="staff_id" />
+          <ScalarProperty Name="is_public" ColumnName="is_public" />
+          <ScalarProperty Name="factory_number" ColumnName="factory_number" />
+          <ScalarProperty Name="is_binding" ColumnName="is_binding" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tools_in">
+      <EntityTypeMapping TypeName="EFModel.tools_in">
+        <MappingFragment StoreEntitySet="tools_in">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="staff_id" ColumnName="staff_id" />
+          <ScalarProperty Name="requisit_id" ColumnName="requisit_id" />
+          <ScalarProperty Name="in_time" ColumnName="in_time" />
+          <ScalarProperty Name="out_time" ColumnName="out_time" />
+          <ScalarProperty Name="create_staff_id" ColumnName="create_staff_id" />
+          <ScalarProperty Name="create_time" ColumnName="create_time" />
+          <ScalarProperty Name="delete_staff_id" ColumnName="delete_staff_id" />
+          <ScalarProperty Name="delete_time" ColumnName="delete_time" />
+          <ScalarProperty Name="requisit_main_id" ColumnName="requisit_main_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tools_in_detail">
+      <EntityTypeMapping TypeName="EFModel.tools_in_detail">
+        <MappingFragment StoreEntitySet="tools_in_detail">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="tools_in_id" ColumnName="tools_in_id" />
+          <ScalarProperty Name="tools_id" ColumnName="tools_id" />
+          <ScalarProperty Name="epc" ColumnName="epc" />
+          <ScalarProperty Name="in_time" ColumnName="in_time" />
+          <ScalarProperty Name="out_time" ColumnName="out_time" />
+          <ScalarProperty Name="create_staff_id" ColumnName="create_staff_id" />
+          <ScalarProperty Name="create_time" ColumnName="create_time" />
+          <ScalarProperty Name="delete_staff_id" ColumnName="delete_staff_id" />
+          <ScalarProperty Name="delete_time" ColumnName="delete_time" />
+          <ScalarProperty Name="in_type" ColumnName="in_type" />
+          <ScalarProperty Name="in_type_desc" ColumnName="in_type_desc" />
+          <ScalarProperty Name="out_type" ColumnName="out_type" />
+          <ScalarProperty Name="out_type_desc" ColumnName="out_type_desc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tools_in_material">
+      <EntityTypeMapping TypeName="EFModel.tools_in_material">
+        <MappingFragment StoreEntitySet="tools_in_material">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="tools_in_id" ColumnName="tools_in_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="amount" ColumnName="amount" />
+          <ScalarProperty Name="unit" ColumnName="unit" />
+          <ScalarProperty Name="desc" ColumnName="desc" />
+          <ScalarProperty Name="in_type" ColumnName="in_type" />
+          <ScalarProperty Name="in_type_desc" ColumnName="in_type_desc" />
+          <ScalarProperty Name="out_type" ColumnName="out_type" />
+          <ScalarProperty Name="out_type_desc" ColumnName="out_type_desc" />
+          <ScalarProperty Name="staff_id" ColumnName="staff_id" />
+          <ScalarProperty Name="material_requisit_id" ColumnName="material_requisit_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tools_in_type">
+      <EntityTypeMapping TypeName="EFModel.tools_in_type">
+        <MappingFragment StoreEntitySet="tools_in_type">
+          <ScalarProperty Name="requisit_type_id" ColumnName="requisit_type_id" />
+          <ScalarProperty Name="requisit_type" ColumnName="requisit_type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tools_out_type">
+      <EntityTypeMapping TypeName="EFModel.tools_out_type">
+        <MappingFragment StoreEntitySet="tools_out_type">
+          <ScalarProperty Name="requisit_type_id" ColumnName="requisit_type_id" />
+          <ScalarProperty Name="requisit_type" ColumnName="requisit_type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tools_requisit_material">
+      <EntityTypeMapping TypeName="EFModel.tools_requisit_material">
+        <MappingFragment StoreEntitySet="tools_requisit_material">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="requisit_main_id" ColumnName="requisit_main_id" />
+          <ScalarProperty Name="material_name" ColumnName="material_name" />
+          <ScalarProperty Name="material_amount" ColumnName="material_amount" />
+          <ScalarProperty Name="material_unit" ColumnName="material_unit" />
+          <ScalarProperty Name="material_desc" ColumnName="material_desc" />
+          <ScalarProperty Name="material_in_type" ColumnName="material_in_type" />
+          <ScalarProperty Name="material_in_type_desc" ColumnName="material_in_type_desc" />
+          <ScalarProperty Name="material_out_type" ColumnName="material_out_type" />
+          <ScalarProperty Name="material_out_type_desc" ColumnName="material_out_type_desc" />
+          <ScalarProperty Name="work_id" ColumnName="work_id" />
+          <ScalarProperty Name="staff_id" ColumnName="staff_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tools_scan">
+      <EntityTypeMapping TypeName="EFModel.tools_scan">
+        <MappingFragment StoreEntitySet="tools_scan">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="staff_id" ColumnName="staff_id" />
+          <ScalarProperty Name="mobile_id" ColumnName="mobile_id" />
+          <ScalarProperty Name="in_count" ColumnName="in_count" />
+          <ScalarProperty Name="out_cout" ColumnName="out_cout" />
+          <ScalarProperty Name="station_id" ColumnName="station_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tools_style">
+      <EntityTypeMapping TypeName="EFModel.tools_style">
+        <MappingFragment StoreEntitySet="tools_style">
+          <ScalarProperty Name="tools_style_id" ColumnName="tools_style_id" />
+          <ScalarProperty Name="tools_style1" ColumnName="tools_style" />
+          <ScalarProperty Name="tools_spec" ColumnName="tools_spec" />
+          <ScalarProperty Name="tools_jm" ColumnName="tools_jm" />
+          <ScalarProperty Name="create_time" ColumnName="create_time" />
+          <ScalarProperty Name="create_staff_id" ColumnName="create_staff_id" />
+          <ScalarProperty Name="delete_time" ColumnName="delete_time" />
+          <ScalarProperty Name="delete_staff_id" ColumnName="delete_staff_id" />
+          <ScalarProperty Name="update_time" ColumnName="update_time" />
+          <ScalarProperty Name="update_staff_id" ColumnName="update_staff_id" />
+          <ScalarProperty Name="delete_status" ColumnName="delete_status" />
+          <ScalarProperty Name="parent_id" ColumnName="parent_id" />
+          <ScalarProperty Name="tools_path" ColumnName="tools_path" />
+          <ScalarProperty Name="tools_unit" ColumnName="tools_unit" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="train">
+      <EntityTypeMapping TypeName="EFModel.train">
+        <MappingFragment StoreEntitySet="train">
+          <ScalarProperty Name="train_id" ColumnName="train_id" />
+          <ScalarProperty Name="train_code" ColumnName="train_code" />
+          <ScalarProperty Name="train_style_id" ColumnName="train_style_id" />
+          <ScalarProperty Name="create_id" ColumnName="create_id" />
+          <ScalarProperty Name="create_time" ColumnName="create_time" />
+          <ScalarProperty Name="delete_id" ColumnName="delete_id" />
+          <ScalarProperty Name="delete_time" ColumnName="delete_time" />
+          <ScalarProperty Name="update_time" ColumnName="update_time" />
+          <ScalarProperty Name="train_status" ColumnName="train_status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="train_style">
+      <EntityTypeMapping TypeName="EFModel.train_style">
+        <MappingFragment StoreEntitySet="train_style">
+          <ScalarProperty Name="train_style_id" ColumnName="train_style_id" />
+          <ScalarProperty Name="train_style_name" ColumnName="train_style_name" />
+          <ScalarProperty Name="create_time" ColumnName="create_time" />
+          <ScalarProperty Name="create_id" ColumnName="create_id" />
+          <ScalarProperty Name="delete_time" ColumnName="delete_time" />
+          <ScalarProperty Name="delete_id" ColumnName="delete_id" />
+          <ScalarProperty Name="update_time" ColumnName="update_time" />
+          <ScalarProperty Name="train_style_status" ColumnName="train_style_status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="train_video">
+      <EntityTypeMapping TypeName="EFModel.train_video">
+        <MappingFragment StoreEntitySet="train_video">
+          <ScalarProperty Name="video_id" ColumnName="video_id" />
+          <ScalarProperty Name="staff_id" ColumnName="staff_id" />
+          <ScalarProperty Name="equipment_id" ColumnName="equipment_id" />
+          <ScalarProperty Name="company_id" ColumnName="company_id" />
+          <ScalarProperty Name="train_id" ColumnName="train_id" />
+          <ScalarProperty Name="video_path" ColumnName="video_path" />
+          <ScalarProperty Name="create_time" ColumnName="create_time" />
+          <ScalarProperty Name="create_id" ColumnName="create_id" />
+          <ScalarProperty Name="delete_id" ColumnName="delete_id" />
+          <ScalarProperty Name="delete_time" ColumnName="delete_time" />
+          <ScalarProperty Name="update_time" ColumnName="update_time" />
+          <ScalarProperty Name="picture_path" ColumnName="picture_path" />
+          <ScalarProperty Name="train_video_status" ColumnName="train_video_status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="type_experience">
+      <EntityTypeMapping TypeName="EFModel.type_experience">
+        <MappingFragment StoreEntitySet="type_experience">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="experience_id" ColumnName="experience_id" />
+          <ScalarProperty Name="equipment_type_id" ColumnName="equipment_type_id" />
+          <ScalarProperty Name="create_time" ColumnName="create_time" />
+          <ScalarProperty Name="create_staff_id" ColumnName="create_staff_id" />
+          <ScalarProperty Name="delete_time" ColumnName="delete_time" />
+          <ScalarProperty Name="delete_staff_id" ColumnName="delete_staff_id" />
+          <ScalarProperty Name="delete_status" ColumnName="delete_status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="v2_maintenance_content">
+      <EntityTypeMapping TypeName="EFModel.v2_maintenance_content">
+        <MappingFragment StoreEntitySet="v2_maintenance_content">
+          <ScalarProperty Name="content_id" ColumnName="content_id" />
+          <ScalarProperty Name="item_id" ColumnName="item_id" />
+          <ScalarProperty Name="content_template_id" ColumnName="content_template_id" />
+          <ScalarProperty Name="memo" ColumnName="memo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="v2_maintenance_content_template">
+      <EntityTypeMapping TypeName="EFModel.v2_maintenance_content_template">
+        <MappingFragment StoreEntitySet="v2_maintenance_content_template">
+          <ScalarProperty Name="content_template_id" ColumnName="content_template_id" />
+          <ScalarProperty Name="item_template_id" ColumnName="item_template_id" />
+          <ScalarProperty Name="record_template_id" ColumnName="record_template_id" />
+          <ScalarProperty Name="content" ColumnName="content" />
+          <ScalarProperty Name="cycle" ColumnName="cycle" />
+          <ScalarProperty Name="standard" ColumnName="standard" />
+          <ScalarProperty Name="method" ColumnName="method" />
+          <ScalarProperty Name="memo" ColumnName="memo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="v2_maintenance_item">
+      <EntityTypeMapping TypeName="EFModel.v2_maintenance_item">
+        <MappingFragment StoreEntitySet="v2_maintenance_item">
+          <ScalarProperty Name="item_id" ColumnName="item_id" />
+          <ScalarProperty Name="record_id" ColumnName="record_id" />
+          <ScalarProperty Name="item_template_id" ColumnName="item_template_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="v2_maintenance_item_equipment">
+      <EntityTypeMapping TypeName="EFModel.v2_maintenance_item_equipment">
+        <MappingFragment StoreEntitySet="v2_maintenance_item_equipment">
+          <ScalarProperty Name="item_equipment_id" ColumnName="item_equipment_id" />
+          <ScalarProperty Name="item_id" ColumnName="item_id" />
+          <ScalarProperty Name="equipment_id" ColumnName="equipment_id" />
+          <ScalarProperty Name="record_id" ColumnName="record_id" />
+          <ScalarProperty Name="maintenance_time" ColumnName="maintenance_time" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="v2_maintenance_item_template">
+      <EntityTypeMapping TypeName="EFModel.v2_maintenance_item_template">
+        <MappingFragment StoreEntitySet="v2_maintenance_item_template">
+          <ScalarProperty Name="item_template_id" ColumnName="item_template_id" />
+          <ScalarProperty Name="record_template_id" ColumnName="record_template_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="parent_id" ColumnName="parent_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="v2_maintenance_record">
+      <EntityTypeMapping TypeName="EFModel.v2_maintenance_record">
+        <MappingFragment StoreEntitySet="v2_maintenance_record">
+          <ScalarProperty Name="record_id" ColumnName="record_id" />
+          <ScalarProperty Name="record_template_id" ColumnName="record_template_id" />
+          <ScalarProperty Name="record_period" ColumnName="record_period" />
+          <ScalarProperty Name="create_user" ColumnName="create_user" />
+          <ScalarProperty Name="create_time" ColumnName="create_time" />
+          <ScalarProperty Name="delete_flag" ColumnName="delete_flag" />
+          <ScalarProperty Name="delete_user" ColumnName="delete_user" />
+          <ScalarProperty Name="delete_time" ColumnName="delete_time" />
+          <ScalarProperty Name="plan_id" ColumnName="plan_id" />
+          <ScalarProperty Name="plan_content_id" ColumnName="plan_content_id" />
+          <ScalarProperty Name="stationId" ColumnName="stationId" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="result_num" ColumnName="result_num" />
+          <ScalarProperty Name="result_code" ColumnName="result_code" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="v2_maintenance_record_template">
+      <EntityTypeMapping TypeName="EFModel.v2_maintenance_record_template">
+        <MappingFragment StoreEntitySet="v2_maintenance_record_template">
+          <ScalarProperty Name="record_template_id" ColumnName="record_template_id" />
+          <ScalarProperty Name="record_period_type" ColumnName="record_period_type" />
+          <ScalarProperty Name="range_id" ColumnName="range_id" />
+          <ScalarProperty Name="report_type" ColumnName="report_type" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="result_num" ColumnName="result_num" />
+          <ScalarProperty Name="code" ColumnName="code" />
+          <ScalarProperty Name="create_user" ColumnName="create_user" />
+          <ScalarProperty Name="create_time" ColumnName="create_time" />
+          <ScalarProperty Name="delete_flag" ColumnName="delete_flag" />
+          <ScalarProperty Name="delete_user" ColumnName="delete_user" />
+          <ScalarProperty Name="delete_time" ColumnName="delete_time" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="v2_maintenance_result">
+      <EntityTypeMapping TypeName="EFModel.v2_maintenance_result">
+        <MappingFragment StoreEntitySet="v2_maintenance_result">
+          <ScalarProperty Name="result_id" ColumnName="result_id" />
+          <ScalarProperty Name="content_id" ColumnName="content_id" />
+          <ScalarProperty Name="result_template_id" ColumnName="result_template_id" />
+          <ScalarProperty Name="result" ColumnName="result" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="v2_maintenance_result_template">
+      <EntityTypeMapping TypeName="EFModel.v2_maintenance_result_template">
+        <MappingFragment StoreEntitySet="v2_maintenance_result_template">
+          <ScalarProperty Name="result_template_id" ColumnName="result_template_id" />
+          <ScalarProperty Name="content_template_id" ColumnName="content_template_id" />
+          <ScalarProperty Name="input_type" ColumnName="input_type" />
+          <ScalarProperty Name="options" ColumnName="options" />
+          <ScalarProperty Name="result_name" ColumnName="result_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="v2_maintenance_station_picture">
+      <EntityTypeMapping TypeName="EFModel.v2_maintenance_station_picture">
+        <MappingFragment StoreEntitySet="v2_maintenance_station_picture">
+          <ScalarProperty Name="picture_id" ColumnName="picture_id" />
+          <ScalarProperty Name="station_id" ColumnName="station_id" />
+          <ScalarProperty Name="mobile_id" ColumnName="mobile_id" />
+          <ScalarProperty Name="plan_id" ColumnName="plan_id" />
+          <ScalarProperty Name="staff_id" ColumnName="staff_id" />
+          <ScalarProperty Name="company_id" ColumnName="company_id" />
+          <ScalarProperty Name="work_image" ColumnName="work_image" />
+          <ScalarProperty Name="date" ColumnName="date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="v2_month_plan">
+      <EntityTypeMapping TypeName="EFModel.v2_month_plan">
+        <MappingFragment StoreEntitySet="v2_month_plan">
+          <ScalarProperty Name="plan_id" ColumnName="plan_id" />
+          <ScalarProperty Name="plan_type" ColumnName="plan_type" />
+          <ScalarProperty Name="plan_month" ColumnName="plan_month" />
+          <ScalarProperty Name="range_id" ColumnName="range_id" />
+          <ScalarProperty Name="workshop_manger" ColumnName="workshop_manger" />
+          <ScalarProperty Name="workrange_manager" ColumnName="workrange_manager" />
+          <ScalarProperty Name="plan_date" ColumnName="plan_date" />
+          <ScalarProperty Name="create_user" ColumnName="create_user" />
+          <ScalarProperty Name="create_time" ColumnName="create_time" />
+          <ScalarProperty Name="delete_flag" ColumnName="delete_flag" />
+          <ScalarProperty Name="delete_time" ColumnName="delete_time" />
+          <ScalarProperty Name="delete_user" ColumnName="delete_user" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="v2_month_plan_content">
+      <EntityTypeMapping TypeName="EFModel.v2_month_plan_content">
+        <MappingFragment StoreEntitySet="v2_month_plan_content">
+          <ScalarProperty Name="content_id" ColumnName="content_id" />
+          <ScalarProperty Name="plan_id" ColumnName="plan_id" />
+          <ScalarProperty Name="location" ColumnName="location" />
+          <ScalarProperty Name="equipment_name" ColumnName="equipment_name" />
+          <ScalarProperty Name="content" ColumnName="content" />
+          <ScalarProperty Name="unit" ColumnName="unit" />
+          <ScalarProperty Name="amount" ColumnName="amount" />
+          <ScalarProperty Name="times" ColumnName="times" />
+          <ScalarProperty Name="result_id" ColumnName="result_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="v2_month_plan_content_detail">
+      <EntityTypeMapping TypeName="EFModel.v2_month_plan_content_detail">
+        <MappingFragment StoreEntitySet="v2_month_plan_content_detail">
+          <ScalarProperty Name="content_detail_id" ColumnName="content_detail_id" />
+          <ScalarProperty Name="plan_id" ColumnName="plan_id" />
+          <ScalarProperty Name="content_id" ColumnName="content_id" />
+          <ScalarProperty Name="date" ColumnName="date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="v2_month_plan_content_detail_staff">
+      <EntityTypeMapping TypeName="EFModel.v2_month_plan_content_detail_staff">
+        <MappingFragment StoreEntitySet="v2_month_plan_content_detail_staff">
+          <ScalarProperty Name="detail_staff_id" ColumnName="detail_staff_id" />
+          <ScalarProperty Name="content_detail_id" ColumnName="content_detail_id" />
+          <ScalarProperty Name="staff_id" ColumnName="staff_id" />
+          <ScalarProperty Name="staff_name" ColumnName="staff_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="v2_protection_log">
+      <EntityTypeMapping TypeName="EFModel.v2_protection_log">
+        <MappingFragment StoreEntitySet="v2_protection_log">
+          <ScalarProperty Name="log_id" ColumnName="log_id" />
+          <ScalarProperty Name="work_id" ColumnName="work_id" />
+          <ScalarProperty Name="plan_id" ColumnName="plan_id" />
+          <ScalarProperty Name="staff_id" ColumnName="staff_id" />
+          <ScalarProperty Name="work_time" ColumnName="work_time" />
+          <ScalarProperty Name="work_proj" ColumnName="work_proj" />
+          <ScalarProperty Name="agree_time" ColumnName="agree_time" />
+          <ScalarProperty Name="command_code" ColumnName="command_code" />
+          <ScalarProperty Name="job_location" ColumnName="job_location" />
+          <ScalarProperty Name="staff_num" ColumnName="staff_num" />
+          <ScalarProperty Name="train_flag" ColumnName="train_flag" />
+          <ScalarProperty Name="stop_time" ColumnName="stop_time" />
+          <ScalarProperty Name="stop_time2" ColumnName="stop_time2" />
+          <ScalarProperty Name="back_time" ColumnName="back_time" />
+          <ScalarProperty Name="gate_flag" ColumnName="gate_flag" />
+          <ScalarProperty Name="gate_time" ColumnName="gate_time" />
+          <ScalarProperty Name="out_gate_loc" ColumnName="out_gate_loc" />
+          <ScalarProperty Name="out_gate_time" ColumnName="out_gate_time" />
+          <ScalarProperty Name="photo_flag" ColumnName="photo_flag" />
+          <ScalarProperty Name="remark" ColumnName="remark" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="delete_flag" ColumnName="delete_flag" />
+          <ScalarProperty Name="delete_time" ColumnName="delete_time" />
+          <ScalarProperty Name="gate_loc" ColumnName="gate_loc" />
+          <ScalarProperty Name="out_gate_loc2" ColumnName="out_gate_loc2" />
+          <ScalarProperty Name="out_gate_time2" ColumnName="out_gate_time2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="v2_protection_log_detail">
+      <EntityTypeMapping TypeName="EFModel.v2_protection_log_detail">
+        <MappingFragment StoreEntitySet="v2_protection_log_detail">
+          <ScalarProperty Name="log_detail_id" ColumnName="log_detail_id" />
+          <ScalarProperty Name="log_id" ColumnName="log_id" />
+          <ScalarProperty Name="up" ColumnName="up" />
+          <ScalarProperty Name="down" ColumnName="down" />
+          <ScalarProperty Name="notice_time" ColumnName="notice_time" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="v2_shelf">
+      <EntityTypeMapping TypeName="EFModel.v2_shelf">
+        <MappingFragment StoreEntitySet="v2_shelf">
+          <ScalarProperty Name="shelf_id" ColumnName="shelf_id" />
+          <ScalarProperty Name="station_id" ColumnName="station_id" />
+          <ScalarProperty Name="railway_code" ColumnName="railway_code" />
+          <ScalarProperty Name="manager" ColumnName="manager" />
+          <ScalarProperty Name="rfid" ColumnName="rfid" />
+          <ScalarProperty Name="memo" ColumnName="memo" />
+          <ScalarProperty Name="create_user" ColumnName="create_user" />
+          <ScalarProperty Name="create_time" ColumnName="create_time" />
+          <ScalarProperty Name="delete_flag" ColumnName="delete_flag" />
+          <ScalarProperty Name="delete_user" ColumnName="delete_user" />
+          <ScalarProperty Name="delete_time" ColumnName="delete_time" />
+          <ScalarProperty Name="qrcode" ColumnName="qrcode" />
+          <ScalarProperty Name="update_time" ColumnName="update_time" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="v2_work">
+      <EntityTypeMapping TypeName="EFModel.v2_work">
+        <MappingFragment StoreEntitySet="v2_work">
+          <ScalarProperty Name="work_id" ColumnName="work_id" />
+          <ScalarProperty Name="staff_id" ColumnName="staff_id" />
+          <ScalarProperty Name="work_name" ColumnName="work_name" />
+          <ScalarProperty Name="work_location" ColumnName="work_location" />
+          <ScalarProperty Name="begin_date" ColumnName="begin_date" />
+          <ScalarProperty Name="end_date" ColumnName="end_date" />
+          <ScalarProperty Name="work_type" ColumnName="work_type" />
+          <ScalarProperty Name="work_subtype" ColumnName="work_subtype" />
+          <ScalarProperty Name="work_status" ColumnName="work_status" />
+          <ScalarProperty Name="del_flag" ColumnName="del_flag" />
+          <ScalarProperty Name="del_time" ColumnName="del_time" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="v2_work_plan">
+      <EntityTypeMapping TypeName="EFModel.v2_work_plan">
+        <MappingFragment StoreEntitySet="v2_work_plan">
+          <ScalarProperty Name="work_plan_id" ColumnName="work_plan_id" />
+          <ScalarProperty Name="work_id" ColumnName="work_id" />
+          <ScalarProperty Name="plan_id" ColumnName="plan_id" />
+          <ScalarProperty Name="del_flag" ColumnName="del_flag" />
+          <ScalarProperty Name="del_time" ColumnName="del_time" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="v2_work_subtype">
+      <EntityTypeMapping TypeName="EFModel.v2_work_subtype">
+        <MappingFragment StoreEntitySet="v2_work_subtype">
+          <ScalarProperty Name="subtype_id" ColumnName="subtype_id" />
+          <ScalarProperty Name="subtype_name" ColumnName="subtype_name" />
+          <ScalarProperty Name="create_time" ColumnName="create_time" />
+          <ScalarProperty Name="create_user" ColumnName="create_user" />
+          <ScalarProperty Name="del_flag" ColumnName="del_flag" />
+          <ScalarProperty Name="del_time" ColumnName="del_time" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="video_borrow">
+      <EntityTypeMapping TypeName="EFModel.video_borrow">
+        <MappingFragment StoreEntitySet="video_borrow">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="staff_id" ColumnName="staff_id" />
+          <ScalarProperty Name="equipment_id" ColumnName="equipment_id" />
+          <ScalarProperty Name="create_time" ColumnName="create_time" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="warn_deal_set">
+      <EntityTypeMapping TypeName="EFModel.warn_deal_set">
+        <MappingFragment StoreEntitySet="warn_deal_set">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="role_id" ColumnName="role_id" />
+          <ScalarProperty Name="company_id" ColumnName="company_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="warn_level">
+      <EntityTypeMapping TypeName="EFModel.warn_level">
+        <MappingFragment StoreEntitySet="warn_level">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="state" ColumnName="state" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="warn_level_relation">
+      <EntityTypeMapping TypeName="EFModel.warn_level_relation">
+        <MappingFragment StoreEntitySet="warn_level_relation">
+          <ScalarProperty Name="relation_id" ColumnName="relation_id" />
+          <ScalarProperty Name="warn_level_id" ColumnName="warn_level_id" />
+          <ScalarProperty Name="company_id" ColumnName="company_id" />
+          <ScalarProperty Name="model_id" ColumnName="model_id" />
+          <ScalarProperty Name="type_id" ColumnName="type_id" />
+          <ScalarProperty Name="create_staff_id" ColumnName="create_staff_id" />
+          <ScalarProperty Name="create_date" ColumnName="create_date" />
+          <ScalarProperty Name="update_date" ColumnName="update_date" />
+          <ScalarProperty Name="update_staff_id" ColumnName="update_staff_id" />
+          <ScalarProperty Name="delete_staff_id" ColumnName="delete_staff_id" />
+          <ScalarProperty Name="delete_date" ColumnName="delete_date" />
+          <ScalarProperty Name="delete_state" ColumnName="delete_state" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="warn_message">
+      <EntityTypeMapping TypeName="EFModel.warn_message">
+        <MappingFragment StoreEntitySet="warn_message">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="warn_level_id" ColumnName="warn_level_id" />
+          <ScalarProperty Name="company_id" ColumnName="company_id" />
+          <ScalarProperty Name="work_id" ColumnName="work_id" />
+          <ScalarProperty Name="requisit_main_id" ColumnName="requisit_main_id" />
+          <ScalarProperty Name="model_id" ColumnName="model_id" />
+          <ScalarProperty Name="type_id" ColumnName="type_id" />
+          <ScalarProperty Name="mobile_id" ColumnName="mobile_id" />
+          <ScalarProperty Name="receive_time" ColumnName="receive_time" />
+          <ScalarProperty Name="deal_staff_id" ColumnName="deal_staff_id" />
+          <ScalarProperty Name="message" ColumnName="message" />
+          <ScalarProperty Name="deal_time" ColumnName="deal_time" />
+          <ScalarProperty Name="handle_opinions" ColumnName="handle_opinions" />
+          <ScalarProperty Name="create_staff_id" ColumnName="create_staff_id" />
+          <ScalarProperty Name="message_state" ColumnName="message_state" />
+          <ScalarProperty Name="longitude" ColumnName="longitude" />
+          <ScalarProperty Name="latitude" ColumnName="latitude" />
+          <ScalarProperty Name="epc" ColumnName="epc" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="work_progress">
+      <EntityTypeMapping TypeName="EFModel.work_progress">
+        <MappingFragment StoreEntitySet="work_progress">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="company_id" ColumnName="company_id" />
+          <ScalarProperty Name="work_id" ColumnName="work_id" />
+          <ScalarProperty Name="progress_state" ColumnName="progress_state" />
+          <ScalarProperty Name="create_staff_id" ColumnName="create_staff_id" />
+          <ScalarProperty Name="create_date" ColumnName="create_date" />
+          <ScalarProperty Name="complete_time" ColumnName="complete_time" />
+          <ScalarProperty Name="complete_staff_id" ColumnName="complete_staff_id" />
+          <ScalarProperty Name="model_id" ColumnName="model_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="work_range">
+      <EntityTypeMapping TypeName="EFModel.work_range">
+        <MappingFragment StoreEntitySet="work_range">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="remark" ColumnName="remark" />
+          <ScalarProperty Name="begin_meter" ColumnName="begin_meter" />
+          <ScalarProperty Name="end_meter" ColumnName="end_meter" />
+          <ScalarProperty Name="begin_longtitude" ColumnName="begin_longtitude" />
+          <ScalarProperty Name="begin_kilo_mark" ColumnName="begin_kilo_mark" />
+          <ScalarProperty Name="end_kilo_mark" ColumnName="end_kilo_mark" />
+          <ScalarProperty Name="create_time" ColumnName="create_time" />
+          <ScalarProperty Name="create_staff_id" ColumnName="create_staff_id" />
+          <ScalarProperty Name="begin_latitude" ColumnName="begin_latitude" />
+          <ScalarProperty Name="end_longtitude" ColumnName="end_longtitude" />
+          <ScalarProperty Name="end_latitude" ColumnName="end_latitude" />
+          <ScalarProperty Name="company_id" ColumnName="company_id" />
+          <ScalarProperty Name="delete_time" ColumnName="delete_time" />
+          <ScalarProperty Name="delete_status" ColumnName="delete_status" />
+          <ScalarProperty Name="delete_staff_id" ColumnName="delete_staff_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="gender">
+      <EntityTypeMapping TypeName="EFModel.gender">
+        <MappingFragment StoreEntitySet="gender">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="sex_name" ColumnName="sex_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="login_log">
+      <EntityTypeMapping TypeName="EFModel.login_log">
+        <MappingFragment StoreEntitySet="login_log">
+          <ScalarProperty Name="staff_id" ColumnName="staff_id" />
+          <ScalarProperty Name="login_name" ColumnName="login_name" />
+          <ScalarProperty Name="datetime" ColumnName="datetime" />
+          <ScalarProperty Name="create_time" ColumnName="create_time" />
+          <ScalarProperty Name="create_staff_id" ColumnName="create_staff_id" />
+          <ScalarProperty Name="delete_time" ColumnName="delete_time" />
+          <ScalarProperty Name="delete_staff_id" ColumnName="delete_staff_id" />
+          <ScalarProperty Name="delete_status" ColumnName="delete_status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="v2_report_period_type">
+      <EntityTypeMapping TypeName="EFModel.v2_report_period_type">
+        <MappingFragment StoreEntitySet="v2_report_period_type">
+          <ScalarProperty Name="PeriodType" ColumnName="PeriodType" />
+          <ScalarProperty Name="PeriodName" ColumnName="PeriodName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

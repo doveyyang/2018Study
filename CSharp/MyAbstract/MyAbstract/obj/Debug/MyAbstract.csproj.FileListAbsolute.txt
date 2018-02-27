@@ -1,0 +1,6 @@
+C:\Users\Dovey\source\repos\MyAbstract\MyAbstract\bin\Debug\MyAbstract.exe.config
+C:\Users\Dovey\source\repos\MyAbstract\MyAbstract\bin\Debug\MyAbstract.exe
+C:\Users\Dovey\source\repos\MyAbstract\MyAbstract\bin\Debug\MyAbstract.pdb
+C:\Users\Dovey\source\repos\MyAbstract\MyAbstract\obj\Debug\MyAbstract.csproj.CoreCompileInputs.cache
+C:\Users\Dovey\source\repos\MyAbstract\MyAbstract\obj\Debug\MyAbstract.exe
+C:\Users\Dovey\source\repos\MyAbstract\MyAbstract\obj\Debug\MyAbstract.pdb

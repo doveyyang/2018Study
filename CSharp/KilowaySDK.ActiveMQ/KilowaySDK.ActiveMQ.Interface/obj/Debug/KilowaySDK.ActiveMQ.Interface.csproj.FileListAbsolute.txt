@@ -1,0 +1,7 @@
+C:\Users\Dovey\source\repos\KilowaySDK.ActiveMQ\KilowaySDK.ActiveMQ.Interface\bin\Debug\KilowaySDK.ActiveMQ.Interface.dll
+C:\Users\Dovey\source\repos\KilowaySDK.ActiveMQ\KilowaySDK.ActiveMQ.Interface\bin\Debug\KilowaySDK.ActiveMQ.Interface.pdb
+C:\Users\Dovey\source\repos\KilowaySDK.ActiveMQ\KilowaySDK.ActiveMQ.Interface\bin\Debug\Apache.NMS.dll
+C:\Users\Dovey\source\repos\KilowaySDK.ActiveMQ\KilowaySDK.ActiveMQ.Interface\obj\Debug\KilowaySDK.ActiveMQ.Interface.csproj.CoreCompileInputs.cache
+C:\Users\Dovey\source\repos\KilowaySDK.ActiveMQ\KilowaySDK.ActiveMQ.Interface\obj\Debug\KilowaySDK.ActiveMQ.Interface.dll
+C:\Users\Dovey\source\repos\KilowaySDK.ActiveMQ\KilowaySDK.ActiveMQ.Interface\obj\Debug\KilowaySDK.ActiveMQ.Interface.pdb
+C:\Users\Dovey\source\repos\KilowaySDK.ActiveMQ\KilowaySDK.ActiveMQ.Interface\obj\Debug\KilowaySDK.ActiveMQ.Interface.csprojResolveAssemblyReference.cache

@@ -1,0 +1,20 @@
+﻿@using SwaggerApiDemo.ViewModels;
+@model StaffListView
+@{
+    ViewBag.Title = "TestModel";
+}
+
+<h2>Staff List</h2>
+<a href="/Staff/Add"> 添加</a>
+
+
+@{
+    foreach (var staff in Model.sList)
+    {
+        <p> LoginName:@staff.LoginName</p>
+        <p>RFID:@staff.RFID</p>
+        <p>CardNumber:@staff.CardNumber</p>
+        <br />
+    }
+
+}

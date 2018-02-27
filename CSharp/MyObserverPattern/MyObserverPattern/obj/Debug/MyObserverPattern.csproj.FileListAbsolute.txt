@@ -1,0 +1,6 @@
+C:\Users\Dovey\source\repos\MyObserverPattern\MyObserverPattern\bin\Debug\MyObserverPattern.exe.config
+C:\Users\Dovey\source\repos\MyObserverPattern\MyObserverPattern\bin\Debug\MyObserverPattern.exe
+C:\Users\Dovey\source\repos\MyObserverPattern\MyObserverPattern\bin\Debug\MyObserverPattern.pdb
+C:\Users\Dovey\source\repos\MyObserverPattern\MyObserverPattern\obj\Debug\MyObserverPattern.csproj.CoreCompileInputs.cache
+C:\Users\Dovey\source\repos\MyObserverPattern\MyObserverPattern\obj\Debug\MyObserverPattern.exe
+C:\Users\Dovey\source\repos\MyObserverPattern\MyObserverPattern\obj\Debug\MyObserverPattern.pdb

@@ -1,0 +1,14 @@
+C:\Users\Dovey\source\repos\KilowaySDK.ActiveMQ\KilowaySDK.ActiveMQ.App\bin\Debug\KilowaySDK.ActiveMQ.App.exe.config
+C:\Users\Dovey\source\repos\KilowaySDK.ActiveMQ\KilowaySDK.ActiveMQ.App\bin\Debug\KilowaySDK.ActiveMQ.App.exe
+C:\Users\Dovey\source\repos\KilowaySDK.ActiveMQ\KilowaySDK.ActiveMQ.App\bin\Debug\KilowaySDK.ActiveMQ.App.pdb
+C:\Users\Dovey\source\repos\KilowaySDK.ActiveMQ\KilowaySDK.ActiveMQ.App\bin\Debug\KilowaySDK.ActiveMQ.dll
+C:\Users\Dovey\source\repos\KilowaySDK.ActiveMQ\KilowaySDK.ActiveMQ.App\bin\Debug\KilowaySDK.ActiveMQ.Interface.dll
+C:\Users\Dovey\source\repos\KilowaySDK.ActiveMQ\KilowaySDK.ActiveMQ.App\bin\Debug\Apache.NMS.ActiveMQ.dll
+C:\Users\Dovey\source\repos\KilowaySDK.ActiveMQ\KilowaySDK.ActiveMQ.App\bin\Debug\KilowaySDK.ActiveMQ.Interface.pdb
+C:\Users\Dovey\source\repos\KilowaySDK.ActiveMQ\KilowaySDK.ActiveMQ.App\bin\Debug\KilowaySDK.ActiveMQ.pdb
+C:\Users\Dovey\source\repos\KilowaySDK.ActiveMQ\KilowaySDK.ActiveMQ.App\bin\Debug\Apache.NMS.ActiveMQ.pdb
+C:\Users\Dovey\source\repos\KilowaySDK.ActiveMQ\KilowaySDK.ActiveMQ.App\bin\Debug\Apache.NMS.ActiveMQ.xml
+C:\Users\Dovey\source\repos\KilowaySDK.ActiveMQ\KilowaySDK.ActiveMQ.App\obj\Debug\KilowaySDK.ActiveMQ.App.Producer.csprojResolveAssemblyReference.cache
+C:\Users\Dovey\source\repos\KilowaySDK.ActiveMQ\KilowaySDK.ActiveMQ.App\obj\Debug\KilowaySDK.ActiveMQ.App.Producer.csproj.CoreCompileInputs.cache
+C:\Users\Dovey\source\repos\KilowaySDK.ActiveMQ\KilowaySDK.ActiveMQ.App\obj\Debug\KilowaySDK.ActiveMQ.App.exe
+C:\Users\Dovey\source\repos\KilowaySDK.ActiveMQ\KilowaySDK.ActiveMQ.App\obj\Debug\KilowaySDK.ActiveMQ.App.pdb

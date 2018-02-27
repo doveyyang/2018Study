@@ -1,0 +1,10 @@
+c:\Users\Dovey\source\repos\MyDIP\Kiloway.BLL.Update\bin\Debug\Kiloway.BLL.Update.dll
+c:\Users\Dovey\source\repos\MyDIP\Kiloway.BLL.Update\bin\Debug\Kiloway.BLL.Update.pdb
+c:\Users\Dovey\source\repos\MyDIP\Kiloway.BLL.Update\bin\Debug\Kiloway.IBLL.dll
+c:\Users\Dovey\source\repos\MyDIP\Kiloway.BLL.Update\bin\Debug\Kiloway.IDAL.dll
+c:\Users\Dovey\source\repos\MyDIP\Kiloway.BLL.Update\bin\Debug\Kiloway.IBLL.pdb
+c:\Users\Dovey\source\repos\MyDIP\Kiloway.BLL.Update\bin\Debug\Kiloway.IDAL.pdb
+c:\Users\Dovey\source\repos\MyDIP\Kiloway.BLL.Update\obj\Debug\Kiloway.BLL.Update.csprojResolveAssemblyReference.cache
+c:\Users\Dovey\source\repos\MyDIP\Kiloway.BLL.Update\obj\Debug\Kiloway.BLL.Update.csproj.CoreCompileInputs.cache
+c:\Users\Dovey\source\repos\MyDIP\Kiloway.BLL.Update\obj\Debug\Kiloway.BLL.Update.dll
+c:\Users\Dovey\source\repos\MyDIP\Kiloway.BLL.Update\obj\Debug\Kiloway.BLL.Update.pdb

@@ -1,0 +1,36 @@
+﻿@using SwaggerApiDemo.ViewModels;
+@using SwaggerApiDemo.ViewModels;
+
+@model EmployeeListViewModel
+@{
+    ViewBag.Title = "TestModel";
+}
+
+<h2>Staff List</h2>
+<a href="/Staff/Add"> 添加</a>
+
+
+@{
+    <table>
+        <tr>
+            <td>
+                First Name
+            </td>
+
+            <td>
+                Last Name
+            </td>
+            <td>
+                Salary
+            </td>
+            @foreach (EmployViewModel m in @Model.sList)
+            {
+                <td> @m.FName</td>
+                <td>@m.LName</td>
+                <td>@m.Salary</td>
+            }
+        </tr>
+    </table>
+
+
+}

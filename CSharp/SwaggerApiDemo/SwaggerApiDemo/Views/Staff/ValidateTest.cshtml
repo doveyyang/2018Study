@@ -1,0 +1,30 @@
+﻿@using SwaggerApiDemo.ViewModels;
+@model EmployViewModel
+@{
+    ViewBag.Title = "ValidateTest";
+}
+
+<h2>ValidateTest</h2>
+<form action="ValidateTest">
+    <table>
+        <tr>
+            <td> First Name</td>
+            <td> <input type="text" name="FName" /></td>
+            <td> @Html.ValidationMessage("FName")</td>
+        </tr>
+        <tr>
+            <td> Last Name</td>
+            <td> <input type="text" name="LName" /></td>
+            <td> @Html.ValidationMessage("LName")</td>
+        </tr>
+        <tr>
+            <td> Salary</td>
+            <td> <input type="text" name="Salary" /></td>
+            <td> @Html.ValidationMessage("Salary")</td>
+        </tr>
+    </table>
+
+    <input type="submit" name="BtnSubmit" value="Save Employee" />
+    <input type="submit" name="BtnSubmit" value="Cancel" />
+    <input type="reset" name="BtnReset" value="Reset"/>
+</form>

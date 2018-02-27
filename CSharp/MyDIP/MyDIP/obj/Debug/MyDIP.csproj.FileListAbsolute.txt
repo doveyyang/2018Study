@@ -1,0 +1,13 @@
+c:\users\dovey\source\repos\MyDIP\MyDIP\bin\Debug\MyDIP.exe.config
+c:\users\dovey\source\repos\MyDIP\MyDIP\bin\Debug\MyDIP.exe
+c:\users\dovey\source\repos\MyDIP\MyDIP\bin\Debug\MyDIP.pdb
+c:\users\dovey\source\repos\MyDIP\MyDIP\bin\Debug\Kiloway.Factory.dll
+c:\users\dovey\source\repos\MyDIP\MyDIP\bin\Debug\Kiloway.IBLL.dll
+c:\users\dovey\source\repos\MyDIP\MyDIP\bin\Debug\Kiloway.IDAL.dll
+c:\users\dovey\source\repos\MyDIP\MyDIP\bin\Debug\Kiloway.Factory.pdb
+c:\users\dovey\source\repos\MyDIP\MyDIP\bin\Debug\Kiloway.IBLL.pdb
+c:\users\dovey\source\repos\MyDIP\MyDIP\bin\Debug\Kiloway.IDAL.pdb
+c:\users\dovey\source\repos\MyDIP\MyDIP\obj\Debug\MyDIP.csprojResolveAssemblyReference.cache
+c:\users\dovey\source\repos\MyDIP\MyDIP\obj\Debug\MyDIP.csproj.CoreCompileInputs.cache
+c:\users\dovey\source\repos\MyDIP\MyDIP\obj\Debug\MyDIP.exe
+c:\users\dovey\source\repos\MyDIP\MyDIP\obj\Debug\MyDIP.pdb
