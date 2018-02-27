@@ -1,0 +1,5 @@
+C:\Users\Dovey\Documents\Tencent Files\172399463\FileRecv\MobileFile\HomeWork_two\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
+C:\Users\Dovey\Documents\Tencent Files\172399463\FileRecv\MobileFile\HomeWork_two\Common\bin\Debug\Common.dll
+C:\Users\Dovey\Documents\Tencent Files\172399463\FileRecv\MobileFile\HomeWork_two\Common\bin\Debug\Common.pdb
+C:\Users\Dovey\Documents\Tencent Files\172399463\FileRecv\MobileFile\HomeWork_two\Common\obj\Debug\Common.dll
+C:\Users\Dovey\Documents\Tencent Files\172399463\FileRecv\MobileFile\HomeWork_two\Common\obj\Debug\Common.pdb

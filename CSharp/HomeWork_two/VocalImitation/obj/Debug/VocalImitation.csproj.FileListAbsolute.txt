@@ -1,0 +1,11 @@
+C:\Users\Dovey\Documents\Tencent Files\172399463\FileRecv\MobileFile\HomeWork_two\VocalImitation\bin\Debug\VocalImitation.dll
+C:\Users\Dovey\Documents\Tencent Files\172399463\FileRecv\MobileFile\HomeWork_two\VocalImitation\bin\Debug\VocalImitation.pdb
+C:\Users\Dovey\Documents\Tencent Files\172399463\FileRecv\MobileFile\HomeWork_two\VocalImitation\bin\Debug\Common.dll
+C:\Users\Dovey\Documents\Tencent Files\172399463\FileRecv\MobileFile\HomeWork_two\VocalImitation\bin\Debug\Interface.dll
+C:\Users\Dovey\Documents\Tencent Files\172399463\FileRecv\MobileFile\HomeWork_two\VocalImitation\bin\Debug\Common.pdb
+C:\Users\Dovey\Documents\Tencent Files\172399463\FileRecv\MobileFile\HomeWork_two\VocalImitation\bin\Debug\Interface.pdb
+C:\Users\Dovey\Documents\Tencent Files\172399463\FileRecv\MobileFile\HomeWork_two\VocalImitation\bin\Debug\Interface.dll.config
+C:\Users\Dovey\Documents\Tencent Files\172399463\FileRecv\MobileFile\HomeWork_two\VocalImitation\obj\Debug\VocalImitation.csprojResolveAssemblyReference.cache
+C:\Users\Dovey\Documents\Tencent Files\172399463\FileRecv\MobileFile\HomeWork_two\VocalImitation\obj\Debug\VocalImitation.csproj.CoreCompileInputs.cache
+C:\Users\Dovey\Documents\Tencent Files\172399463\FileRecv\MobileFile\HomeWork_two\VocalImitation\obj\Debug\VocalImitation.dll
+C:\Users\Dovey\Documents\Tencent Files\172399463\FileRecv\MobileFile\HomeWork_two\VocalImitation\obj\Debug\VocalImitation.pdb

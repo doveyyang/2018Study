@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<VocalImitationModel>
+  <Person>南派</Person>
+  <Table>桌子</Table>
+  <Chair>椅子</Chair>
+  <Fan>扇子</Fan>
+  <Ruler>尺子</Ruler>
+  <FireEvents>
+    <string>"夫起大呼"，天生我才必有用，</string>
+    <string>"妇亦起大呼",屋顶好大一个洞</string>
+  </FireEvents>
+  <Temperature>
+    400
+  </Temperature>
+</VocalImitationModel>

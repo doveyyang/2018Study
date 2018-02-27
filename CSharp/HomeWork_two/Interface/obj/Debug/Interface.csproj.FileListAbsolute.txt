@@ -1,0 +1,9 @@
+C:\Users\Dovey\Documents\Tencent Files\172399463\FileRecv\MobileFile\HomeWork_two\Interface\obj\Debug\Interface.csproj.CoreCompileInputs.cache
+C:\Users\Dovey\Documents\Tencent Files\172399463\FileRecv\MobileFile\HomeWork_two\Interface\bin\Debug\Interface.dll.config
+C:\Users\Dovey\Documents\Tencent Files\172399463\FileRecv\MobileFile\HomeWork_two\Interface\bin\Debug\Interface.dll
+C:\Users\Dovey\Documents\Tencent Files\172399463\FileRecv\MobileFile\HomeWork_two\Interface\bin\Debug\Interface.pdb
+C:\Users\Dovey\Documents\Tencent Files\172399463\FileRecv\MobileFile\HomeWork_two\Interface\bin\Debug\Common.dll
+C:\Users\Dovey\Documents\Tencent Files\172399463\FileRecv\MobileFile\HomeWork_two\Interface\bin\Debug\Common.pdb
+C:\Users\Dovey\Documents\Tencent Files\172399463\FileRecv\MobileFile\HomeWork_two\Interface\obj\Debug\Interface.csprojResolveAssemblyReference.cache
+C:\Users\Dovey\Documents\Tencent Files\172399463\FileRecv\MobileFile\HomeWork_two\Interface\obj\Debug\Interface.dll
+C:\Users\Dovey\Documents\Tencent Files\172399463\FileRecv\MobileFile\HomeWork_two\Interface\obj\Debug\Interface.pdb
